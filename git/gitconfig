@@ -1,0 +1,62 @@
+[user]
+	name = Hugo Ferreira
+	email = hugo@mindclick.info
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = green
+[color "interactive"]
+	prompt = green bold
+	help = yellow bold
+	error = red bold
+[color "status"]
+	changed = yellow
+	untracked = cyan
+[alias]
+	f = flow
+	br = branch -a -vv 
+	co = checkout
+	st = status
+	graph = log --graph --all --oneline
+[branch]
+	autosetuprebase = always
+[commit]
+	template = ~/.dotfiles/git/gitcommit
+[core]
+	attributesfile = ~/.dotfiles/git/gitattributes
+	excludesfile = ~/.dotfiles/git/gitignore
+[diff]
+	renames = copies
+[gui]
+	encoding = utf-8
+[log]
+	decorate = short
+[merge]
+	log = true
+	ff = false
+[push]
+	default = simple
+
+# Project urls
+[url "git@github.com"]
+	insteadOf = github
+[url "git@git.wpengine.com"]
+	insteadOf = wpengine
+
+# 3rd party tools
+[github]
+	user = hugocf
+	token = a94fa8ce1d99984b22c6804d8f65a2c7
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

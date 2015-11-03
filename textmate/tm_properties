@@ -1,0 +1,54 @@
+# TextMate Reference:
+# - http://wiki.macromates.com/Reference/Settings
+# - http://wiki.macromates.com/Reference/FolderSpecificSettings
+#
+# Extra Info:
+# - http://hiltmon.com/blog/2013/04/15/my-textmate-2-setup/
+# - https://gist.github.com/dvessel/1478685
+# - http://stackoverflow.com/a/19243383/1380781
+
+followSymbolicLinks = true
+showInvisibles      = true
+invisiblesMap       = "~ "
+
+[ text ]
+spellChecking       = true
+spellingLanguage    = 'en_UK'
+softWrap            = true
+wrapColumn          = "Use Window Frame"
+softTabs            = false
+tabSize             = 4
+
+[ text.html.basic ] # WordPress
+softTabs            = false
+
+[ text.html.markdown ]
+softTabs            = true
+tabSize             = 4
+
+[ text.html.php ]   # WordPress
+softTabs            = false
+
+[ source ]
+softWrap            = false
+softTabs            = true
+tabSize             = 4
+
+[ source.css ]      # WordPress
+softTabs            = false
+
+[ source.js ]      # WordPress
+softTabs            = false
+
+[ source.js.node ]
+softTabs            = true
+tabSize             = 2
+
+[ source.go ]
+softTabs            = false
+
+[ source.plist ]
+softTabs            = false
+
+[ *.log ]
+softWrap            = false

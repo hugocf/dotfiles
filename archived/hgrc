@@ -1,0 +1,63 @@
+# Inspired by Steve Losh's http://stevelosh.com/blog/2009/05/what-i-hate-about-mercurial/#comment-30277005
+
+[extensions]
+fetch =
+graphlog =
+record = 
+bookmarks = 
+rebase = 
+purge = 
+mq = 
+patchbomb =
+extdiff = 
+color = 
+parentrevspec =
+schemes = 
+# http://mercurial.selenic.com/wiki/ShelveExtension
+# hgshelve = ~/lib/hg/hgshelve/hgshelve.py
+
+[diff]
+git = True
+
+[email]
+method = smtp
+
+[smtp]
+# ?!?
+
+[web]
+allow_archive = gz zip bz2
+
+[color]
+status.modified = cyan
+status.added = green
+status.removed = red
+status.deleted = yellow bold underline
+status.unknown = magenta bold underline
+status.ignored = black bold
+diff.diffline = none
+diff.extended = cyan
+diff.file_a = red
+diff.file_b = green
+diff.hunk = yellow bold
+diff.deleted = red
+diff.inserted = green
+diff.changed = white
+diff.trailingwhitespace = white_background
+
+[bookmarks]
+track.current = True
+
+[defaults]
+diff   = --color always
+status = --color always
+serve  = --style=gitweb
+rebase = --keepbranches
+addremove = --similarity 100
+
+[alias]
+nudge = push --rev .
+tmd = diff --no-color -U 10
+st = status -C
+? = summary
+

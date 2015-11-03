@@ -1,0 +1,156 @@
+# NETWORK MONITORING (backup only; see ~admin)
+alias nwmon='sudo tcpdump -i en1'
+alias nwout='sudo tcpdump -Q "if=en1 and dir=out"'
+alias nwin='sudo tcpdump -Q "if=en1 and dir=in"'
+port2pid() {
+    sudo lsof -Fp -i:$1 | xargs -I% ps -%
+}
+
+# FUNCTIONS
+close () {
+    osascript -e "tell app \"$1\" to quit"
+}
+
+brewrelink () {
+    for f in /usr/local/Cellar/*; do
+        latest=`ls -1 $f | grep -v current | tail -1`
+        ln -nfs $latest $f/current
+    done
+}
+
+# Dash App: http://kapeli.com/dash
+dash () { 
+    open dash://$1
+}
+
+exist () {
+    command -v "$1" &> /dev/null
+}
+
+fix-zip () {
+    zip -d "$1" __MACOSX/* *.DS_Store*
+    unzip -t "$1"
+}
+
+isadmin () {
+    dscl . read /groups/admin GroupMembership | grep $1 &> /dev/null
+}
+
+# Bash Function to open man pages in new terminal window - Mac OS X Hints
+# http://hints.macworld.com/article.php?story=20131226153018801
+man() { 
+    if [ $# -eq 1 ]; then open x-man-page://$1 ; elif [ $# -eq 2 ] ; then open x-man-page://$1/$2 ; fi 
+}
+
+open-site () {
+    current_dir="${PWD##*/}"
+    
+    # Does ~/Sites link here?
+    links_sites="$(ls -l ~/Sites | grep "$current_dir" | tr -s ' ' | cut -d ' ' -f 9)"
+    links_array=( $links_sites )
+    links_count=${#links_array[@]}
+    if [[ $links_count == 1 ]]; then
+        open "http://${links_array[0]}.dev"
+        return
+    fi
+    
+    # Is there a web location file to open?
+    shortcut_file=$(ls -1 *.{webloc,url} 2>/dev/null | head -1)
+    if [[ -a "$shortcut_file" ]]; then
+        open "$shortcut_file";
+        return
+    fi
+    
+    # Oops, something's wrong...
+    if [[ $links_count > 1 ]]; then
+        echo "Current directory '$current_dir' is used in too many ~/Sites"
+    else
+        echo "Didn't find any ~/Sites pointing to the current directory '$current_dir' nor any web location files inside it"
+    fi
+}
+
+super () {
+    su - admin -c "sudo $*"
+}
+
+watch () {
+    while true; do
+        [[ ! $WATCH_SKIP_CLEAR ]] && clear
+        echo "# WATCH_SECONDS=${WATCH_SECONDS:=5}   WATCH_SKIP_CLEAR=$WATCH_SKIP_CLEAR"
+        echo "# $(date)"
+        echo "> $*"; echo
+        ( $* )
+        sleep $WATCH_SECONDS
+    done
+}
+
+week-days-en() {
+    date +"# Work W%V"
+    date -v+sunday    +"## %Y-%m-%d %a"
+    date -v+saturday  +"## %Y-%m-%d %a"
+    date -v+friday    +"## %Y-%m-%d %a"
+    date -v+thursday  +"## %Y-%m-%d %a"
+    date -v+wednesday +"## %Y-%m-%d %a"
+    date -v+tuesday   +"## %Y-%m-%d %a"
+    date -v+monday    +"## %Y-%m-%d %a"
+}
+
+week-days-pt() {
+    date +"# Stuff W%V"
+    date -v+sunday    +"## %Y-%m-%d Dom"
+    date -v+saturday  +"## %Y-%m-%d Sáb"
+    date -v+friday    +"## %Y-%m-%d Sex"
+    date -v+thursday  +"## %Y-%m-%d Qui"
+    date -v+wednesday +"## %Y-%m-%d Qua"
+    date -v+tuesday   +"## %Y-%m-%d Ter"
+    date -v+monday    +"## %Y-%m-%d Seg"
+}
+
+# DEFAULTS
+alias grep='grep --color'
+alias ll='ls -lh'
+alias ld='ll -tr'
+alias psql='psql -U postgres'
+exist rmtrash && alias rm=rmtrash || alias rm='rm -i'
+alias rm~='mv -f *~ /tmp/'
+alias top='top -o cpu'
+
+# TOOLS
+alias clean-tmp-all='clean-tmp-bak; clean-tmp-ds; clean-tmp-meta'
+alias clean-tmp-bak='find . \( -name ".#*" -or -name "*~" \) -exec mv {} ~/.tmp/ \;'
+alias clean-tmp-ds='find . \( -name .DS_Store -or -name ._.DS_Store \) -exec rm {} \;'
+alias clean-tmp-meta='find . -name "._*" -exec rm {} \;'
+alias clean-mov-thumbs='find . -name "*.MOV" | sed -e "s/\.MOV/.JPG/" | xargs -I{} rm "{}"'
+alias convert-xls-csv='/Applications/LibreOffice.app/Contents/MacOS/soffice --invisible --convert-to csv'
+alias edit-hosts='mate /etc/hosts'
+alias edit-vhosts='mate /etc/apache2/extra/httpd-vhosts.conf'
+alias find-tmp='find . -name .DS_Store -or -name ._.DS_Store -or -name ".#*" -or -name "*~" -or -name "._*"'
+alias flush-dns='su admin -c "sudo dscacheutil -flushcache"'
+alias hide-desktop-icons='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
+alias login-window='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+alias logout-user="osascript -e 'tell application \"System Events\" to log out'"
+alias open-dev="open . && mate . && gitx && open-site"
+alias restart-apache='su admin -c "sudo apachectl -k restart"'
+alias restart-pow='touch ~/.pow/restart.txt'
+alias rot13='tr "0-9a-zA-Z" "5-90-4n-za-mN-ZA-M"'
+alias show-desktop-icons='defaults delete com.apple.finder CreateDesktop; killall Finder'
+
+# http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
+alias fix-open-with='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+
+# VERSION CONTROL
+alias cvsst='cvs st | grep -E "\?|Status:" | grep -v "Up-to-date"; date'
+alias cvsup='cvs -q update -P -d ; date'
+alias cvsupC='cvs update -P -d -C ; date'
+alias svnadd='svn st | grep \? | cut -c2- | xargs svn add'
+alias g='git'
+
+# WORK / CLIENTS
+alias maygurney='sudo openconnect --user=rliberato --no-cert-check --script=/usr/local/etc/vpnc-script vpnclient1.maygurney.co.uk'
+alias maygurney2='sudo openconnect --user=rliberato --no-cert-check --script=/usr/local/etc/vpnc-script vpnclient2.maygurney.co.uk'
+
+# PROXY/SOCKS
+alias tunnel-socks="ssh -D 1080 -f -N digitalocean"
+# http://www.chromium.org/developers/design-documents/network-stack/socks-proxy
+alias chrome-socks='open /Applications/Google\ Chrome.app --args --incognito --proxy-server="socks5://localhost:1080"'
+alias chrome-socks-resolver='open /Applications/Google\ Chrome.app --args --incognito --proxy-server="socks5://localhost:1080" --host-resolver-rules="MAP * 0.0.0.0 , EXCLUDE localhost"'
