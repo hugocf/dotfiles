@@ -2,7 +2,11 @@
 
 # Raw escape sequence:  \[\e[1;32m\]
 # 
-# Examples of using this color aliases:
+# Other options instead of \e:
+# \x1B = 1B is the hex value of the Escape character
+# \033 = 33 is the octal value of the Escape character
+#
+# Examples of using these color aliases:
 #   a) '\[\e[${bold}${green}m\] $(command)'
 #   b) "\[${color}${bold}${green}m\] \$(command)"
 # 
