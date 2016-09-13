@@ -85,7 +85,7 @@ watch () {
 }
 
 week-days-en() {
-    date +"# Work W%V"
+    date +"# Week %V"
     date -v+sunday    +"## %Y-%m-%d %a"
     date -v+saturday  +"## %Y-%m-%d %a"
     date -v+friday    +"## %Y-%m-%d %a"
@@ -96,7 +96,7 @@ week-days-en() {
 }
 
 week-days-pt() {
-    date +"# Stuff W%V"
+    date +"# Semana %V"
     date -v+sunday    +"## %Y-%m-%d Dom"
     date -v+saturday  +"## %Y-%m-%d Sáb"
     date -v+friday    +"## %Y-%m-%d Sex"
@@ -134,7 +134,6 @@ alias restart-apache='su admin -c "sudo apachectl -k restart"'
 alias restart-pow='touch ~/.pow/restart.txt'
 alias rot13='tr "0-9a-zA-Z" "5-90-4n-za-mN-ZA-M"'
 alias show-desktop-icons='defaults delete com.apple.finder CreateDesktop; killall Finder'
-
 # http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
 alias fix-open-with='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
@@ -145,12 +144,8 @@ alias cvsupC='cvs update -P -d -C ; date'
 alias svnadd='svn st | grep \? | cut -c2- | xargs svn add'
 alias g='git'
 
-# WORK / CLIENTS
-alias maygurney='sudo openconnect --user=rliberato --no-cert-check --script=/usr/local/etc/vpnc-script vpnclient1.maygurney.co.uk'
-alias maygurney2='sudo openconnect --user=rliberato --no-cert-check --script=/usr/local/etc/vpnc-script vpnclient2.maygurney.co.uk'
-
 # PROXY/SOCKS
-alias tunnel-socks="ssh -D 1080 -f -N digitalocean"
+alias tunnel-create="ssh -D 1080 -f -N digitalocean"    # SOCKS port
+alias tunnel-list="ps -el | grep 'ssh -D'"
 # http://www.chromium.org/developers/design-documents/network-stack/socks-proxy
-alias chrome-socks='open /Applications/Google\ Chrome.app --args --incognito --proxy-server="socks5://localhost:1080"'
-alias chrome-socks-resolver='open /Applications/Google\ Chrome.app --args --incognito --proxy-server="socks5://localhost:1080" --host-resolver-rules="MAP * 0.0.0.0 , EXCLUDE localhost"'
+alias tunnel-chrome='open /Applications/Google\ Chrome.app --args --incognito --proxy-server="socks5://localhost:1080" --host-resolver-rules="MAP * ~NOTFOUND , EXCLUDE localhost"'
