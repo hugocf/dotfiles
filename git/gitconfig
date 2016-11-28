@@ -42,7 +42,6 @@
 	decorate = short
 [merge]
 	log = true
-	ff = false
 [rebase]
 	autoStash = true
 [pull]
