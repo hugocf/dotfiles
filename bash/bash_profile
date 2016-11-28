@@ -33,7 +33,7 @@ fi
 
 # BASH ETERNAL HISTORY
 shopt -s histappend
-export HISTCONTROL=erasedups
+export HISTCONTROL=ignoredups:erasedups:ignorespace
 export HISTFILESIZE=
 export HISTSIZE=
 export HISTTIMEFORMAT="%F %T "
