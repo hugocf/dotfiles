@@ -24,7 +24,7 @@ softTabs            = false
 
 [ text.html.markdown ]
 softTabs            = true
-tabSize             = 4
+tabSize             = 2
 
 [ text.html.php ]   # WordPress
 softTabs            = false
