@@ -117,7 +117,7 @@ alias top='top -o cpu'
 
 # TOOLS
 alias clean-tmp-all='clean-tmp-bak; clean-tmp-ds; clean-tmp-meta'
-alias clean-tmp-bak='find . \( -name ".#*" -or -name "*~" \) -exec mv {} ~/.tmp/ \;'
+alias clean-tmp-bak='find . \( -name ".#*" -or -name "*~" \) -exec rm {} \;'
 alias clean-tmp-ds='find . \( -name .DS_Store -or -name ._.DS_Store \) -exec rm {} \;'
 alias clean-tmp-meta='find . -name "._*" -exec rm {} \;'
 alias clean-mov-thumbs='find . -name "*.MOV" | sed -e "s/\.MOV/.JPG/" | xargs -I{} rm "{}"'
