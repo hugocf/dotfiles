@@ -1,16 +1,28 @@
-# https://github.com/github/gitignore/blob/master/Global/CVS.gitignore
+# Created by https://www.gitignore.io/api/cvs,linux,macos,mercurial,svn,textmate,vim,windows
+
+### CVS ###
 /CVS/*
-*/CVS/*
+**/CVS/*
 .cvsignore
 */.cvsignore
 
-# https://github.com/github/gitignore/blob/master/Global/Mercurial.gitignore
-/.hg/*
-*/.hg/*
-.hgignore
+### Linux ###
+*~
 
-# https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
-.DS_Store
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### macOS ###
+*.DS_Store
 .AppleDouble
 .LSOverride
 
@@ -20,9 +32,14 @@ Icon
 # Thumbnails
 ._*
 
-# Files that might appear on external disk
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
 .Spotlight-V100
+.TemporaryItems
 .Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -31,26 +48,40 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# https://github.com/github/gitignore/blob/master/Global/SVN.gitignore
+### Mercurial ###
+.hg/
+.hgignore
+.hgsigs
+.hgsub
+.hgsubstate
+.hgtags
+
+### SVN ###
 .svn/
 
-# https://github.com/github/gitignore/blob/master/Global/TextMate.gitignore
+### TextMate ###
 *.tmproj
 *.tmproject
 tmtags
 
-# https://github.com/github/gitignore/blob/master/Global/vim.gitignore
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
+### Vim ###
+# swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+# session
 Session.vim
+# temporary
 .netrwhist
-*~
+# auto-generated tag files
+tags
 
-# https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
-# Windows image file caches
+### Windows ###
+# Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
+ehthumbs_vista.db
 
 # Folder config file
 Desktop.ini
@@ -67,6 +98,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# https://github.com/github/gitignore/blob/master/Global/Xcode.gitignore
-# HF: Add to the project repo (Xcode is a characteristic of the project, not an option of the dev)
-# HF: Besides, it’s already included in one of the `Objective-C.gitignore` or `Swift.gitignore`.
+# End of https://www.gitignore.io/api/cvs,linux,macos,mercurial,svn,textmate,vim,windows
