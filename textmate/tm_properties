@@ -50,6 +50,9 @@ softTabs            = false
 [ source.plist ]
 softTabs            = false
 
+[ source.sbt ]
+tabSize             = 2
+
 [ source.scala ]
 tabSize             = 2
 
