@@ -37,7 +37,7 @@ tabSize             = 4
 [ source.css ]      # WordPress
 softTabs            = false
 
-[ source.js ]      # WordPress
+[ source.js ]       # WordPress
 softTabs            = false
 
 [ source.js.node ]
@@ -54,6 +54,12 @@ softTabs            = false
 tabSize             = 2
 
 [ source.scala ]
+tabSize             = 2
+
+[ source.terraform ]
+tabSize             = 2
+
+[ source.yaml ]
 tabSize             = 2
 
 [ *.log ]
