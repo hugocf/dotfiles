@@ -112,10 +112,10 @@ alias ll='ls -lh'
 alias ld='ll -tr'
 alias psql='psql -U postgres'
 exist rmtrash && alias rm=rmtrash || alias rm='rm -i'
-alias rm~='mv -f *~ /tmp/'
 alias top='top -o cpu'
 
 # TOOLS
+alias chrome='open /Applications/Google\ Chrome.app'
 alias clean-tmp-all='clean-tmp-bak; clean-tmp-ds; clean-tmp-meta'
 alias clean-tmp-bak='find . \( -name ".#*" -or -name "*~" \) -exec rm {} \;'
 alias clean-tmp-ds='find . \( -name .DS_Store -or -name ._.DS_Store \) -exec rm {} \;'
