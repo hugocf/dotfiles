@@ -56,8 +56,8 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 # 3rd PARTY SOURCES
 [[ -f `brew --prefix`/etc/autojump.sh ]] && source `brew --prefix`/etc/autojump.sh
-[[ -f `brew --prefix`/share/chtf/chtf.sh ]] && source `brew --prefix`/share/chtf/chtf.sh
 [[ -f $LOCAL_SCRIPTS/mvncolor.sh ]] && source $LOCAL_SCRIPTS/mvncolor.sh
+source /usr/local/opt/asdf/asdf.sh
 
 # Work related
 [[ -f $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh ]] && source $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh
