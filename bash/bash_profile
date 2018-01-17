@@ -23,7 +23,9 @@ export LC_ALL=en_US.UTF-8
 if isadmin $USER; then
     export PS1="\n${RED}\h: ${BOLD_RED}\w\n${RED}\u\$${RESET} [\A] ${RESET}"
 else
-    export PS1="\n${WHITE}\h: ${CYAN}\w\n${WHITE}\u\$${RESET} [\A]${YELLOW}\${VIRTUAL_ENV:+ (\${VIRTUAL_ENV##*/})} ${YELLOW}\$(vcprompt -f '[%n:%b]%m%u ')${RESET}"
+    PS_FULL="\n${WHITE}\h: ${CYAN}\w\n${WHITE}\u\$${RESET} [\A]${YELLOW}\${VIRTUAL_ENV:+ (\${VIRTUAL_ENV##*/})} ${YELLOW}\$(vcprompt -f '[%n:%b]%m%u ')${RESET}"
+    PS_DEMO="\n${WHITE}\h: ${CYAN}\W\n${WHITE}\u\$${RESET}${YELLOW}\${VIRTUAL_ENV:+ (\${VIRTUAL_ENV##*/})} ${YELLOW}\$(vcprompt -f '[%n:%b]%m%u ')${RESET}"
+    export PS1=$PS_FULL
 fi
     # (deprecated: irrelevant since using "vcprompt")
     # GIT_PS1_SHOWDIRTYSTATE=           # unstaged (*) and staged (+) changes
