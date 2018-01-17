@@ -108,8 +108,11 @@ week-days-pt() {
 
 # DEFAULTS
 alias grep='grep --color'
-alias ll='ls -lh'
-alias ld='ll -tr'
+alias ll='ls -lhp'
+alias lld='ls -lh -d */'
+alias llf='ll | grep -v "^d"'
+alias lsd='ls -d */'
+alias lsf='ls -p | grep -v "/"'
 alias psql='psql -U postgres'
 exist rmtrash && alias rm=rmtrash || alias rm='rm -i'
 alias top='top -o cpu'
