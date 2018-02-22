@@ -44,6 +44,7 @@
 	log = true
 [rebase]
 	autoStash = true
+	autosquash = true
 [pull]
 	rebase = true
 [push]
