@@ -46,20 +46,13 @@ export GOPATH=$HOME/Documents/C/Code/Go
 # JAVA ENVIRONMENT
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
-# PYTHON VIRTUAL ENVS
-# HF: FIXME: Set only if virtualenv stuff is installed
-# export VIRTUAL_ENV_DISABLE_PROMPT=1
-# export PIP_VIRTUALENV_BASE=$WORKON_HOME
-# export PIP_RESPECT_VIRTUALENV=true
-# source virtualenvwrapper.sh
-
 # BASH COMPLETION
 [[ -f `brew --prefix`/etc/bash_completion ]] && source `brew --prefix`/etc/bash_completion
 
 # 3rd PARTY SOURCES
-[[ -f `brew --prefix`/etc/autojump.sh ]] && source `brew --prefix`/etc/autojump.sh
+source_from_brew "etc/autojump.sh"
+source_from_brew "opt/asdf/asdf.sh"
 [[ -f $LOCAL_SCRIPTS/mvncolor.sh ]] && source $LOCAL_SCRIPTS/mvncolor.sh
-source /usr/local/opt/asdf/asdf.sh
 
 # Work related
 [[ -f $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh ]] && source $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh

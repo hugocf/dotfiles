@@ -69,6 +69,11 @@ open-site () {
     fi
 }
 
+source_from_brew () {
+    local path=$1
+    [[ -f `brew --prefix`/$1 ]] && source `brew --prefix`/$1
+}
+
 super () {
     su - admin -c "sudo $*"
 }
