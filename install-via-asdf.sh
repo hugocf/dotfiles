@@ -32,6 +32,14 @@ install () {
     asdf global $name $global
 }
 
+set_local () {
+    local -r name=$1
+    local -r version=$2
+    local -r folder=$3
+    cd "$folder"
+    asdf local $name $version
+}
+
 # Do the work
 update_asdf
 
@@ -43,3 +51,7 @@ install minikube    0.24.1
 install nodejs      9.7.1
 install python      2.7.14
 install terraform   0.10.4  0.8.8
+
+# Set local versions
+set_local terraform 0.8.8   "$UX_CODE"/uxforms-infra-live/provisioning/
+set_local terraform 0.10.4  "$UX_CODE"/uxforms-infra-live/kubernetes/provision/
