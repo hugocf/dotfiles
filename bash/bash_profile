@@ -51,7 +51,8 @@ source_from_brew etc/bash_completion
 
 # 3rd PARTY SOURCES
 source_from_brew etc/autojump.sh
-source_from_brew opt/asdf/asdf.sh
+source_from_path $HOME/.asdf/asdf.sh
+source_from_path $HOME/.asdf/completions/asdf.bash
 source_from_path $LOCAL_SCRIPTS/mvncolor.sh
 
 # Work related
