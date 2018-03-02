@@ -19,28 +19,28 @@ wrapColumn          = "Use Window Frame"
 softTabs            = false
 tabSize             = 4
 
-[ text.html.basic ] # WordPress
-softTabs            = false
-
 [ text.html.markdown ]
 softTabs            = true
 tabSize             = 2
-
-[ text.html.php ]   # WordPress
-softTabs            = false
 
 [ source ]
 softWrap            = false
 softTabs            = true
 tabSize             = 4
 
-[ source.css ]      # WordPress
-softTabs            = false
+# [ text.html.basic ] # WordPress
+# softTabs            = false
+# 
+# [ text.html.php ]   # WordPress
+# softTabs            = false
+# 
+# [ source.css ]      # WordPress
+# softTabs            = false
+# 
+# [ source.js ]       # WordPress
+# softTabs            = false
 
-[ source.js ]       # WordPress
-softTabs            = false
-
-[ source.js.node ]
+[ source.js ]
 softTabs            = true
 tabSize             = 2
 
