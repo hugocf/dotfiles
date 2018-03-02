@@ -70,8 +70,12 @@ open-site () {
 }
 
 source_from_brew () {
-    local path=$1
-    [[ -f `brew --prefix`/$1 ]] && source `brew --prefix`/$1
+    source_from_path `brew --prefix`/$1
+}
+
+source_from_path () {
+    local path="$1"
+    [[ -r "$1" ]] && source "$1"
 }
 
 super () {

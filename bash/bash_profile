@@ -17,7 +17,7 @@ export EDITOR='mate -w'
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-[[ -r ~/.colors.sh ]] && source ~/.colors.sh
+source_from_path ~/.colors.sh
 # HF: FIXME: show a message if doesn't exits; load the PS's otherwise
 # e.g. PS1='[missing ~/.color.sh] \h:\W \u\$ '
 if isadmin $USER; then
@@ -47,13 +47,13 @@ export GOPATH=$HOME/Documents/C/Code/Go
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 # BASH COMPLETION
-[[ -f `brew --prefix`/etc/bash_completion ]] && source `brew --prefix`/etc/bash_completion
+source_from_brew etc/bash_completion
 
 # 3rd PARTY SOURCES
-source_from_brew "etc/autojump.sh"
-source_from_brew "opt/asdf/asdf.sh"
-[[ -f $LOCAL_SCRIPTS/mvncolor.sh ]] && source $LOCAL_SCRIPTS/mvncolor.sh
+source_from_brew etc/autojump.sh
+source_from_brew opt/asdf/asdf.sh
+source_from_path $LOCAL_SCRIPTS/mvncolor.sh
 
 # Work related
-[[ -f $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh ]] && source $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh
-[[ -f $LOCAL_CODE/dotfiles_work.git/uxforms/bash_profile.sh ]] && source $LOCAL_CODE/dotfiles_work.git/uxforms/bash_profile.sh
+source_from_path $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh
+source_from_path $LOCAL_CODE/dotfiles_work.git/uxforms/bash_profile.sh
