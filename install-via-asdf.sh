@@ -38,6 +38,7 @@ set_local () {
     local -r folder=$3
     cd "$folder"
     asdf local $name $version
+    echo "(set $version => $folder)"
 }
 
 # Do the work
