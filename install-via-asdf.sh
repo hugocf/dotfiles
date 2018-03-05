@@ -51,7 +51,7 @@ install kubectl     1.9.3
 install minikube    0.24.1
 install nodejs      9.7.1
 install python      2.7.14
-install terraform   0.10.4  0.8.8
+install terraform   0.11.3  0.10.4  0.8.8
 
 # Set local versions
 set_local terraform 0.8.8   "$UX_CODE"/uxforms-infra-live/provisioning/
