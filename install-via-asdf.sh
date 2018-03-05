@@ -22,11 +22,11 @@ update_asdf () {
 install () {
     local -r name=$1
     local -r global=$2
-    local -r other=${3:-}
+    local -r others=${@:3:$#}   # from 3rd until the last one
 
     heading "$name"
     asdf plugin-add $name
-    for v in $global $other; do
+    for v in $global $others; do
         asdf install $name $v
     done
     asdf global $name $global
