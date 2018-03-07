@@ -56,3 +56,7 @@ install terraform   0.11.3  0.10.4  0.8.8
 # Set local versions
 set_local terraform 0.8.8   "$UX_CODE"/uxforms-infra-live/provisioning/
 set_local terraform 0.10.4  "$UX_CODE"/uxforms-infra-live/kubernetes/provision/
+
+# Bash completion
+kubectl completion bash > $(brew --prefix)/etc/bash_completion.d/kubectl
+minikube completion bash > $(brew --prefix)/etc/bash_completion.d/minikube
