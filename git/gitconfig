@@ -38,8 +38,6 @@
 	prune = true
 [gui]
 	encoding = utf-8
-[log]
-	decorate = short
 [merge]
 	log = true
 [rebase]
