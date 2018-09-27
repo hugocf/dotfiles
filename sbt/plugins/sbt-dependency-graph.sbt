@@ -1,1 +1,1 @@
-addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.1")
+addSbtPlugin("org.hammerlab" % "sbt-dependency-graph" % "0.10.2")
