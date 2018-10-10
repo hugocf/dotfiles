@@ -57,4 +57,3 @@ source_from_path $LOCAL_SCRIPTS/mvncolor.sh
 
 # Work related
 source_from_path $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh
-source_from_path $LOCAL_CODE/dotfiles_work.git/uxforms/bash_profile.sh
