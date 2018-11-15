@@ -25,6 +25,7 @@
 	co = checkout
 	st = status
 	graph = log --graph --all --oneline
+	tree = log --graph --all --oneline
 # [branch]
 # 	autosetuprebase = always
 [commit]
