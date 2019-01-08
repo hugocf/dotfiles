@@ -84,8 +84,8 @@ super () {
 
 watch () {
     while true; do
-        [[ ! $WATCH_SKIP_CLEAR ]] && clear
-        echo "# WATCH_SECONDS=${WATCH_SECONDS:=5}   WATCH_SKIP_CLEAR=$WATCH_SKIP_CLEAR"
+        [[ ! ${WATCH_SKIP_CLEAR:-} ]] && clear || echo
+        echo "# WATCH_SECONDS=${WATCH_SECONDS:=5}   WATCH_SKIP_CLEAR=${WATCH_SKIP_CLEAR:-}"
         echo "# $(date)"
         echo "> $*"; echo
         ( $* )
