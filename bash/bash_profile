@@ -29,7 +29,7 @@ else
 fi
     # (deprecated: irrelevant since using "vcprompt")
     # GIT_PS1_SHOWDIRTYSTATE=           # unstaged (*) and staged (+) changes
-    # GIT_PS1_SHOWSTASHSTATE=1          # something stashed ($) 
+    # GIT_PS1_SHOWSTASHSTATE=1          # something stashed ($)
     # GIT_PS1_SHOWUNTRACKEDFILES=       # untracked files (%)
     # export PS1='\h:\w \u`__git_ps1`\$ '
 

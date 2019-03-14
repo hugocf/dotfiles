@@ -19,7 +19,7 @@ brewrelink () {
 }
 
 # Dash App: http://kapeli.com/dash
-dash () { 
+dash () {
     open dash://$1
 }
 
@@ -38,13 +38,13 @@ isadmin () {
 
 # Bash Function to open man pages in new terminal window - Mac OS X Hints
 # http://hints.macworld.com/article.php?story=20131226153018801
-man() { 
-    if [ $# -eq 1 ]; then open x-man-page://$1 ; elif [ $# -eq 2 ] ; then open x-man-page://$1/$2 ; fi 
+man() {
+    if [ $# -eq 1 ]; then open x-man-page://$1 ; elif [ $# -eq 2 ] ; then open x-man-page://$1/$2 ; fi
 }
 
 open-site () {
     current_dir="${PWD##*/}"
-    
+
     # Does ~/Sites link here?
     links_sites="$(ls -l ~/Sites | grep "$current_dir" | tr -s ' ' | cut -d ' ' -f 9)"
     links_array=( $links_sites )
@@ -53,14 +53,14 @@ open-site () {
         open "http://${links_array[0]}.dev"
         return
     fi
-    
+
     # Is there a web location file to open?
     shortcut_file=$(ls -1 *.{webloc,url} 2>/dev/null | head -1)
     if [[ -a "$shortcut_file" ]]; then
         open "$shortcut_file";
         return
     fi
-    
+
     # Oops, something's wrong...
     if [[ $links_count > 1 ]]; then
         echo "Current directory '$current_dir' is used in too many ~/Sites"
@@ -148,6 +148,7 @@ alias restart-apache='su admin -c "sudo apachectl -k restart"'
 alias restart-pow='touch ~/.pow/restart.txt'
 alias rot13='tr "0-9a-zA-Z" "5-90-4n-za-mN-ZA-M"'
 alias show-desktop-icons='defaults delete com.apple.finder CreateDesktop; killall Finder'
+
 # http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
 alias fix-open-with='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
