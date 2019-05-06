@@ -33,6 +33,7 @@
 [core]
 	attributesfile = ~/.dotfiles/git/gitattributes
 	excludesfile = ~/.dotfiles/git/gitignore
+	compression = 9
 [diff]
 	renames = copies
 [fetch]
