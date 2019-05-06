@@ -2,8 +2,7 @@
 [[ -r ~/.bash_aliases ]] && source ~/.bash_aliases
 
 # PATHS
-LOCAL_CODE=~/Documents/C/Code/Shell
-LOCAL_SCRIPTS=$LOCAL_CODE/scripts.git
+LOCAL_SCRIPTS=~/Documents/C/Code/Shell/scripts.git
 PATH=`brew --prefix ruby`/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH
@@ -20,7 +19,7 @@ export LC_ALL=en_US.UTF-8
 source_from_path ~/.colors.sh
 # HF: FIXME: show a message if doesn't exits; load the PS's otherwise
 # e.g. PS1='[missing ~/.color.sh] \h:\W \u\$ '
-if isadmin $USER; then
+if [[ "$USER" == "admin" ]]; then
     export PS1="\n${RED}\h: ${BOLD_RED}\w\n${RED}\u\$${RESET} [\A] ${RESET}"
 else
     PS_FULL="\n${WHITE}\h: ${CYAN}\w\n${WHITE}\u\$${RESET} [\A]${YELLOW}\${VIRTUAL_ENV:+ (\${VIRTUAL_ENV##*/})} ${YELLOW}\$(vcprompt -f '[%n:%b]%m%u ')${RESET}"
@@ -41,7 +40,7 @@ export HISTSIZE=
 export HISTTIMEFORMAT="%F %T "
 
 # GO ENVIRONMENT
-export GOPATH=$HOME/Documents/C/Code/Go
+export GOPATH=~/Documents/C/Code/Go
 
 # JAVA ENVIRONMENT
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
@@ -51,9 +50,9 @@ source_from_brew etc/bash_completion
 
 # 3rd PARTY SOURCES
 source_from_brew etc/autojump.sh
-source_from_path $HOME/.asdf/asdf.sh
-source_from_path $HOME/.asdf/completions/asdf.bash
+source_from_path ~/.asdf/asdf.sh
+source_from_path ~/.asdf/completions/asdf.bash
 source_from_path $LOCAL_SCRIPTS/mvncolor.sh
 
 # Work related
-source_from_path $LOCAL_CODE/dotfiles_work.git/equalexperts/bash_profile.sh
+source_from_path ~/.dotfiles_work/bash_profile.sh

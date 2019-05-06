@@ -1,0 +1,55 @@
+tap "alexanderwillner/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "openssl"
+# brew "ansible"
+brew "asciinema"
+brew "autojump"
+brew "awscli"
+brew "bash-completion"
+# brew "coreutils"
+# brew "diffoscope"
+brew "exiftool"
+brew "git"
+brew "git-flow-avh"
+brew "gnupg"        # `asdf nodejs` needs this
+# brew "gource"
+brew "graphviz"
+brew "httpie"
+brew "hugo"
+brew "jq"
+brew "mas"
+brew "md5sha1sum"
+brew "mercurial"
+brew "mysql"
+brew "pdftohtml"
+brew "rmtrash"
+brew "testdisk"
+brew "tldr"
+brew "tree"
+brew "vcprompt"
+brew "watch"
+brew "wget"
+brew "zlib"         # `asdf python` needs this
+brew "alexanderwillner/tap/things.sh"
+cask "aerial"
+cask "clipy"
+# cask "google-cloud-sdk"
+cask "keepingyouawake"
+cask "keycastr"
+cask "menumeters"
+# cask "qlmarkdown"
+mas "com.linebreak.CloudAppMacOSX", id: 417602904
+mas "com.helloresolven.GIF-Brewery-3", id: 1081413713
+mas "com.riffsy.GIF-for-Mac", id: 1043270657
+mas "com.ghostery.lite", id: 1436953057
+mas "com.kevinsilmore.Randomness", id: 673815312
+mas "cx.c3.theunarchiver", id: 425424353
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Things", id: 904280696
+mas "Xcode", id: 497799835
