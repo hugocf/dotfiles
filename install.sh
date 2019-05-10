@@ -4,6 +4,7 @@ set -u  # treat unset variables as errors
 readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
 readonly CALLDIR=$(pwd)                         # where it was called from
 
+# Do the work
 cd "$BASEDIR"
 
 source ./bash/bash_aliases
