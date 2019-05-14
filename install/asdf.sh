@@ -23,12 +23,10 @@ install () {
 }
 
 install_plugins () {
-    # install java        oracle-8.191
     install kops        1.11.1.z
     install kubectl     1.14.1
     install minikube    1.0.1
     install nodejs      12.1.0
-    # install python      3.7.3       2.7.16
     install terraform   0.11.13
 }
 
