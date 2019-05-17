@@ -26,7 +26,6 @@ install_plugins () {
     install kops        1.11.1.z
     install kubectl     1.14.1
     install minikube    1.0.1
-    install nodejs      12.1.0
     install terraform   0.11.13
 }
 
