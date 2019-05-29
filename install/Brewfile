@@ -28,6 +28,7 @@ brew "tree"
 brew "vcprompt"
 brew "watch"
 brew "wget"
+brew "yarn"
 brew "zlib"         # `asdf python` needs this
 brew "alexanderwillner/tap/things.sh"
 
