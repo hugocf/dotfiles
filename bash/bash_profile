@@ -54,5 +54,8 @@ source_from_path ~/.asdf/asdf.sh
 source_from_path ~/.asdf/completions/asdf.bash
 source_from_path $LOCAL_SCRIPTS/mvncolor.sh
 
+eval $(thefuck --alias)
+export THEFUCK_REQUIRE_CONFIRMATION='false'
+
 # Work related
 source_from_path ~/.dotfiles_work/bash_profile.sh
