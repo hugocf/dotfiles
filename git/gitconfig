@@ -54,6 +54,3 @@
 # Project urls
 [url "git@github.com"]
 	insteadOf = github
-[url "git@git.wpengine.com"]
-	insteadOf = wpengine
-
