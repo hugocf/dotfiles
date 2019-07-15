@@ -58,9 +58,6 @@
 	insteadOf = wpengine
 
 # 3rd party tools
-[github]
-	user = hugocf
-	token = a94fa8ce1d99984b22c6804d8f65a2c7
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
