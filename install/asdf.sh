@@ -27,6 +27,7 @@ install_plugins () {
     install kubectl     1.14.1
     install minikube    1.0.1
     install ruby        2.6.3
+    install sbt         1.2.8
     install terraform   0.11.13
 }
 
