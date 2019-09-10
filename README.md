@@ -1,6 +1,8 @@
 # dotfiles
 
-Local home conf files and app installation scripts
+Local home conf files and app installation scripts.
+
+See also [scripts.git](https://github.com/hugocf/scripts) for more stuff.
 
 ```
 # To configure the environment
