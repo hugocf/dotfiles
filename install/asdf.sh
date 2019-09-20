@@ -23,6 +23,7 @@ install () {
 }
 
 install_plugins () {
+    install golang      1.13
     install kops        1.11.1.z
     install kubectl     1.14.1
     install minikube    1.0.1
