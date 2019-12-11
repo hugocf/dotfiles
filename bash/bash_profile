@@ -6,6 +6,7 @@ export GOPATH=~/Documents/C/Code/Go
 
 # PATHS
 LOCAL_SCRIPTS=~/Documents/C/Code/Shell/scripts.git
+
 PATH=`brew --prefix ruby`/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH
@@ -45,6 +46,7 @@ export HISTTIMEFORMAT="%F %T "
 
 # JAVA ENVIRONMENT
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+source_from_path $LOCAL_SCRIPTS/mvncolor.sh
 
 # BASH COMPLETION
 source_from_brew etc/bash_completion
@@ -53,7 +55,6 @@ source_from_brew etc/bash_completion
 source_from_brew etc/autojump.sh
 source_from_path ~/.asdf/asdf.sh
 source_from_path ~/.asdf/completions/asdf.bash
-source_from_path $LOCAL_SCRIPTS/mvncolor.sh
 
 eval $(thefuck --alias)
 export THEFUCK_REQUIRE_CONFIRMATION='false'
