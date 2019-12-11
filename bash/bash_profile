@@ -6,7 +6,7 @@ LOCAL_SCRIPTS=~/Documents/C/Code/Shell/scripts.git
 PATH=`brew --prefix ruby`/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH
-PATH=$PATH:/Applications/Xcode.app/Contents//Developer/Tools
+PATH=$PATH:/Applications/Xcode.app/Contents/Developer/Tools
 PATH=$PATH:$LOCAL_SCRIPTS
 export PATH
 
