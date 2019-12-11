@@ -1,6 +1,9 @@
 # ALIASES & FUNCTIONS
 [[ -r ~/.bash_aliases ]] && source ~/.bash_aliases
 
+# GO ENVIRONMENT
+export GOPATH=~/Documents/C/Code/Go
+
 # PATHS
 LOCAL_SCRIPTS=~/Documents/C/Code/Shell/scripts.git
 PATH=`brew --prefix ruby`/bin:$PATH
@@ -8,6 +11,7 @@ PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH
 PATH=$PATH:/Applications/Xcode.app/Contents/Developer/Tools
 PATH=$PATH:$LOCAL_SCRIPTS
+PATH=$PATH:$GOPATH
 export PATH
 
 # ENVIRONMENT CONFIG
@@ -38,9 +42,6 @@ export HISTCONTROL=ignoredups:erasedups:ignorespace
 export HISTFILESIZE=
 export HISTSIZE=
 export HISTTIMEFORMAT="%F %T "
-
-# GO ENVIRONMENT
-export GOPATH=~/Documents/C/Code/Go
 
 # JAVA ENVIRONMENT
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
