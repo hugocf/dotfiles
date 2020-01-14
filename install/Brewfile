@@ -60,6 +60,7 @@ cask "owasp-zap"    # security audit tool
 cask "piezo"
 cask "poedit"
 cask "postman"
+cask "qlmarkdown"
 cask "rectangle"
 cask "resilio-sync"
 cask "sequel-pro"
