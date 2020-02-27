@@ -26,7 +26,9 @@
 	st = status
 	graph = log --graph --all --oneline
 	tree = log --graph --all --oneline
-  # https://stackoverflow.com/a/1441062
+	# https://stackoverflow.com/a/18442755
+	update = pull --rebase origin master
+	# https://stackoverflow.com/a/1441062
 	when = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
 	who = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 # [branch]
