@@ -32,6 +32,11 @@ fix-zip () {
     unzip -t "$1"
 }
 
+git-anonymise-repo () {
+    git config --local user.name Anonymous
+    git config --local user.email anonymous@example.com
+}
+
 isadmin () {
     dscl . read /groups/admin GroupMembership | grep $1 &> /dev/null
 }
