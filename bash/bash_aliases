@@ -7,6 +7,11 @@ port2pid() {
 }
 
 # FUNCTIONS
+clean-resource-forks () {
+    local what=${1:-.}
+    find $what -exec xattr -d -s -v com.apple.ResourceFork {} \; 2> /dev/null
+}
+
 close () {
     osascript -e "tell app \"$1\" to quit"
 }
@@ -25,6 +30,11 @@ dash () {
 
 exist () {
     command -v "$1" &> /dev/null
+}
+
+find-resource-forks () {
+    local what=${1:-.}
+    find $what -exec ls -l {}/..namedfork/rsrc \; 2> /dev/null
 }
 
 fix-zip () {
