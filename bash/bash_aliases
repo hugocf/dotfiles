@@ -47,6 +47,19 @@ git-anonymise-repo () {
     git config --local user.email anonymous@example.com
 }
 
+git-commit-dates () {
+    local value="$*"
+    local default=$(date +'%b %d %H:%M')
+    if [[ -z "$value" ]]; then
+        read -p "Enter the time: [$default] " value
+    fi
+    local value="${value:-$default}"
+
+    export GIT_COMMITTER_DATE="Day $value:$(date +%S) $(date +%Y)"  # envar => CommitDate
+    git commit --amend --no-edit --date="$GIT_COMMITTER_DATE"       # param => AuthorDate
+    git show --format=fuller
+}
+
 isadmin () {
     dscl . read /groups/admin GroupMembership | grep $1 &> /dev/null
 }
