@@ -1,9 +1,3 @@
-# NETWORK MONITORING (backup only; see ~admin)
-alias nwmon='sudo tcpdump -i en0'
-alias nwout='sudo tcpdump -Q "if=en0 and dir=out"'
-alias nwin='sudo tcpdump -Q "if=en0 and dir=in"'
-port2pid() {
-    sudo lsof -Fp -i:$1 | xargs -I% ps -%
 }
 
 # FUNCTIONS
@@ -97,6 +91,10 @@ open-site () {
     fi
 }
 
+port2pid() {
+    sudo lsof -Fp -i:$1 | xargs -I% ps -%
+}
+
 source_from_brew () {
     source_from_path `brew --prefix`/$1
 }
@@ -186,6 +184,9 @@ alias flush-dns='su admin -c "sudo dscacheutil -flushcache"'
 alias hide-desktop-icons='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
 alias login-window='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 alias logout-user="osascript -e 'tell application \"System Events\" to log out'"
+alias nwmon='sudo tcpdump -i en0'
+alias nwout='sudo tcpdump -Q "if=en0 and dir=out"'
+alias nwin='sudo tcpdump -Q "if=en0 and dir=in"'
 alias open-idea="open . && gitx && chrome && idea ."
 alias open-mate="open . && gitx && chrome && mate ."
 alias restart-apache='su admin -c "sudo apachectl -k restart"'
