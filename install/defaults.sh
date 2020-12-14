@@ -4,7 +4,6 @@
 echo -e "\n=== Tweak macOS defaults ==="
 
 # Main System
-defaults write com.apple.dashboard devmode -bool true
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'
@@ -31,10 +30,15 @@ defaults write org.shiftitapp.ShiftIt multipleActionsCycleWindowSizes YES
 ##
 ## Deprecated
 ##
+# # Main System
+# defaults write com.apple.dashboard devmode -bool true
+
 # # iCal ≤ 6 (OS X 10.7 Lion)
 # defaults write com.apple.iCal IncludeDebugMenu -bool true
+
 # # Safari < 3.1
 # defaults write com.apple.Safari IncludeDebugMenu -bool true
+
 # # Safari < 3.0
 # defaults write com.apple.Safari WebKitHistoryAgeInDaysLimit 30
 # defaults write com.apple.Safari WebKitHistoryItemLimit 10000
