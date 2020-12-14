@@ -20,6 +20,9 @@ defaults write com.macromates.TextMate.preview allowExpandingLinks -bool YES
 defaults write com.macromates.TextMate.preview disableTabReordering -bool YES
 defaults write org.shiftitapp.ShiftIt multipleActionsCycleWindowSizes YES
 
+# https://www.imore.com/how-stop-googlesoftwareupdateapp-trying-run-your-mac
+defaults write com.google.Keystone.Agent checkInterval 604800 # 1 week
+
 ##
 ## Unused
 ##
