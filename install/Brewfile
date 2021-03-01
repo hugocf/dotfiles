@@ -1,4 +1,5 @@
 tap "alexanderwillner/tap"
+tap "apparition47/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -47,6 +48,7 @@ cask "keycastr"
 cask "libreoffice"
 cask "maccy"
 cask "meld"
+cask "mailtrackerblocker"
 cask "menumeters"
 cask "oversight"
 cask "owasp-zap"    # security audit tool
