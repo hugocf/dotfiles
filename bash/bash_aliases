@@ -200,6 +200,7 @@ alias restart-apache='su admin -c "sudo apachectl -k restart"'
 alias restart-pow='touch ~/.pow/restart.txt'
 alias rot13='tr "0-9a-zA-Z" "5-90-4n-za-mN-ZA-M"'
 alias show-desktop-icons='defaults delete com.apple.finder CreateDesktop; killall Finder'
+alias typora="open -a typora"
 
 # http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
 alias fix-open-with='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
