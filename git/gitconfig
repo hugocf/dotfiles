@@ -41,6 +41,7 @@
 	compression = 9
 [diff]
 	renames = copies
+	submodule = log
 [fetch]
 	prune = true
 [gui]
