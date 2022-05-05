@@ -20,25 +20,25 @@
 	changed = yellow
 	untracked = cyan
 [alias]
-	f = flow
 	br = branch -a -vv 
 	co = checkout
-	st = status
+	st = status --short
+	refdate = reflog --date=iso
 	graph = log --graph --all --oneline
 	tree = log --graph --all --oneline
 	# https://stackoverflow.com/a/18442755
 	update = pull --rebase origin master
+	shove = push --force-with-lease
 	# https://stackoverflow.com/a/1441062
 	when = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
 	who = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
-# [branch]
-# 	autosetuprebase = always
 [commit]
 	template = ~/.dotfiles/git/gitcommit
 [core]
 	attributesfile = ~/.dotfiles/git/gitattributes
-	excludesfile = ~/.dotfiles/git/gitignore
+	autocrlf = input
 	compression = 9
+	excludesfile = ~/.dotfiles/git/gitignore
 [diff]
 	renames = copies
 	submodule = log
@@ -46,6 +46,8 @@
 	prune = true
 [gui]
 	encoding = utf-8
+[init]
+	defaultBranch = main
 [merge]
 	log = true
 [rebase]
