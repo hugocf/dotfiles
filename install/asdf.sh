@@ -23,6 +23,8 @@ install () {
 }
 
 install_plugins () {
+    install java        liberica-17.0.3+7
+    install python      3.10.4
     install ruby        2.6.3
     install sbt         1.3.9       1.2.8
     install terraform   0.12.28
