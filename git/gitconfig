@@ -57,8 +57,6 @@
 	rebase = true
 [push]
 	autoSetupRemote = true
-	# See http://stackoverflow.com/a/948397
-	default = simple
 
 # Project urls
 [url "git@github.com"]
