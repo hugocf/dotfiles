@@ -1,6 +1,8 @@
 [user]
 	name = Hugo Ferreira
 	email = hugo@ferreira.cc
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig    # TODO: Link this properly to the local `.dotfiles_work` repo
 [color]
 	ui = auto
 [color "branch"]
