@@ -173,7 +173,7 @@ alias llf='ll | grep -v "^d"'
 alias lsd='ls -d */'
 alias lsf='ls -p | grep -v "/"'
 alias psql='psql -U postgres'
-exist rmtrash && alias rm=rmtrash || alias rm='rm -i'
+exist trash && alias rm='trash -F' || alias rm='rm -i'
 alias top='top -o cpu'
 
 # TOOLS
