@@ -1,8 +1,6 @@
 tap "alexanderwillner/tap"
 tap "apparition47/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 
 brew "alexanderwillner/tap/things.sh"
 brew "asciinema"
