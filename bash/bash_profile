@@ -51,8 +51,6 @@ source_from_brew etc/bash_completion
 
 # 3rd PARTY SOURCES
 source_from_brew etc/autojump.sh
-source_from_path ~/.asdf/asdf.sh
-source_from_path ~/.asdf/completions/asdf.bash
 
 eval $(thefuck --alias)
 export THEFUCK_REQUIRE_CONFIRMATION='false'

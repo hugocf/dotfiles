@@ -15,8 +15,6 @@ fi
 
 ./install/symlinks.sh
 ./install/defaults.sh
-
 ./install/brew.sh
-./install/asdf.sh
 
 ../dotfiles_work.git/install.sh

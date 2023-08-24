@@ -1,6 +1,7 @@
 tap "alexanderwillner/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-versions"
+tap "teaxyz/pkgs"
 
 brew "alexanderwillner/tap/things.sh"
 brew "asciinema"
@@ -26,6 +27,7 @@ brew "vcprompt"
 brew "watch"
 brew "wget"
 brew "yarn"
+brew "teaxyz/pkgs/tea-cli"
 
 cask "1password"
 cask "aerial"
