@@ -1,5 +1,6 @@
 tap "alexanderwillner/tap"
 tap "homebrew/bundle"
+tap "homebrew/cask-versions"
 
 brew "alexanderwillner/tap/things.sh"
 brew "asciinema"
