@@ -14,7 +14,6 @@ brew "graphviz"
 brew "httpie"
 brew "hugo"
 brew "jq"
-brew "mas"
 brew "md5sha1sum"
 brew "openssl"
 brew "pdftohtml"
@@ -61,6 +60,7 @@ cask "typora"
 cask "vlc"
 cask "whatsapp"
 
+brew "mas"
 mas "com.helloresolven.GIF-Brewery-3", id: 1081413713
 mas "com.kevinsilmore.Randomness", id: 673815312
 mas "cx.c3.theunarchiver", id: 425424353
