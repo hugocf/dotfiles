@@ -1,5 +1,4 @@
 tap "alexanderwillner/tap"
-tap "apparition47/tap"
 tap "homebrew/bundle"
 
 brew "alexanderwillner/tap/things.sh"
@@ -42,7 +41,6 @@ cask "keepingyouawake"
 cask "keycastr"
 cask "libreoffice"
 cask "maccy"
-cask "mailtrackerblocker"
 cask "menumeters"
 cask "netnewswire"
 cask "oversight"
