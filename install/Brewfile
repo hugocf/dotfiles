@@ -3,67 +3,67 @@ tap "homebrew/bundle"
 tap "homebrew/cask-versions"
 tap "teaxyz/pkgs"
 
+# Core installs
+
 brew "alexanderwillner/tap/things.sh"
 brew "asciinema"
 brew "autojump"
 brew "awscli"
-brew "bash-completion"
 brew "exiftool"
-brew "fx" # json tool
+brew "fx"                     # tool for json
 brew "git"
-brew "graphviz"
 brew "httpie"
 brew "hugo"
-brew "jq"
+brew "jq"                     # tool for json
+brew "mas"                    # tool for App Store
 brew "md5sha1sum"
-brew "openssl"
-brew "pdftohtml"
 brew "testdisk"
-brew "thefuck"
 brew "tldr"
 brew "trash"
 brew "tree"
-brew "vcprompt"
 brew "watch"
 brew "wget"
-brew "yarn"
 brew "teaxyz/pkgs/tea-cli"
 
 cask "1password"
-cask "aerial"
-cask "charles"
 cask "choosy"
-cask "discord"
 cask "disk-inventory-x"
-cask "docker"
-cask "dropbox"
-cask "firefox"
+cask "google-cloud-sdk"
 cask "google-chrome"
-cask "grammarly"
 cask "keepingyouawake"
-cask "keycastr"
-cask "libreoffice"
 cask "maccy"
 cask "menumeters"
 cask "netnewswire"
+cask "orbstack"               # replacement for "docker"
+cask "qlmarkdown"             # extension for Quick Look
+cask "rectangle"
+cask "slack"
+cask "syncthing"
+cask "syntax-highlight"       # extension for Quick Look
+cask "textmate"
+cask "typora"
+
+mas "The Unarchiver", id: 425424353
+mas "Things", id: 904280696
+mas "Xcode", id: 497799835
+
+# Temp installs
+
+brew "bash-completion"        # TODO: drop for default zsh shell
+brew "pdftohtml"
+brew "thefuck"
+brew "vcprompt"               # TODO: drop for default zsh prompt
+
+cask "aerial"
+cask "around"
+cask "discord"
+cask "firefox"
+cask "keycastr"
+cask "libreoffice"
 cask "oversight"
 cask "piezo"
 cask "postman"
-cask "qlmarkdown"
-cask "rectangle"
-cask "screen"
-cask "slack"
-cask "syncthing"
-cask "syntax-highlight"
-cask "textmate"
 cask "tunnelbear"
-cask "typora"
 cask "vlc"
-cask "whatsapp"
 
-brew "mas"
-mas "com.helloresolven.GIF-Brewery-3", id: 1081413713
-mas "com.kevinsilmore.Randomness", id: 673815312
-mas "cx.c3.theunarchiver", id: 425424353
-mas "Things", id: 904280696
-mas "Xcode", id: 497799835
+mas "Randomness", id: 673815312
