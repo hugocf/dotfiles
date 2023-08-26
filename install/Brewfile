@@ -8,7 +8,6 @@ tap "teaxyz/pkgs"
 brew "alexanderwillner/tap/things.sh"
 brew "asciinema"
 brew "autojump"
-brew "awscli"
 brew "exiftool"
 brew "fx"                     # tool for json
 brew "git"
@@ -29,7 +28,6 @@ cask "1password"
 cask "choosy"
 cask "disk-inventory-x"
 cask "gitx"
-cask "google-cloud-sdk"
 cask "google-chrome"
 cask "keepingyouawake"
 cask "maccy"
@@ -53,7 +51,6 @@ mas "Xcode", id: 497799835
 # Temp installs
 
 brew "bash-completion"        # TODO: drop for default zsh shell
-brew "pdftohtml"
 brew "thefuck"
 brew "vcprompt"               # TODO: drop for default zsh prompt
 
@@ -76,3 +73,34 @@ mas "GarageBand", id: 682658836
 mas "Hush", id: 1544743900                        # safari extension for cookies consent
 mas "Just Focus", id: 1142151959                  # tool for pomodoro intervals
 mas "Super Agent", id: 1568262835                 # safari extension for cookies consent
+
+# Work installs
+
+tap "bell-sw/liberica"
+tap "cloudfoundry/tap"
+tap "springernature/halfpipe"
+
+brew "awscli"
+brew "cdktf"
+brew "cloudfoundry/tap/cf-cli@8"
+brew "k6"
+brew "kubevela"
+brew "mkdocs"
+brew "multitail"
+brew "pandoc"
+brew "pass"
+brew "pdftohtml"              # tool for pdf conversion
+brew "springernature/halfpipe/halfpipe"
+brew "vault"
+brew "yq"                     # tool for yaml, json, xml, properties, csv, tsv
+
+cask "fly"
+cask "google-cloud-sdk"
+cask "intellij-idea"
+cask "jetbrains-toolbox"
+cask "kap"                    # screen recording into gif, webm, mp4, apng
+cask "liberica-jdk11"
+cask "liberica-jdk17"
+cask "medis"                  # tool for redis
+cask "robo-3t"                # tool for mongodb
+cask "wkhtmltopdf"            # tool for pdf conversion
