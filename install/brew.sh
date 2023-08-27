@@ -12,7 +12,19 @@ if ! type brew &> /dev/null; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+install_mac_app_store_cli() {
+    brew install --quiet "mas"
+}
+
+install_xcode_and_license() {
+    mas install 497799835
+    echo "Agreeing to the Xcode license"
+    sudo xcodebuild -license accept
+}
+
 install_apps () {
+    install_mac_app_store_cli
+    install_xcode_and_license
     brew bundle install --file="$BREWFILE"
 }
 
