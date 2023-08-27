@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 cask_args adopt: true
 
@@ -29,6 +30,8 @@ brew "teaxyz/pkgs/tea-cli"    # package manager for multi-lang versions
 cask "1password"
 cask "choosy"
 cask "disk-inventory-x"
+cask "font-fira-code"
+cask "font-jetbrains-mono"
 cask "gitx"
 cask "google-chrome"
 cask "keepingyouawake"
