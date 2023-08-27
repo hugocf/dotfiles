@@ -23,12 +23,14 @@ install_xcode_and_license() {
 }
 
 install_apps () {
+    echo -e "\n=== Install brew apps ==="
     install_mac_app_store_cli
     install_xcode_and_license
     brew bundle install --file="$BREWFILE"
 }
 
 cleanup_apps () {
+    echo -e "\n=== Cleanup brew apps ==="
     brew bundle cleanup --file="$BREWFILE"
     read -p "Are you sure to proceed with cleanup? [y/N] " answer
     if [[ "$answer" == "y" ]]; then
@@ -39,6 +41,5 @@ cleanup_apps () {
 }
 
 # Do the work
-echo -e "\n=== Install brew apps ==="
 install_apps
 cleanup_apps
