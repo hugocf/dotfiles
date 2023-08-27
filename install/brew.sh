@@ -22,11 +22,18 @@ install_xcode_and_license() {
     sudo xcodebuild -license accept
 }
 
+post_install_things() {
+    if [[ -f "/Applications/ThingsMacSandboxHelper.app" ]]; then
+        open /Applications/ThingsMacSandboxHelper.app
+    fi
+}
+
 install_apps () {
     echo -e "\n=== Install brew apps ==="
     install_mac_app_store_cli
     install_xcode_and_license
     brew bundle install --file="$BREWFILE"
+    post_install_things
 }
 
 cleanup_apps () {
