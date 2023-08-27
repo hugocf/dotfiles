@@ -43,6 +43,7 @@ cask "syncthing"
 cask "syntax-highlight"       # extension for Quick Look
 cask "textmate"               # TODO: replace with "visual-studio-code" + all commands `mate` ➔ `code` + core `vscode` extensions
 cask "typora"
+cask "visual-studio-code"
 
 mas "1Password for Safari", id: 1569813296
 mas "Streaks", id: 963034692
