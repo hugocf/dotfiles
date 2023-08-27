@@ -1,9 +1,10 @@
-tap "alexanderwillner/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-versions"
-tap "teaxyz/pkgs"
 
 # Core installs
+
+tap "alexanderwillner/tap"
+tap "teaxyz/pkgs"
 
 brew "alexanderwillner/tap/things.sh"
 brew "asciinema"
