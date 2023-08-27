@@ -32,7 +32,7 @@ install_apps () {
 cleanup_apps () {
     echo -e "\n=== Cleanup brew apps ==="
     brew bundle cleanup --file="$BREWFILE"
-    read -p "Are you sure to proceed with cleanup? [y/N] " answer
+    read -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer
     if [[ "$answer" == "y" ]]; then
         brew bundle cleanup --file="$BREWFILE" --force
     else
