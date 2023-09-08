@@ -186,6 +186,8 @@ alias clean-tmp-ds='find . \( -name .DS_Store -or -name ._.DS_Store \) -exec rm 
 alias clean-tmp-meta='find . -name "._*" -exec rm {} \;'
 alias clean-mov-thumbs='find . -name "*.MOV" | sed -e "s/\.MOV/.JPG/" | xargs -I{} rm "{}"'
 alias convert-xls-csv='/Applications/LibreOffice.app/Contents/MacOS/soffice --invisible --convert-to csv'
+alias edit-brew='code ~/.dotfiles/install/Brewfile'
+alias edit-dev="open . && gitx && chrome && code ."
 alias edit-hosts='mate /etc/hosts'
 alias edit-vhosts='mate /etc/apache2/extra/httpd-vhosts.conf'
 alias find-tmp='find . -name .DS_Store -or -name ._.DS_Store -or -name ".#*" -or -name "*~" -or -name "._*"'
@@ -196,8 +198,6 @@ alias logout-user="osascript -e 'tell application \"System Events\" to log out'"
 alias nwmon='sudo tcpdump -i en0'
 alias nwout='sudo tcpdump -Q "if=en0 and dir=out"'
 alias nwin='sudo tcpdump -Q "if=en0 and dir=in"'
-alias open-idea="open . && gitx && chrome && idea ."
-alias open-mate="open . && gitx && chrome && mate ."
 alias restart-apache='su admin -c "sudo apachectl -k restart"'
 alias restart-pow='touch ~/.pow/restart.txt'
 alias rot13='tr "0-9a-zA-Z" "5-90-4n-za-mN-ZA-M"'
