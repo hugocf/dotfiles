@@ -18,6 +18,7 @@ brew "httpie"
 brew "hugo"
 brew "jq"                     # tool for json
 brew "mas"                    # tool for App Store
+brew "mr"                     # tool to manage all version control repos
 brew "md5sha1sum"
 brew "testdisk"
 brew "tldr"
