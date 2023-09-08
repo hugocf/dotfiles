@@ -1,7 +1,7 @@
 [user]
 	name = Hugo Ferreira
 	email = hugo@ferreira.cc
-[includeIf "gitdir:~/work/"]
+[includeIf "gitdir:~/work/"]	$ TODO: does it work with `~/.local/work -> "~/Work/Springer Nature/C/Code"?
 	path = ~/work/.gitconfig    # TODO: Link this properly to the local `.dotfiles_work` repo
 [color]
 	ui = auto
