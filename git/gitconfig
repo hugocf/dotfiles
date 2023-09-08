@@ -24,13 +24,12 @@
 [alias]
 	br = branch -a -vv 
 	co = checkout
-	st = status --short
 	refdate = reflog --date=iso
 	graph = log --graph --all --oneline
 	tree = log --graph --all --oneline
-	# https://stackoverflow.com/a/18442755
-	update = pull --rebase origin master
+	register = "!git clone $1 $2 && mr register $2"
 	shove = push --force-with-lease
+	st = status --short
 	# https://stackoverflow.com/a/1441062
 	when = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
 	who = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
