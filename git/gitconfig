@@ -27,7 +27,7 @@
 	refdate = reflog --date=iso
 	graph = log --graph --all --oneline
 	tree = log --graph --all --oneline
-	register = "!git clone $1 $2 && mr register $2"
+	register = "!git clone $1 $(basename $1) && mr register $(basename $1)"
 	shove = push --force-with-lease
 	st = status --short
 	# https://stackoverflow.com/a/1441062
