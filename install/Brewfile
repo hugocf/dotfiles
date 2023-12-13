@@ -62,7 +62,6 @@ brew "bash-completion"        # TODO: drop for default zsh shell
 brew "thefuck"
 brew "vcprompt"               # TODO: drop for default zsh prompt
 
-cask "aerial"
 cask "around"
 cask "discord"
 cask "firefox"
