@@ -65,7 +65,6 @@ brew "vcprompt"               # TODO: drop for default zsh prompt
 cask "around"
 cask "discord"
 cask "firefox"
-cask "hypercal"
 cask "keycastr"
 cask "libreoffice"
 cask "oversight"
