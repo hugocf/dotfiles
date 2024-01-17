@@ -72,6 +72,7 @@ cask "piezo"
 cask "postman"
 cask "tunnelbear"
 cask "vlc"
+cask "macwhisper"
 
 mas "Randomness", id: 673815312
 mas "Sim Daltonism", id: 693112260
