@@ -59,6 +59,7 @@ mas "Xcode", id: 497799835
 # Temp installs
 
 brew "bash-completion"        # TODO: drop for default zsh shell
+brew "git-absorb"
 brew "thefuck"
 brew "vcprompt"               # TODO: drop for default zsh prompt
 
