@@ -11,6 +11,7 @@ tap "teaxyz/pkgs"
 brew "alexanderwillner/tap/things.sh"
 brew "asciinema"
 brew "autojump"
+brew "cliclick"
 brew "exiftool"
 brew "fx"                     # tool for json
 brew "git"
