@@ -57,7 +57,7 @@ mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
 
-# Temp installs
+# Temp installs (experimental)
 
 brew "bash-completion"        # TODO: drop for default zsh shell
 brew "git-absorb"
@@ -69,12 +69,13 @@ cask "discord"
 cask "firefox"
 cask "keycastr"
 cask "libreoffice"
+cask "macwhisper"
 cask "oversight"
 cask "piezo"
 cask "postman"
 cask "tunnelbear"
 cask "vlc"
-cask "macwhisper"
+cask "warp"
 
 mas "Randomness", id: 673815312
 mas "Sim Daltonism", id: 693112260
