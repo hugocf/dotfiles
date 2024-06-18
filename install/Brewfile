@@ -27,6 +27,7 @@ brew "trash"
 brew "tree"
 brew "watch"
 brew "wget"
+brew "yadm"
 brew "teaxyz/pkgs/tea-cli"    # package manager for multi-lang versions
 
 cask "1password"
