@@ -39,7 +39,7 @@
 	attributesfile = ~/.dotfiles/git/gitattributes
 	autocrlf = input
 	compression = 9
-	excludesfile = ~/.dotfiles/git/gitignore
+	excludesfile = ~/.gitignore
 [diff]
 	renames = copies
 	submodule = log
