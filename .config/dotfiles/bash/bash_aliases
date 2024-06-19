@@ -169,6 +169,7 @@ week-days-pt() {
 
 # DEFAULTS
 alias grep='grep --color'
+alias diff='diff --color=always'
 alias ll='ls -lhp'
 alias lld='ls -lh -d */'
 alias llf='ll | grep -v "^d"'
@@ -213,6 +214,7 @@ alias cvsup='cvs -q update -P -d ; date'
 alias cvsupC='cvs update -P -d -C ; date'
 alias svnadd='svn st | grep \? | cut -c2- | xargs svn add'
 alias g='git'
+alias y='yadm'
 
 # PROXY/SOCKS
 alias tunnel-create="ssh -D 1080 -f -N digitalocean"    # SOCKS port
