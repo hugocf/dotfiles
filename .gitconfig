@@ -1,8 +1,8 @@
 [user]
 	name = Hugo Ferreira
 	email = hugo@ferreira.cc
-[includeIf "gitdir:~/work/"]	$ TODO: does it work with `~/.local/work -> "~/Work/Springer Nature/C/Code"?
-	path = ~/work/.gitconfig    # TODO: Link this properly to the local `.dotfiles_work` repo
+# [includeIf "gitdir:~/work/"]	$ TODO: does it work with `~/.local/work -> "~/Work/Springer Nature/C/Code"?
+# 	path = ~/work/.gitconfig    # TODO: Link this properly to the local `.dotfiles_work` repo
 [color]
 	ui = auto
 [color "branch"]
@@ -34,12 +34,12 @@
 	when = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
 	who = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 [commit]
-	template = ~/.dotfiles/git/gitcommit
+	template = ~/.config/git/commit
 [core]
-	attributesfile = ~/.dotfiles/git/gitattributes
+	attributesfile = ~/.config/git/attributes   # default
 	autocrlf = input
 	compression = 9
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.config/git/ignore         # default
 [diff]
 	renames = copies
 	submodule = log
