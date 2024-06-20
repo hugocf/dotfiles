@@ -10,6 +10,7 @@
 	co = checkout
 	refdate = reflog --date=iso
 	graph = log --graph --all --oneline
+	last = logiso -n 10
 	# https://stackoverflow.com/a/1441062
 	logdate = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s'
 	logiso = logdate --date=iso
