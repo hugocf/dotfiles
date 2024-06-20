@@ -1,6 +1,7 @@
 [user]
 	name = Hugo Ferreira
 	email = hugocf@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL1Ln3c4Qj+jvN+bjBUpG0YvWSZ+vfvSHyUbI/99fNio
 # [includeIf "gitdir:~/work/"]	$ TODO: does it work with `~/.local/work -> "~/Work/Springer Nature/C/Code"?
 # 	path = ~/work/.gitconfig    # TODO: Link this properly to the local `.dotfiles_work` repo
 [color]
@@ -34,6 +35,7 @@
 	when = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
 	who = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 [commit]
+	gpgsign = true
 	template = ~/.config/git/commit
 [core]
 	attributesfile = ~/.config/git/attributes   # default
@@ -45,6 +47,10 @@
 	submodule = log
 [fetch]
 	prune = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [gui]
 	encoding = utf-8
 [init]
