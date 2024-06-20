@@ -4,6 +4,18 @@
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL1Ln3c4Qj+jvN+bjBUpG0YvWSZ+vfvSHyUbI/99fNio
 # [includeIf "gitdir:~/work/"]	$ TODO: does it work with `~/.local/work -> "~/Work/Springer Nature/C/Code"?
 # 	path = ~/work/.gitconfig    # TODO: Link this properly to the local `.dotfiles_work` repo
+[alias]
+	br = branch -a -vv
+	co = checkout
+	refdate = reflog --date=iso
+	graph = log --graph --all --oneline
+	tree = log --graph --all --oneline
+	register = "!git clone $1 $(basename $1) && mr register $(basename $1)"
+	shove = push --force-with-lease
+	st = status --short
+	# https://stackoverflow.com/a/1441062
+	when = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
+	who = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 [color]
 	ui = auto
 [color "branch"]
@@ -22,18 +34,6 @@
 [color "status"]
 	changed = yellow
 	untracked = cyan
-[alias]
-	br = branch -a -vv 
-	co = checkout
-	refdate = reflog --date=iso
-	graph = log --graph --all --oneline
-	tree = log --graph --all --oneline
-	register = "!git clone $1 $(basename $1) && mr register $(basename $1)"
-	shove = push --force-with-lease
-	st = status --short
-	# https://stackoverflow.com/a/1441062
-	when = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
-	who = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
 [commit]
 	gpgsign = true
 	template = ~/.config/git/commit
@@ -57,13 +57,13 @@
 	defaultBranch = main
 [merge]
 	log = true
-[rebase]
-	autoStash = true
-	autosquash = true
 [pull]
 	rebase = true
 [push]
 	autoSetupRemote = true
+[rebase]
+	autoStash = true
+	autosquash = true
 
 # Project urls
 [url "git@github.com"]
