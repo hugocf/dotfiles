@@ -1,15 +1,13 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 cask_args adopt: true
 
 # Core installs
 
 tap "alexanderwillner/tap"
-tap "teaxyz/pkgs"
 
 brew "alexanderwillner/tap/things.sh"
 brew "asciinema"
+brew "asdf"                   # installs coreutils, which ads md5sum and sha1sum
 brew "autojump"
 brew "cliclick"
 brew "exiftool"
@@ -20,7 +18,6 @@ brew "hugo"
 brew "jq"                     # tool for json
 brew "mas"                    # tool for App Store
 brew "mr"                     # tool to manage all version control repos
-brew "md5sha1sum"
 brew "testdisk"
 brew "tldr"
 brew "trash"
@@ -28,7 +25,6 @@ brew "tree"
 brew "watch"
 brew "wget"
 brew "yadm"
-brew "teaxyz/pkgs/tea-cli"    # package manager for multi-lang versions
 
 cask "1password"
 cask "choosy"
