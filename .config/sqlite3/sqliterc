@@ -1,0 +1,8 @@
+.databases
+select '.tables';
+.tables
+select '';
+
+.headers on
+.mode column --wrap 200
+.timer on
