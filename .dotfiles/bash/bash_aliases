@@ -104,6 +104,17 @@ port2pid() {
     sudo lsof -Fp -i:$1 | xargs -I% ps -%
 }
 
+safari_history() {
+    local rows=${1:-20}
+
+    sqlite3 ~/Library/Safari/History.db "
+        select datetime(v.visit_time + 978307200, 'unixepoch', 'localtime') as date, i.domain_expansion, i.url
+        from history_items i left join history_visits v on i.id = v.history_item
+        order by i.id desc
+        limit $rows;
+    "
+}
+
 source_from_brew() {
     source_from_path `brew --prefix`/$1
 }
