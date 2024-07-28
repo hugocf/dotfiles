@@ -11,7 +11,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-07-25T00:57:46Z</date>
+	<date>2024-07-27T01:00:01Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>2766913725</integer>
 	<key>allowAnyShortcut</key>
@@ -205,6 +205,13 @@
 	<dict>
 		<key>keyCode</key>
 		<integer>18</integer>
+		<key>modifierFlags</key>
+		<integer>393216</integer>
+	</dict>
+	<key>topRight</key>
+	<dict>
+		<key>keyCode</key>
+		<integer>14</integer>
 		<key>modifierFlags</key>
 		<integer>393216</integer>
 	</dict>
