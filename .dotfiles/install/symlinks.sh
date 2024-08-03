@@ -4,12 +4,12 @@ set -u  # treat unset variables as errors
 readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
 readonly CALLDIR=$(pwd)                         # where it was called from
 
-relpath () {
+relpath() {
     local path=$1
     cd "$(dirname "$0")/$path" && pwd
 }
 
-link_files () {
+link_files() {
     echo -e "\n=== Link config dotfiles ==="
     local path=$(relpath ../../dotfiles.git)
     ln -nfs $path ~/.dotfiles
@@ -20,7 +20,7 @@ link_files () {
     ln -nfs ~/.dotfiles/mate/tm_properties  ~/.tm_properties
 }
 
-link_local () {
+link_local() {
     echo -e "\n=== Link local dotfiles ==="
     local path=$(relpath ../../dotfiles_local.git)
     ln -nfs $path ~/.dotfiles_local
@@ -30,7 +30,7 @@ link_local () {
     ln -nfs ~/.dotfiles_local/ssh           ~/.ssh
 }
 
-link_system () {
+link_system() {
     echo -e "\n=== Link system dotfiles ==="
     local path=$(relpath ../../dotfiles_local.git)
     sudo ln -nfs $path/etc/hosts /etc/hosts

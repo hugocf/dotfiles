@@ -28,7 +28,7 @@ post_install_things() {
     fi
 }
 
-install_apps () {
+install_apps() {
     echo -e "\n=== Install brew apps ==="
     install_mac_app_store_cli
     install_xcode_and_license
@@ -36,7 +36,7 @@ install_apps () {
     post_install_things
 }
 
-cleanup_apps () {
+cleanup_apps() {
     echo -e "\n=== Cleanup brew apps ==="
     brew bundle cleanup --file="$BREWFILE"
     read -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer
