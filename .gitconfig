@@ -2,8 +2,8 @@
 	name = Hugo Ferreira
 	email = hugocf@users.noreply.github.com
 	signingKey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL1Ln3c4Qj+jvN+bjBUpG0YvWSZ+vfvSHyUbI/99fNio
-# [includeIf "gitdir:~/work/"]	$ TODO: does it work with `~/.local/work -> "~/Work/Springer Nature/C/Code"?
-# 	path = ~/work/.gitconfig    # TODO: Link this properly to the local `.dotfiles_work` repo
+[includeIf "gitdir:~/Work/NewStore"]
+	path = ~/Work/NewStore/.gitconfig
 [alias]
 	br = branch -a -vv
 	ci = commit
@@ -76,3 +76,5 @@
 # Project urls
 [url "git@github.com"]
 	insteadOf = github
+[url "git@gitlab.com"]
+	insteadOf = gitlab
