@@ -43,7 +43,7 @@ setup_things_helper() {
 cleanup_apps() {
     echo -e "\n=== Cleanup brew apps ==="
     cat $BREWFILES | brew bundle cleanup --file=-
-    read -r -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer
+    read -r -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer < /dev/tty
     if [[ "$answer" == "y" ]]; then
         cat $BREWFILES | brew bundle cleanup --file=- --force
     else
