@@ -22,8 +22,16 @@ post_install_setup() {
 }
 
 setup_xcode_license() {
-    echo "Agreeing to the Xcode license"
-    sudo xcodebuild -license accept
+    local xcode_version accepted_version
+    xcode_version=$(xcodebuild -version | grep Xcode | cut -d' ' -f2)
+    accepted_version=$(defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense)
+    
+    if [[ "$xcode_version" == "$accepted_version" ]]; then 
+        echo "Xcode license is accepted"
+    else
+        echo "Xcode license needs acceptance..."
+        sudo xcodebuild -license accept
+    fi
 }
 
 setup_things_helper() {
