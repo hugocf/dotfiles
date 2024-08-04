@@ -1,0 +1,28 @@
+# Work related installs
+
+tap "bell-sw/liberica"
+tap "cloudfoundry/tap"
+tap "springernature/halfpipe"
+
+brew "awscli"                               # Official Amazon AWS command-line interface
+brew "cdktf"                                # Cloud Development Kit for Terraform
+brew "cloudfoundry/tap/cf-cli@8"            # Cloud Foundry CLI
+brew "k6"                                   # Modern load testing tool, using Go and JavaScript
+brew "kubevela"                             # Application Platform based on Kubernetes and Open Application Model
+brew "mkdocs"                               # Project documentation with Markdown
+brew "multitail"                            # Tail multiple files in one terminal simultaneously
+brew "pass"                                 # Password manager [for Unix]
+brew "pdftohtml"                            # Utility which converts PDF files into HTML and XML formats
+brew "springernature/halfpipe/halfpipe"     # halfpipe cli
+brew "vault"                                # Secures, stores, and tightly controls access to secrets
+
+cask "fly"                                  # Official CLI tool for Concourse CI
+cask "google-cloud-sdk"                     # Set of tools to manage resources and applications hosted on Google Cloud
+cask "intellij-idea"                        # Java IDE by JetBrains
+cask "jetbrains-toolbox"                    # JetBrains tools manager
+cask "liberica-jdk11"                       # 100% open-source Java implementation
+cask "liberica-jdk17"                       # 100% open-source Java implementation
+cask "medis"                                # Modern GUI for Redis
+cask "orbstack"                             # Replacement for Docker Desktop
+cask "robo-3t"                              # MongoDB management tool (formerly Robomongo)
+cask "wkhtmltopdf"                          # HTML to PDF renderer

@@ -1,0 +1,35 @@
+# Experimental apps being tried out
+
+# TODO: drop for default zsh shell
+brew "bash-completion"                      # Programmable completion for Bash 3.2
+brew "vcprompt"                             # Provide version control info in shell prompts
+
+# TODO: replace with "visual-studio-code" + all commands `mate` ➔ `code` + core `vscode` extensions
+cask "textmate"                             # General-purpose text editor
+
+brew "git-absorb"                           # Automatic git commit --fixup
+brew "pandoc"                               # Swiss-army knife of markup format conversion
+brew "thefuck"                              # Programmatically correct mistyped console commands
+brew "yq"                                   # Process YAML, JSON, XML, CSV and properties documents from the CLI
+
+cask "around"                               # Video calls designed for energy, ideas and action
+cask "discord"                              # Voice and text chat software
+cask "firefox"                              # Web browser
+cask "kap"                                  # Open-source screen recorder built with web technology
+cask "keycastr"                             # Open-source keystroke visualiser
+cask "libreoffice"                          # Free cross-platform office suite, fresh version
+cask "macwhisper"                           # Speech recognition tool
+cask "oversight"                            # Monitors computer mic and webcam
+cask "piezo"                                # Audio recording application
+cask "postman"                              # Collaboration platform for API development
+cask "tunnelbear"                           # VPN client for secure internet access and private browsing
+cask "vlc"                                  # Multimedia player
+cask "warp"                                 # Rust-based terminal
+
+mas "Randomness", id: 673815312             # Instantly generate random passwords, numbers, colors, coin flips, card picks, and dice rolls.
+mas "Sim Daltonism", id: 693112260          # Sim Daltonism lets you visualize colors as they are perceived with various types of color blindness.
+mas "Exporter", id: 1099120373              # Export notes from Notes.app [to Markdown]
+mas "GarageBand", id: 682658836             # GarageBand is the easiest way to create a great-sounding song on your Mac.
+mas "Hush", id: 1544743900                  # Safari extension to browse the web free of nags to accept cookies or privacy invasive tracking.
+mas "Just Focus", id: 1142151959            # JustFocus is a simple rest reminder [menu bar Pomodoro timer]
+mas "Super Agent", id: 1568262835           # [Safari extension that] automatically fills out website’s cookie consent forms for you based on your preferences.
