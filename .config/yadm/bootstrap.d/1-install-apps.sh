@@ -12,7 +12,7 @@ main() {
 }
 
 install_apps() {
-    echo -e "\n=== Install brew apps ==="
+    echo -e "\n=== Install applications ==="
     cat $BREWFILES | brew bundle install --file=-
 }
 
@@ -55,7 +55,7 @@ setup_things_helper() {
 }
 
 cleanup_apps() {
-    echo -e "\n=== Cleanup brew apps ==="
+    echo -e "\n=== Cleanup applications ==="
     cat $BREWFILES | brew bundle cleanup --file=-
     read -r -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer < /dev/tty
     if [[ "$answer" == "y" ]]; then
