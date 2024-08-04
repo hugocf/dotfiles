@@ -35,7 +35,7 @@ setup_xcode_license() {
 }
 
 setup_things_helper() {
-    if [[ -f "/Applications/ThingsMacSandboxHelper.app" ]]; then
+    if [[ -e "/Applications/ThingsMacSandboxHelper.app" ]]; then
         open /Applications/ThingsMacSandboxHelper.app
     fi
 }
