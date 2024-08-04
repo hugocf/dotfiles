@@ -1,7 +1,7 @@
 [user]
 	name = Hugo Ferreira
 	email = hugocf@users.noreply.github.com
-	signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL1Ln3c4Qj+jvN+bjBUpG0YvWSZ+vfvSHyUbI/99fNio
+	signingKey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL1Ln3c4Qj+jvN+bjBUpG0YvWSZ+vfvSHyUbI/99fNio
 # [includeIf "gitdir:~/work/"]	$ TODO: does it work with `~/.local/work -> "~/Work/Springer Nature/C/Code"?
 # 	path = ~/work/.gitconfig    # TODO: Link this properly to the local `.dotfiles_work` repo
 [alias]
