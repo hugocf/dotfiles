@@ -17,8 +17,22 @@ install_apps() {
 }
 
 post_install_setup() {
+    setup_xcode_directory
     setup_xcode_license
     setup_things_helper
+}
+
+setup_xcode_directory() {
+    local current_path target_path
+    current_path=$(xcode-select --print-path)
+    target_path="/Applications/Xcode.app/Contents/Developer"
+
+    if [[ "$current_path" == "$target_path" ]]; then 
+        echo "Xcode developer directory set correctly"
+    else
+        echo "Xcode developer directory needs changing..."
+        sudo xcode-select --switch $target_path
+    fi
 }
 
 setup_xcode_license() {
