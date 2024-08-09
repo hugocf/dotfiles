@@ -12,6 +12,13 @@ install_homebrew() {
     fi
 }
 
+# TODO: Inception
+yadm_init_repo() {
+    echo "yadm clone dotfiles repo"
+    yadm clone https://github.com/hugocf/dotfiles
+}
+
+# TODO: Inception fix [after systems knows about ssh]
 yadm_fix_git_url() {
     echo "yadm: Update repo origin URL"
     yadm remote set-url origin "git@github.com:hugocf/dotfiles.git"
