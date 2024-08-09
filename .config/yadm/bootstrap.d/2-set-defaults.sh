@@ -3,8 +3,13 @@ set -euo pipefail
 
 main() {
     echo -e "\n=== Set main preferences ==="
+    set_system_settings
+    set_application_preferences
+}
+
+set_system_settings() {
+    echo -e "\n--- System Settings ---"
     set_system_touchid_sudo
-    set_textedit_open_plain_text
 }
 
 set_system_touchid_sudo() {
@@ -14,6 +19,11 @@ set_system_touchid_sudo() {
         echo "Touch ID for sudo must be enabled..."
         sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
     fi
+}
+
+set_application_preferences() {
+    echo -e "\n--- Application Preferences ---"
+    set_textedit_open_plain_text
 }
 
 set_textedit_open_plain_text() {

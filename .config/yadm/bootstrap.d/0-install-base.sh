@@ -20,7 +20,7 @@ yadm_init_repo() {
 
 # TODO: Inception fix [after systems knows about ssh]
 yadm_fix_git_url() {
-    echo "yadm: Update repo origin URL"
+    echo "yadm update dotfiles origin url to ssh"
     yadm remote set-url origin "git@github.com:hugocf/dotfiles.git"
 }
 

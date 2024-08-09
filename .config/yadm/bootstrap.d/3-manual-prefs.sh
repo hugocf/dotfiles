@@ -3,6 +3,8 @@ set -euo pipefail
 
 main() {
     :
+
+    echo
 }
 
 main "$@"

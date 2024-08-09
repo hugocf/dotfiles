@@ -50,6 +50,7 @@ setup_xcode_license() {
 
 setup_things_helper() {
     if [[ -e "/Applications/ThingsMacSandboxHelper.app" ]]; then
+        echo "Things Helper needs setup..."
         open /Applications/ThingsMacSandboxHelper.app
     fi
 }
