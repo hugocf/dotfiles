@@ -23,7 +23,19 @@ set_system_touchid_sudo() {
 
 set_application_preferences() {
     echo -e "\n--- Application Preferences ---"
+    set_maccy_preferences
     set_textedit_open_plain_text
+}
+
+set_maccy_preferences() {
+    echo "Maccy preferences"
+    defaults write org.p0deje.Maccy imageMaxHeight 16
+    defaults write org.p0deje.Maccy pasteByDefault 1
+    defaults write org.p0deje.Maccy searchMode fuzzy
+    defaults write org.p0deje.Maccy showInStatusBar 0
+    defaults write org.p0deje.Maccy SUEnableAutomaticChecks 1
+    # ctrl-alt-v
+    defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string '{"carbonKeyCode":9,"carbonModifiers":6144}'
 }
 
 set_textedit_open_plain_text() {
