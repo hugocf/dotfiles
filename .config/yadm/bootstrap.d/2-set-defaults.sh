@@ -23,8 +23,15 @@ set_system_touchid_sudo() {
 
 set_application_preferences() {
     echo -e "\n--- Application Preferences ---"
+    set_choosy_preferences
     set_maccy_preferences
     set_textedit_open_plain_text
+}
+
+set_choosy_preferences() {
+    echo "Choosy preferences"
+    defaults write com.choosyosx.Choosy displayMenuBarItem 0
+    defaults write com.choosyosx.Choosy launchAtLogin 1
 }
 
 set_maccy_preferences() {
