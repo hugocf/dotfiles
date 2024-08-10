@@ -5,6 +5,7 @@ main() {
     echo -e "\n=== Set main preferences ==="
     set_system_settings
     set_application_preferences
+    force_preferences_reload
 }
 
 set_system_settings() {
@@ -41,6 +42,10 @@ set_maccy_preferences() {
 set_textedit_open_plain_text() {
     echo "TextEdit default to plain text"
     defaults write com.apple.TextEdit RichText 0
+}
+
+force_preferences_reload() {
+    killall sighup cfprefsd
 }
 
 main "$@"
