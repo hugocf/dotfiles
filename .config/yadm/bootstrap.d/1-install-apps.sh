@@ -6,17 +6,19 @@ readonly HOMEBREW="$BASEDIR/../../homebrew"
 readonly BREWFILES="$HOMEBREW/Brewfile.core $HOMEBREW/Brewfile.temp $HOMEBREW/Brewfile.work"
 
 main() {
+    echo -e "\n=== Applications ==="
     install_apps
     post_install_setup
     cleanup_apps
 }
 
 install_apps() {
-    echo -e "\n=== Install applications ==="
+    echo -e "\n--- Homebrew Instalation ---"
     cat $BREWFILES | brew bundle install --file=-
 }
 
 post_install_setup() {
+    echo -e "\n--- Post-install Setup ---"
     setup_xcode_directory
     setup_xcode_license
     setup_things_helper
@@ -56,7 +58,7 @@ setup_things_helper() {
 }
 
 cleanup_apps() {
-    echo -e "\n=== Cleanup applications ==="
+    echo -e "\n--- Homebrew Cleanup ---"
     cat $BREWFILES | brew bundle cleanup --file=-
     read -r -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer < /dev/tty
     if [[ "$answer" == "y" ]]; then

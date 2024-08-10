@@ -2,12 +2,13 @@
 set -euo pipefail
 
 main() {
+    echo -e "\n=== Base Components ==="
     install_homebrew
 }
 
 install_homebrew() {
     if ! type brew &> /dev/null; then
-        echo -e "\n=== Install homebrew ==="
+        echo "Install homebrew..."
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
 }

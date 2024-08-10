@@ -2,7 +2,7 @@
 set -euo pipefail
 
 main() {
-    echo -e "\n=== Set main preferences ==="
+    echo -e "\n=== Preferences (auto) ==="
     set_system_settings
     set_application_preferences
     force_preferences_reload
