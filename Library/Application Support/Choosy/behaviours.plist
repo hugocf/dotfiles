@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 2</string>
+			<key>supportPath</key>
+			<string>/Users/hfr7756/Library/Application Support/Google/Chrome</string>
+			<key>type</key>
+			<string>ChoosyChromeProfileMode</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "1TXjrpnvIYZfcWj77NSCPQ0MrWy4MGmiaVv-6piWB4mA"</string>
+		<key>title</key>
+		<string>Personal documents</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 2</string>
+			<key>supportPath</key>
+			<string>/Users/hfr7756/Library/Application Support/Google/Chrome</string>
+			<key>type</key>
+			<string>ChoosyChromeProfileMode</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "facebook.com" OR URL CONTAINS "instagram.com" OR URL CONTAINS "linkedin.com" OR URL CONTAINS "slack.com" OR URL CONTAINS "twitter.com" OR URL CONTAINS "youtube.com" OR URL CONTAINS "youtu.be"</string>
+		<key>title</key>
+		<string>Social Media</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 1</string>
+			<key>supportPath</key>
+			<string>/Users/hfr7756/Library/Application Support/Google/Chrome</string>
+			<key>type</key>
+			<string>ChoosyChromeProfileMode</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>modifierKeys == "56" OR URL CONTAINS "app.drovio.com" OR URL CONTAINS "app.getdx.com" OR URL CONTAINS "accounts.google.com" OR URL CONTAINS "analytics.google.com" OR URL CONTAINS "calendar.google.com" OR URL CONTAINS "datastudio.google.com" OR URL CONTAINS "docs.google.com" OR URL CONTAINS "docusign.net" OR URL CONTAINS "drive.google.com" OR URL CONTAINS "figma.com" OR URL CONTAINS "forms.gle" OR URL CONTAINS "g.co/meet" OR URL CONTAINS "gotomeet" OR URL CONTAINS "halfpipe.io" OR URL CONTAINS "macmillan.csod.com" OR URL CONTAINS "meet.google.com" OR URL CONTAINS "miro.com" OR URL CONTAINS "nature.com" OR URL CONTAINS "postman.co" OR URL CONTAINS "getpostman.com" OR URL CONTAINS "scanii.com" OR URL CONTAINS "snpaas.eu" OR URL CONTAINS "sparkpost.com" OR URL CONTAINS "springer" OR URL CONTAINS "springernature" OR URL CONTAINS "trello.com"</string>
+		<key>title</key>
+		<string>Springer Nature</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>4</integer>
+		<key>behaviourArgument</key>
+		<string></string>
+		<key>enabled</key>
+		<false/>
+		<key>predicate</key>
+		<string>runningBrowsers &gt; 0</string>
+		<key>title</key>
+		<string>Some browsers are running</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>1</integer>
+		<key>behaviourArgument</key>
+		<string></string>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>TRUEPREDICATE</string>
+		<key>title</key>
+		<string>Default behaviour</string>
+	</dict>
+</array>
+</plist>
