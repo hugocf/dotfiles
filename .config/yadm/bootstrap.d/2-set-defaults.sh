@@ -39,7 +39,7 @@ set_maccy_preferences() {
 }
 
 set_textedit_open_plain_text() {
-    echo "TextEdit open as plain text"
+    echo "TextEdit default to plain text"
     defaults write com.apple.TextEdit RichText 0
 }
 
