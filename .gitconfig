@@ -19,6 +19,10 @@
 	shove = push --force-with-lease
 	st = status --short
 	tree = graph
+
+	# yadm alias
+	check = "!source ~/custom-source.sh && yadm_check_changes"
+	unstaged = "!source ~/custom-source.sh && yadm_restore_unstaged"
 [color]
 	ui = auto
 [color "branch"]
