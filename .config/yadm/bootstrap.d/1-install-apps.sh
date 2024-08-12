@@ -59,12 +59,16 @@ setup_things_helper() {
 
 cleanup_apps() {
     echo -e "\n--- Homebrew Cleanup ---"
-    cat $BREWFILES | brew bundle cleanup --file=-
-    read -r -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer < /dev/tty
-    if [[ "$answer" == "y" ]]; then
-        cat $BREWFILES | brew bundle cleanup --file=- --force
+    # returns $? = 0 (success) if there’s nothing to clean up
+    if cat $BREWFILES | brew bundle cleanup --file=-; then
+        echo "Nothing to cleanup"
     else
-        echo "Skipping..."
+        read -r -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer < /dev/tty
+        if [[ "$answer" == "y" ]]; then
+            cat $BREWFILES | brew bundle cleanup --file=- --force
+        else
+            echo "Cleanup skipped"
+        fi
     fi
 }
 
