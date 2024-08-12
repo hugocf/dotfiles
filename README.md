@@ -19,8 +19,9 @@ rm -rf dotfiles
 On an ongoing basis, run the following to receive updates and ensure all is setup correctly:
 
 ```shell
-yadm pull
-yadm bootstrap
+yadm check && yadm pull && yadm bootstrap
 ```
 
-*(see more [Common Commands - yadm](https://yadm.io/docs/common_commands))*
+*Note that `check` is a custom alias defined in `~/.gitconfig`.*
+
+*See more [Common Commands - yadm](https://yadm.io/docs/common_commands).*
