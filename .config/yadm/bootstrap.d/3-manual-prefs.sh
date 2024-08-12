@@ -5,8 +5,13 @@ readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
 source "$BASEDIR/../common"
 
 main() {
-    h1 "Settings (manual)"
-    set_1password_settings
+    h1 "Manual Settings"
+    read -r -p "Do you want to review all manual settings? [y/N] " answer < /dev/tty
+    if [[ "$answer" != "y" ]]; then
+        echo "Manual settings skipped"
+    else
+        set_1password_settings
+    fi
     echo
 }
 
