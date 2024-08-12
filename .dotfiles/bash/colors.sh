@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+##################################################
+# DEPRECATED
+#
+# TODO: Use instaead https://github.com/vaniacer/bash_color
+# FIXME: Replace with `tput` commands
+#     - `man 5 terminfo` for list of colours
+#     - [e.g. usage of tput](https://stackoverflow.com/a/20983251)
+#     - [e.g. colour vars](https://unix.stackexchange.com/a/559724)
+# 
+##################################################
+
 # Raw escape sequence:  \[\e[1;32m\]
 # 
 # Other options instead of \e:
