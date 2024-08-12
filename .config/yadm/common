@@ -1,4 +1,5 @@
-#!/usr/bin/env echo use: source
+#!echo source
+# shellcheck shell=bash
 
 readonly bold=$(tput bold)
 readonly invert=$(tput setaf 0; tput setab 7)
