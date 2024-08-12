@@ -5,10 +5,10 @@ readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
 source "$BASEDIR/../common"
 
 main() {
-    h1 "Preferences (auto)"
+    h1 "Automatic Defaults"
     set_system_settings
-    set_application_preferences
-    force_preferences_reload
+    set_application_settings
+    force_settings_reload
 }
 
 set_system_settings() {
@@ -45,14 +45,14 @@ system_touchid_sudo() {
     fi
 }
 
-set_application_preferences() {
-    h2 "Application Preferences"
-    app_maccy_preferences
+set_application_settings() {
+    h2 "Application Settings"
+    app_maccy_settings
     app_textedit_open_plain_text
 }
 
-app_maccy_preferences() {
-    echo "Maccy preferences"
+app_maccy_settings() {
+    echo "Maccy settings"
     defaults write org.p0deje.Maccy imageMaxHeight 16
     defaults write org.p0deje.Maccy pasteByDefault 1
     defaults write org.p0deje.Maccy searchMode fuzzy
@@ -67,7 +67,7 @@ app_textedit_open_plain_text() {
     defaults write com.apple.TextEdit RichText 0
 }
 
-force_preferences_reload() {
+force_settings_reload() {
     killall sighup cfprefsd
 }
 
