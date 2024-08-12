@@ -11,13 +11,17 @@ main() {
 }
 
 set_1password_settings() {
-    h2 "1Password Settings"
+    h2 "1Password"
     echo "General   ➤ Show Quick Access: ${bold}⌃ ⌥ ⌘ P${reset}"
     echo "Security  ➤ Touch ID: ${bold}ON${reset}"
     echo "          ➤ Apple Watch: ${bold}ON${reset}"
     echo "          ➤ Hold Option to toggle revelead fields: ${bold}ON${reset}"
     echo "Privacy   ➤ Check for vulnerable passwords: ${bold}ON${reset}"
     echo "Developer ➤ Use the SSH Agent: ${bold}ON${reset}"
+
+    h2 "1Password Chrome Extension"
+    echo "Chrome Profile [each] ➤ chrome://extensions/shortcuts"
+    echo "                      ➤ Activate the extension: ${bold}⇧ ⌘ P${reset}"
 }
 
 main "$@"
