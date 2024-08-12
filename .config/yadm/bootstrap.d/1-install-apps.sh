@@ -10,7 +10,7 @@ readonly BREWFILES="$HOMEBREW/Brewfile.core $HOMEBREW/Brewfile.temp $HOMEBREW/Br
 main() {
     h1 "Applications"
     install_apps
-    post_install_setup
+    setup_post_install
     cleanup_apps
 }
 
@@ -19,7 +19,7 @@ install_apps() {
     cat $BREWFILES | brew bundle install --file=-
 }
 
-post_install_setup() {
+setup_post_install() {
     h2 "Post-install Setup"
     setup_xcode_directory
     setup_xcode_license

@@ -13,11 +13,11 @@ main() {
 
 set_system_settings() {
     h2 "System Settings"
-    set_system_character_palette_categories
-    set_system_touchid_sudo
+    system_character_palette_categories
+    system_touchid_sudo
 }
 
-set_system_character_palette_categories() {
+system_character_palette_categories() {
     echo "Character Palette categories reset"
     # Adding to the default: MusicalSymbols, SignStandardSymbols, TechnicalSymbols
     defaults write com.apple.CharacterPaletteIM CVActiveCategories -array \
@@ -36,7 +36,7 @@ set_system_character_palette_categories() {
             "Category-TechnicalSymbols"
 }
 
-set_system_touchid_sudo() {
+system_touchid_sudo() {
     if grep -e "^auth.*pam_tid.so" /etc/pam.d/sudo_local &> /dev/null; then
         echo "Touch ID for sudo is enabled"
     else
@@ -47,11 +47,11 @@ set_system_touchid_sudo() {
 
 set_application_preferences() {
     h2 "Application Preferences"
-    set_maccy_preferences
-    set_textedit_open_plain_text
+    app_maccy_preferences
+    app_textedit_open_plain_text
 }
 
-set_maccy_preferences() {
+app_maccy_preferences() {
     echo "Maccy preferences"
     defaults write org.p0deje.Maccy imageMaxHeight 16
     defaults write org.p0deje.Maccy pasteByDefault 1
@@ -62,7 +62,7 @@ set_maccy_preferences() {
     defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string '{"carbonKeyCode":9,"carbonModifiers":6144}'
 }
 
-set_textedit_open_plain_text() {
+app_textedit_open_plain_text() {
     echo "TextEdit default to plain text"
     defaults write com.apple.TextEdit RichText 0
 }
