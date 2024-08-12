@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
+source "$BASEDIR/../common"
+
 main() {
-    echo -e "\n=== Base Components ==="
+    h1 "Base Components"
     install_homebrew
 }
 

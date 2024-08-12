@@ -1,0 +1,13 @@
+#!/usr/bin/env echo use: source
+
+readonly bold=$(tput bold)
+readonly invert=$(tput setaf 0; tput setab 7)
+readonly reset=$(tput sgr0)
+
+h1() {
+    echo -e "\n${bold}${invert} === $* === ${reset}"
+}
+
+h2() {
+    echo -e "\n${bold}--- $* ---${reset}"
+}

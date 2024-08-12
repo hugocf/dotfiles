@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
+source "$BASEDIR/../common"
+
 main() {
-    echo -e "\n=== Preferences (auto) ==="
+    h1 "Preferences (auto)"
     set_system_settings
     set_application_preferences
     force_preferences_reload
 }
 
 set_system_settings() {
-    echo -e "\n--- System Settings ---"
+    h2 "System Settings"
     set_system_character_palette_categories
     set_system_touchid_sudo
 }
@@ -43,7 +46,7 @@ set_system_touchid_sudo() {
 }
 
 set_application_preferences() {
-    echo -e "\n--- Application Preferences ---"
+    h2 "Application Preferences"
     set_maccy_preferences
     set_textedit_open_plain_text
 }

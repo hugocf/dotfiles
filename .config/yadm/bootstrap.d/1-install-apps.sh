@@ -2,23 +2,25 @@
 set -euo pipefail
 
 readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
+source "$BASEDIR/../common"
+
 readonly HOMEBREW="$BASEDIR/../../homebrew"
 readonly BREWFILES="$HOMEBREW/Brewfile.core $HOMEBREW/Brewfile.temp $HOMEBREW/Brewfile.work"
 
 main() {
-    echo -e "\n=== Applications ==="
+    h1 "Applications"
     install_apps
     post_install_setup
     cleanup_apps
 }
 
 install_apps() {
-    echo -e "\n--- Homebrew Instalation ---"
+    h2 "Homebrew Instalation"
     cat $BREWFILES | brew bundle install --file=-
 }
 
 post_install_setup() {
-    echo -e "\n--- Post-install Setup ---"
+    h2 "Post-install Setup"
     setup_xcode_directory
     setup_xcode_license
     setup_things_helper
@@ -58,7 +60,7 @@ setup_things_helper() {
 }
 
 cleanup_apps() {
-    echo -e "\n--- Homebrew Cleanup ---"
+    h2 "Homebrew Cleanup"
     # returns $? = 0 (success) if there’s nothing to clean up
     if cat $BREWFILES | brew bundle cleanup --file=-; then
         echo "Nothing to cleanup"
