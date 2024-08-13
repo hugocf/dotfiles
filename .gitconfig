@@ -8,17 +8,15 @@
 	br = branch -a -vv
 	ci = commit
 	co = checkout
-	refiso = reflog --date=iso
-	graph = log --graph --all --oneline
-	last = logiso -n 10
-	# https://stackoverflow.com/a/1441062
-	logdate = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s'
+	last = logiso -n 20
+	loglist = log --graph --all --oneline
+	logdate = loglist --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s'	# https://stackoverflow.com/a/1441062
 	logiso = logdate --date=iso
 	logshort = logdate --date=short
+	refiso = reflog --date=iso
 	register = "!git clone $1 $(basename $1) && mr register $(basename $1)"
 	shove = push --force-with-lease
 	st = status --short
-	tree = graph
 
 	# yadm alias
 	check = "!source ~/custom-source.sh && yadm_check_changes"
