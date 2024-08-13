@@ -3,7 +3,7 @@
 	email = hugocf@users.noreply.github.com
 	signingKey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL1Ln3c4Qj+jvN+bjBUpG0YvWSZ+vfvSHyUbI/99fNio
 [includeIf "gitdir:~/Work/NewStore"]
-	path = ~/Work/NewStore/.gitconfig
+	path = ~/.config/work/gitconfig
 [alias]
 	br = branch -a -vv
 	ci = commit

@@ -1,3 +1,3 @@
-if [[ -r ~/Work/NewStore/.env ]]; then
-    source ~/Work/NewStore/.env 
+if [[ -r ~/.config/work/env ]]; then
+    source ~/.config/work/env 
 fi
