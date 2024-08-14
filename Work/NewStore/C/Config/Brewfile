@@ -1,2 +1,10 @@
 # Work related installs
 
+# tap "moritzheiber/tap"                      # Securily generates temporary AWS credentials through Identity Providers using SAML
+# brew "crowbar"                              # Securily generates temporary AWS credentials through Identity Providers using SAML
+
+brew "awscli"                               # Official Amazon AWS command-line interface
+brew "k9s"                                  # Kubernetes CLI To Manage Your Clusters In Style!
+brew "kubectl"                              # Kubernetes command-line interface
+brew "kubectx"                              # Tool that can switch between kubectl contexts easily and create aliases
+brew "saml2aws"                             # Login and retrieve AWS temporary credentials using a SAML IDP
