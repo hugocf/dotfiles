@@ -26,6 +26,7 @@ brew "wget"                                 # Internet file retriever
 brew "yadm"                                 # Yet Another Dotfiles Manager
 
 cask "1password"                            # Password manager that keeps all passwords secure behind one password
+cask "1password-cli"                        # Command-line interface for 1Password
 cask "choosy"                               # Open links in any browser
 cask "disk-inventory-x"                     # Disk usage utility
 cask "font-fira-code"                       # Free monospaced font with programming ligatures

@@ -23,6 +23,7 @@ set_1password_settings() {
     echo "          ➤ Hold Option to toggle revelead fields: ${bold}ON${reset}"
     echo "Privacy   ➤ Check for vulnerable passwords: ${bold}ON${reset}"
     echo "Developer ➤ Use the SSH Agent: ${bold}ON${reset}"
+    echo "          ➤ Integrate with 1Password CLI: ${bold}ON${reset}"
 
     h2 "1Password Chrome Extension"
     echo "Chrome Profile [each] ➤ chrome://extensions/shortcuts"
