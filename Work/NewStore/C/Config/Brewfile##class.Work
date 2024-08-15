@@ -1,4 +1,4 @@
-# Work related installs
+# Work related installs: yadm config local.class Work
 
 # tap "moritzheiber/tap"                      # Securily generates temporary AWS credentials through Identity Providers using SAML
 # brew "crowbar"                              # Securily generates temporary AWS credentials through Identity Providers using SAML
