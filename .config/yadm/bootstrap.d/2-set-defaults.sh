@@ -66,14 +66,14 @@ set_application_settings() {
 }
 
 app_gitx_settings() {
-    echo "GitX settings"
+    echo "GitX commit message lines, auto update"
     defaults write net.phere.GitX PBCommitMessageViewVerticalBodyLineLength 69
     defaults write net.phere.GitX PBCommitMessageViewVerticalLineLength 72
     defaults write net.phere.GitX SUEnableAutomaticChecks 1
 }
 
 app_maccy_settings() {
-    echo "Maccy settings"
+    echo "Maccy visual tweaks, paste and search behaviour, auto update, shortcut key"
     defaults write org.p0deje.Maccy imageMaxHeight 16
     defaults write org.p0deje.Maccy pasteByDefault 1
     defaults write org.p0deje.Maccy searchMode fuzzy
