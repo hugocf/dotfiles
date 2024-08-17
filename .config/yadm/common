@@ -15,3 +15,8 @@ h1() {
 h2() {
     echo -e "\n${bold}--- $* ---${reset}"
 }
+
+pause() {
+    read -p "Press any key to continue..." -n1 -s
+    echo
+}

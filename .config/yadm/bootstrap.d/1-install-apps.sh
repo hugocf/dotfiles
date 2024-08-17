@@ -20,9 +20,21 @@ install_apps() {
 
 setup_post_install() {
     h2 "Post-install Setup"
+    setup_1password_cli
     setup_xcode_directory
     setup_xcode_license
     setup_things_helper
+}
+
+setup_1password_cli() {
+    if [[ -n "$(op account list)" ]]; then
+        echo "1Password integrated with CLI"
+    else
+        echo "1Password integration with CLI needed..."
+        echo -e "\t${bold}1Password Settings${reset}"
+        echo -e "\tDeveloper ➤ ${bold}ON${reset} Integrate with 1Password CLI"
+        pause
+    fi
 }
 
 setup_xcode_directory() {
