@@ -38,9 +38,15 @@ system_character_palette_categories() {
 }
 
 system_lock_screen_message() {
-    echo "Lock screen message definition"
-    local msg=$(op inject --in-file "$CONFIG/system/lock-message")
-    sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "$msg"
+    local default_msg current_msg
+    default_msg=$(op inject --in-file "$CONFIG/system/lock-message")
+    current_msg=$(defaults read /Library/Preferences/com.apple.loginwindow LoginwindowText 2> /dev/null || echo "") # No error if it was deleted
+    if [[ "$default_msg" == "$current_msg" ]]; then
+        echo "Lock screen message already set as intended"
+    else
+        echo "Lock screen message needs resetting..."
+        sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "$default_msg"
+    fi
 }
 
 system_touchid_sudo() {
