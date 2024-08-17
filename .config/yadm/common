@@ -1,6 +1,9 @@
 #!echo source
 # shellcheck shell=bash
 
+readonly CONFIG="$BASEDIR/../.."
+readonly ROOT="$BASEDIR/../../.."
+
 readonly bold=$(tput bold)
 readonly invert=$(tput setaf 0; tput setab 7)
 readonly reset=$(tput sgr0)

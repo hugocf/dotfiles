@@ -4,7 +4,6 @@ set -euo pipefail
 readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
 source "$BASEDIR/../common"
 
-readonly CONFIG="$BASEDIR/../.."
 readonly BREWFILES="$CONFIG/homebrew/Brewfile.core $CONFIG/homebrew/Brewfile.temp $CONFIG/work/Brewfile"
 
 main() {
