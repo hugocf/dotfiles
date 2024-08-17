@@ -60,8 +60,16 @@ system_touchid_sudo() {
 
 set_application_settings() {
     h2 "Application Settings"
+    app_gitx_settings
     app_maccy_settings
     app_textedit_open_plain_text
+}
+
+app_gitx_settings() {
+    echo "GitX settings"
+    defaults write net.phere.GitX PBCommitMessageViewVerticalBodyLineLength 69
+    defaults write net.phere.GitX PBCommitMessageViewVerticalLineLength 72
+    defaults write net.phere.GitX SUEnableAutomaticChecks 1
 }
 
 app_maccy_settings() {
