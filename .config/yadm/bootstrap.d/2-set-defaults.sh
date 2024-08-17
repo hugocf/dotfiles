@@ -39,7 +39,7 @@ system_character_palette_categories() {
 
 system_lock_screen_message() {
     echo "Lock screen message definition"
-    local msg=$(< "$CONFIG/system/lock-message")
+    local msg=$(op inject --in-file "$CONFIG/system/lock-message")
     sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "$msg"
 }
 
