@@ -20,3 +20,16 @@ pause() {
     read -p "Press any key to continue..." -n1 -s
     echo
 }
+
+confirm_action() {
+    local question="$1"
+    local confirmed_action="$2"
+    local skipped_action="$3"
+
+    read -r -p "$question [y/N] " answer < /dev/tty
+    if [[ "$answer" == "y" ]]; then
+        eval "$confirmed_action"
+    else
+        eval "$skipped_action"
+    fi
+}

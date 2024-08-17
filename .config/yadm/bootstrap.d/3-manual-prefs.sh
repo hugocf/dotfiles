@@ -6,13 +6,14 @@ source "$BASEDIR/../common"
 
 main() {
     h1 "Manual Settings"
-    read -r -p "Do you want to review all manual settings? [y/N] " answer < /dev/tty
-    if [[ "$answer" != "y" ]]; then
-        echo "Manual settings skipped"
-    else
-        set_1password_settings
-    fi
+    confirm_action "Do you want to review all manual settings?" \
+        "all_manual_settings" \
+        "echo Manual settings skipped"
     echo
+}
+
+all_manual_settings() {
+    set_1password_settings
 }
 
 set_1password_settings() {

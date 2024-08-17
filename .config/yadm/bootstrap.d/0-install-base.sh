@@ -35,14 +35,10 @@ yadm_set_machine_class() {
     if [[ -n "$class" ]]; then
         echo "Machine set as local.class = $class"
     else
-        read -r -p "Do you set this machine as ${bold}Work${reset}? [y/N] " answer < /dev/tty
-        if [[ "$answer" == "y" ]]; then
-            yadm config local.class Work
-        else
-            yadm config local.class Personal
-        fi
+        confirm_action "Do you want to setup this machine as ${bold}Work${reset}?" \
+            "yadm config local.class Work" \
+            "yadm config local.class Personal"
     fi
-
 }
 
 main "$@"

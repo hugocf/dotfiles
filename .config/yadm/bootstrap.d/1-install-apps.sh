@@ -76,12 +76,9 @@ cleanup_apps() {
     if cat $BREWFILES | brew bundle cleanup --file=-; then
         echo "Nothing to cleanup"
     else
-        read -r -p "Are you sure to proceed with the listed uninstalls? [y/N] " answer < /dev/tty
-        if [[ "$answer" != "y" ]]; then
-            echo "Cleanup skipped"
-        else
-            cat $BREWFILES | brew bundle cleanup --file=- --force
-        fi
+        confirm_action "Are you sure to proceed with the listed uninstalls?" \
+            "cat $BREWFILES | brew bundle cleanup --file=- --force" \
+            "echo Cleanup skipped"
     fi
 }
 
