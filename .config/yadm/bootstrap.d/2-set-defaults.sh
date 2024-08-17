@@ -14,6 +14,7 @@ main() {
 set_system_settings() {
     h2 "System Settings"
     system_character_palette_categories
+    system_lock_screen_message
     system_touchid_sudo
 }
 
@@ -34,6 +35,12 @@ system_character_palette_categories() {
             "Category-Punctuation"          \
             "Category-SignStandardSymbols"  \
             "Category-TechnicalSymbols"
+}
+
+system_lock_screen_message() {
+    echo "Lock screen message defined"
+    local msg=$(< "$BASEDIR/../../system/lock-message")
+    sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "$msg"
 }
 
 system_touchid_sudo() {
