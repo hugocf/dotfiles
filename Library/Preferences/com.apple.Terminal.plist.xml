@@ -3,35 +3,84 @@
 <plist version="1.0">
 <dict>
 	<key>Default Window Settings</key>
-	<string>Basic</string>
+	<string>Hugo's Solarized Dark</string>
 	<key>DefaultProfilesVersion</key>
 	<integer>1</integer>
 	<key>HasMigratedDefaults</key>
 	<true/>
+	<key>Man Page Window Settings</key>
+	<string>Man Page</string>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads/MacBook Pro Setup NS/officetime preferences</string>
+	<string>~/Desktop/MacBook Pro Setup/1Password</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{800, 448}</string>
+	<string>{730, 565}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
 	<true/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 263.000000, NO, NO</string>
+		<string>0.000000, 264.000000, 224.000000, 43.000000, NO, NO</string>
+	</array>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSUserKeyEquivalents</key>
+	<dict>
+		<key>Show Next Tab</key>
+		<string>^⇥</string>
+		<key>Show Previous Tab</key>
+		<string>^$⇥</string>
+	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>0 76 224 251 0 0 1800 1125 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1083 69 531 101 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>-135 1995 800 448 -535 1329 3200 1775 </string>
+	<string>85 286 730 565 0 0 1800 1125 </string>
 	<key>NSWindow Frame TTAppPreferences</key>
-	<string>733 2296 667 554 -535 1329 3200 1775 </string>
+	<string>576 337 667 554 0 0 1800 1125 </string>
+	<key>NSWindow Frame TTInspector</key>
+	<string>1457 521 281 559 0 0 1800 1125 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>-129 1473 1200 1285 -535 1329 3200 1775 </string>
+	<string>0 1 1800 1124 0 0 1800 1125 </string>
 	<key>NSWindow Frame TTWindow Basic</key>
-	<string>0 1359 2131 1743 -535 1329 3200 1775 </string>
+	<string>228 217 570 413 0 0 1680 1027 </string>
+	<key>NSWindow Frame TTWindow Grass</key>
+	<string>0 8 923 1019 0 0 1680 1027 </string>
 	<key>NSWindow Frame TTWindow Homebrew</key>
-	<string>1065 2215 1599 889 -535 1329 3200 1775 </string>
+	<string>567 527 570 353 0 0 1680 1027 </string>
+	<key>NSWindow Frame TTWindow Hugo's Settings</key>
+	<string>0 4 843 509 0 0 1680 1027 </string>
+	<key>NSWindow Frame TTWindow Hugo's Solarized Dark</key>
+	<string>0 11 899 1114 0 0 1800 1125 </string>
+	<key>NSWindow Frame TTWindow Man Page</key>
+	<string>335 237 570 707 0 0 1512 944 </string>
+	<key>NSWindow Frame TTWindow Novel</key>
+	<string>567 514 570 366 0 0 1680 1027 </string>
+	<key>NSWindow Frame TTWindow Ocean</key>
+	<string>1010 87 570 366 0 0 1680 1027 </string>
+	<key>NSWindow Frame TTWindow Pro</key>
+	<string>0 4 838 506 0 0 1680 1027 </string>
+	<key>NSWindow Frame TTWindow Solid Colors</key>
+	<string>956 126 570 366 0 0 1680 1027 </string>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0699999999999998</real>
 	<key>SecureKeyboardEntry</key>
 	<false/>
+	<key>ShowLineMarks</key>
+	<false/>
 	<key>Startup Window Settings</key>
-	<string>Basic</string>
+	<string>Hugo's Solarized Dark</string>
 	<key>TTAppPreferences Selected Tab</key>
-	<integer>1</integer>
+	<integer>3</integer>
+	<key>TTInspector Selected Pane</key>
+	<string>Info</string>
 	<key>Window Settings</key>
 	<dict>
 		<key>Basic</key>
@@ -41,10 +90,11 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA15TRk1vbm8t
-			UmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250
-			ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zD
-			xgAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADP
+			Z3NWTlNOYW1lViRjbGFzcyNAKAAAAAAAABAQgAKAA18QFVNvdXJj
+			ZUNvZGVQcm8tUmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNz
+			ZXNWTlNGb250ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36F
+			jpCSlKyxvMXMzwAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAA
+			AADY
 			</data>
 			<key>FontAntialias</key>
 			<true/>
@@ -205,6 +255,693 @@
 			<key>type</key>
 			<string>Window Settings</string>
 		</dict>
+		<key>Hugo's Solarized Dark</key>
+		<dict>
+			<key>ANSIBlackColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTjAgMC4xNjQ1IDAuMjEAEAKAAtIUFRYXWiRjbGFz
+			c25hbWVYJGNsYXNzZXNXTlNDb2xvcqIWGFhOU09iamVjdAgRGiQp
+			MjdJTFFTV11kand+jY+RlqGqsrUAAAAAAAABAQAAAAAAAAAZAAAA
+			AAAAAAAAAAAAAAAAvg==
+			</data>
+			<key>ANSIBlueColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAZMC4xNDc2IDAuNTM5ODMzMzMzMyAwLjgyABAC
+			gALSFBUWF1okY2xhc3NuYW1lWCRjbGFzc2VzV05TQ29sb3KiFhhY
+			TlNPYmplY3QIERokKTI3SUxRU1ddZGp3fpqcnqOut7/CAAAAAAAA
+			AQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAMs=
+			</data>
+			<key>ANSIBrightBlackColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAYMC4zNDUgMC40MzMxNjY2NjY3IDAuNDYAEAKA
+			AtIUFRYXWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xvcqIWGFhO
+			U09iamVjdAgRGiQpMjdJTFFTV11kand+mZudoq22vsEAAAAAAAAB
+			AQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAyg==
+			</data>
+			<key>ANSIBrightBlueColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAUMC4xOCAwLjY1ODMzMzMzMzMgMQAQAoAC0hQV
+			FhdaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2Jq
+			ZWN0CBEaJCkyN0lMUVNXXWRqd36Vl5meqbK6vQAAAAAAAAEBAAAA
+			AAAAABkAAAAAAAAAAAAAAAAAAADG
+			</data>
+			<key>ANSIBrightCyanColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAnMC4yMTQ3Mjg5NjExIDAuODI1ODgwNjE5NSAw
+			Ljc3NDk1MTMxNDYAEAKAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNz
+			ZXNXTlNDb2xvcqIWGFhOU09iamVjdAgRGiQpMjdJTFFTV11kand+
+			qKqssbzFzdAAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>ANSIBrightGreenColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGmCwwXGxwjVSRudWxs1Q0ODxAREhMUFRZcTlNDb21wb25l
+			bnRzVU5TUkdCXE5TQ29sb3JTcGFjZV8QEk5TQ3VzdG9tQ29sb3JT
+			cGFjZVYkY2xhc3NPEA8wLjEyMzIgMC44NCAwIDFPEBswLjEwNTY0
+			NDEwNjkgMC44Mzc3Nzc1NTUgMAAQAYACgAXSGBEZGlVOU0lDQ4AD
+			gARPEQ80AAAPNGFwcGwCEAAAbW50clJHQiBYWVogB98ACgAXAAEA
+			GAACYWNzcEFQUEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPbW
+			AAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAARZGVzYwAAAVAAAABiZHNjbQAA
+			AbQAAAQaY3BydAAABdAAAAAjd3RwdAAABfQAAAAUclhZWgAABggA
+			AAAUZ1hZWgAABhwAAAAUYlhZWgAABjAAAAAUclRSQwAABkQAAAgM
+			YWFyZwAADlAAAAAgdmNndAAADnAAAAAwbmRpbgAADqAAAAA+Y2hh
+			ZAAADuAAAAAsbW1vZAAADwwAAAAoYlRSQwAABkQAAAgMZ1RSQwAA
+			BkQAAAgMYWFiZwAADlAAAAAgYWFnZwAADlAAAAAgZGVzYwAAAAAA
+			AAAIRGlzcGxheQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAG1sdWMAAAAAAAAAIgAAAAxockhSAAAAFAAA
+			Aahrb0tSAAAADAAAAbxuYk5PAAAAEgAAAchpZAAAAAAAEgAAAdpo
+			dUhVAAAAFAAAAexjc0NaAAAAFgAAAgBkYURLAAAAHAAAAhZ1a1VB
+			AAAAHAAAAjJhcgAAAAAAFAAAAk5pdElUAAAAFAAAAmJyb1JPAAAA
+			EgAAAnZlc0VTAAAAEgAAAnZoZUlMAAAAFgAAAohubE5MAAAAFgAA
+			Ap5maUZJAAAAEAAAArR6aFRXAAAADAAAAsR2aVZOAAAADgAAAtBz
+			a1NLAAAAFgAAAt56aENOAAAADAAAAsRydVJVAAAAJAAAAvRmckZS
+			AAAAFgAAAxhtcwAAAAAAEgAAAy5jYUVTAAAAGAAAA0B0aFRIAAAA
+			DAAAA1hlc1hMAAAAEgAAAnZkZURFAAAAEAAAA2RlblVTAAAAEgAA
+			A3RwdEJSAAAAGAAAA4ZwbFBMAAAAEgAAA55lbEdSAAAAIgAAA7Bz
+			dlNFAAAAEAAAA9J0clRSAAAAFAAAA+JqYUpQAAAADgAAA/ZwdFBU
+			AAAAFgAABAQATABDAEQAIAB1ACAAYgBvAGoAac7st+wAIABMAEMA
+			RABGAGEAcgBnAGUALQBMAEMARABMAEMARAAgAFcAYQByAG4AYQBT
+			AHoA7QBuAGUAcwAgAEwAQwBEAEIAYQByAGUAdgBuAP0AIABMAEMA
+			RABMAEMARAAtAGYAYQByAHYAZQBzAGsA5gByAG0EGgQ+BDsETAQ+
+			BEAEPgQyBDgEOQAgAEwAQwBEIA8ATABDAEQAIAZFBkQGSAZGBikA
+			TABDAEQAIABjAG8AbABvAHIAaQBMAEMARAAgAGMAbwBsAG8AciAP
+			AEwAQwBEACAF5gXRBeIF1QXgBdkASwBsAGUAdQByAGUAbgAtAEwA
+			QwBEAFYA5AByAGkALQBMAEMARF9pgnIAIABMAEMARABMAEMARAAg
+			AE0A4AB1AEYAYQByAGUAYgBuAOkAIABMAEMARAQmBDIENQRCBD0E
+			PgQ5ACAEFgQaAC0ENAQ4BEEEPwQ7BDUEOQBMAEMARAAgAGMAbwB1
+			AGwAZQB1AHIAVwBhAHIAbgBhACAATABDAEQATABDAEQAIABlAG4A
+			IABjAG8AbABvAHIATABDAEQAIA4qDjUARgBhAHIAYgAtAEwAQwBE
+			AEMAbwBsAG8AcgAgAEwAQwBEAEwAQwBEACAAQwBvAGwAbwByAGkA
+			ZABvAEsAbwBsAG8AcgAgAEwAQwBEA4gDswPHA8EDyQO8A7cAIAO/
+			A7gDzAO9A7cAIABMAEMARABGAOQAcgBnAC0ATABDAEQAUgBlAG4A
+			awBsAGkAIABMAEMARDCrMOkw/AAgAEwAQwBEAEwAQwBEACAAYQAg
+			AEMAbwByAGUAcwAAdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUgSW5j
+			LiwgMjAxNQAAWFlaIAAAAAAAAPMWAAEAAAABFspYWVogAAAAAAAA
+			ccAAADmKAAABZ1hZWiAAAAAAAABhIwAAueYAABP2WFlaIAAAAAAA
+			ACPyAAAMkAAAvdBjdXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAj
+			ACgALQAyADYAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIAdwB8AIEA
+			hgCLAJAAlQCaAJ8AowCoAK0AsgC3ALwAwQDGAMsA0ADVANsA4ADl
+			AOsA8AD2APsBAQEHAQ0BEwEZAR8BJQErATIBOAE+AUUBTAFSAVkB
+			YAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB6QHy
+			AfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqIC
+			rAK2AsECywLVAuAC6wL1AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+
+			A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRjBHEE
+			fgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWW
+			BaYFtQXFBdUF5QX2BgYGFgYnBjcGSAZZBmoGewaMBp0GrwbABtEG
+			4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghG
+			CFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J
+			5Qn7ChEKJwo9ClQKagqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuY
+			C7ALyAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQN
+			jg2pDcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+W
+			D7MPzw/sEAkQJhBDEGEQfhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR
+			6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJ
+			FGoUixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW
+			+hcdF0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZIBlFGWsZkRm3
+			Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMc
+			zBz1HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/q
+			IBUgQSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i3SMKIzgj
+			ZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtybo
+			JxgnSSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsq
+			zysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwugi63
+			Lu4vJC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQz
+			DTNGM38zuDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3JDdg
+			N5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8
+			JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAjQGRApkDn
+			QSlBakGsQe5CMEJyQrVC90M6Q31DwEQDREdEikTORRJFVUWaRd5G
+			IkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtT
+			S5pL4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtR
+			BlFQUZtR5lIxUnxSx1MTU19TqlP2VEJUj1TbVShVdVXCVg9WXFap
+			VvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc
+			1l0nXXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLw
+			Y0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1nk2fpaD9olmjsaUNp
+			mmnxakhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XAr
+			cIZw4HE6cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3
+			VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF84X1BfaF+AX5i
+			fsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauG
+			DoZyhteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Y
+			jf+OZo7OjzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2lCCUipT0lV+V
+			yZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3S
+			nkCerp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWpphqm
+			i6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2uoa8W
+			r4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4
+			WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFn
+			wePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfL
+			Nsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL
+			1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLf
+			Kd+v4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG
+			6dDqW+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0
+			NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c
+			/23//3BhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAAoOdmNn
+			dAAAAAAAAAABAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAA
+			AAAAAQAAbmRpbgAAAAAAAAA2AACnQAAAVYAAAEzAAACewAAAJYAA
+			AAzAAABQAAAAVEAAAjMzAAIzMwACMzMAAAAAAAAAAHNmMzIAAAAA
+			AAEMcgAABfj///MdAAAHugAA/XL///ud///9pAAAA9kAAMBxbW1v
+			ZAAAAAAAAAYQAACgLwAAAADQ5eVjAAAAAAAAAAAAAAAAAAAAANId
+			Hh8gWiRjbGFzc25hbWVYJGNsYXNzZXNcTlNDb2xvclNwYWNloiEi
+			XE5TQ29sb3JTcGFjZVhOU09iamVjdNIdHiQlV05TQ29sb3KiJCIA
+			CAARABoAJAApADIANwBJAEwAUQBTAFoAYABrAHgAfgCLAKAApwC5
+			ANcA2QDbAN0A4gDoAOoA7BAkECkQNBA9EEoQTRBaEGMQaBBwAAAA
+			AAAAAgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAEHM=
+			</data>
+			<key>ANSIBrightMagentaColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAUMSAwLjI2IDAuNjE3NjY2NjY2NgAQAoAC0hQV
+			FhdaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2Jq
+			ZWN0CBEaJCkyN0lMUVNXXWRqd36Vl5meqbK6vQAAAAAAAAEBAAAA
+			AAAAABkAAAAAAAAAAAAAAAAAAADG
+			</data>
+			<key>ANSIBrightRedColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAUMSAwLjIyMzE2NjY2NjYgMC4yMQAQAoAC0hQV
+			FhdaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2Jq
+			ZWN0CBEaJCkyN0lMUVNXXWRqd36Vl5meqbK6vQAAAAAAAAEBAAAA
+			AAAAABkAAAAAAAAAAAAAAAAAAADG
+			</data>
+			<key>ANSIBrightWhiteColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAnMC43NTEyMjM5NTgzIDAuODI1NTIwODMzMyAw
+			LjgyNTUyMDgzMzMAEAKAAtIUFRYXWiRjbGFzc25hbWVYJGNsYXNz
+			ZXNXTlNDb2xvcqIWGFhOU09iamVjdAgRGiQpMjdJTFFTV11kand+
+			qKqssbzFzdAAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA
+			2Q==
+			</data>
+			<key>ANSIBrightYellowColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzSTEgMC43NSAwABACgALSFBUWF1okY2xhc3NuYW1l
+			WCRjbGFzc2VzV05TQ29sb3KiFhhYTlNPYmplY3QIERokKTI3SUxR
+			U1ddZGp3foiKjJGcpa2wAAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAA
+			AAAAAAAAALk=
+			</data>
+			<key>ANSICyanColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAUMC4xNjM4IDAuNjMgMC41OTExNQAQAoAC0hQV
+			FhdaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2Jq
+			ZWN0CBEaJCkyN0lMUVNXXWRqd36Vl5meqbK6vQAAAAAAAAEBAAAA
+			AAAAABkAAAAAAAAAAAAAAAAAAADG
+			</data>
+			<key>ANSIGreenColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGmCwwXGxwjVSRudWxs1Q0ODxAREhMUFRZcTlNDb21wb25l
+			bnRzVU5TUkdCXE5TQ29sb3JTcGFjZV8QEk5TQ3VzdG9tQ29sb3JT
+			cGFjZVYkY2xhc3NMMC4wOSAwLjYgMCAxTxAdMC4wNzgyNDA5MzEw
+			MyAwLjU1MjQ4NDYzMTUgMAAQAYACgAXSGBEZGlVOU0lDQ4ADgARP
+			EQ80AAAPNGFwcGwCEAAAbW50clJHQiBYWVogB98ACgAXAAEAGAAC
+			YWNzcEFQUEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEA
+			AAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAARZGVzYwAAAVAAAABiZHNjbQAAAbQA
+			AAQaY3BydAAABdAAAAAjd3RwdAAABfQAAAAUclhZWgAABggAAAAU
+			Z1hZWgAABhwAAAAUYlhZWgAABjAAAAAUclRSQwAABkQAAAgMYWFy
+			ZwAADlAAAAAgdmNndAAADnAAAAAwbmRpbgAADqAAAAA+Y2hhZAAA
+			DuAAAAAsbW1vZAAADwwAAAAoYlRSQwAABkQAAAgMZ1RSQwAABkQA
+			AAgMYWFiZwAADlAAAAAgYWFnZwAADlAAAAAgZGVzYwAAAAAAAAAI
+			RGlzcGxheQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAG1sdWMAAAAAAAAAIgAAAAxockhSAAAAFAAAAahr
+			b0tSAAAADAAAAbxuYk5PAAAAEgAAAchpZAAAAAAAEgAAAdpodUhV
+			AAAAFAAAAexjc0NaAAAAFgAAAgBkYURLAAAAHAAAAhZ1a1VBAAAA
+			HAAAAjJhcgAAAAAAFAAAAk5pdElUAAAAFAAAAmJyb1JPAAAAEgAA
+			AnZlc0VTAAAAEgAAAnZoZUlMAAAAFgAAAohubE5MAAAAFgAAAp5m
+			aUZJAAAAEAAAArR6aFRXAAAADAAAAsR2aVZOAAAADgAAAtBza1NL
+			AAAAFgAAAt56aENOAAAADAAAAsRydVJVAAAAJAAAAvRmckZSAAAA
+			FgAAAxhtcwAAAAAAEgAAAy5jYUVTAAAAGAAAA0B0aFRIAAAADAAA
+			A1hlc1hMAAAAEgAAAnZkZURFAAAAEAAAA2RlblVTAAAAEgAAA3Rw
+			dEJSAAAAGAAAA4ZwbFBMAAAAEgAAA55lbEdSAAAAIgAAA7BzdlNF
+			AAAAEAAAA9J0clRSAAAAFAAAA+JqYUpQAAAADgAAA/ZwdFBUAAAA
+			FgAABAQATABDAEQAIAB1ACAAYgBvAGoAac7st+wAIABMAEMARABG
+			AGEAcgBnAGUALQBMAEMARABMAEMARAAgAFcAYQByAG4AYQBTAHoA
+			7QBuAGUAcwAgAEwAQwBEAEIAYQByAGUAdgBuAP0AIABMAEMARABM
+			AEMARAAtAGYAYQByAHYAZQBzAGsA5gByAG0EGgQ+BDsETAQ+BEAE
+			PgQyBDgEOQAgAEwAQwBEIA8ATABDAEQAIAZFBkQGSAZGBikATABD
+			AEQAIABjAG8AbABvAHIAaQBMAEMARAAgAGMAbwBsAG8AciAPAEwA
+			QwBEACAF5gXRBeIF1QXgBdkASwBsAGUAdQByAGUAbgAtAEwAQwBE
+			AFYA5AByAGkALQBMAEMARF9pgnIAIABMAEMARABMAEMARAAgAE0A
+			4AB1AEYAYQByAGUAYgBuAOkAIABMAEMARAQmBDIENQRCBD0EPgQ5
+			ACAEFgQaAC0ENAQ4BEEEPwQ7BDUEOQBMAEMARAAgAGMAbwB1AGwA
+			ZQB1AHIAVwBhAHIAbgBhACAATABDAEQATABDAEQAIABlAG4AIABj
+			AG8AbABvAHIATABDAEQAIA4qDjUARgBhAHIAYgAtAEwAQwBEAEMA
+			bwBsAG8AcgAgAEwAQwBEAEwAQwBEACAAQwBvAGwAbwByAGkAZABv
+			AEsAbwBsAG8AcgAgAEwAQwBEA4gDswPHA8EDyQO8A7cAIAO/A7gD
+			zAO9A7cAIABMAEMARABGAOQAcgBnAC0ATABDAEQAUgBlAG4AawBs
+			AGkAIABMAEMARDCrMOkw/AAgAEwAQwBEAEwAQwBEACAAYQAgAEMA
+			bwByAGUAcwAAdGV4dAAAAABDb3B5cmlnaHQgQXBwbGUgSW5jLiwg
+			MjAxNQAAWFlaIAAAAAAAAPMWAAEAAAABFspYWVogAAAAAAAAccAA
+			ADmKAAABZ1hZWiAAAAAAAABhIwAAueYAABP2WFlaIAAAAAAAACPy
+			AAAMkAAAvdBjdXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgA
+			LQAyADYAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIAdwB8AIEAhgCL
+			AJAAlQCaAJ8AowCoAK0AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA
+			8AD2APsBAQEHAQ0BEwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFn
+			AW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB6QHyAfoC
+			AwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2
+			AsECywLVAuAC6wL1AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oD
+			lgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRjBHEEfgSM
+			BJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYF
+			tQXFBdUF5QX2BgYGFgYnBjcGSAZZBmoGewaMBp0GrwbABtEG4wb1
+			BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghGCFoI
+			bgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7
+			ChEKJwo9ClQKagqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuYC7AL
+			yAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2p
+			DcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MP
+			zw/sEAkQJhBDEGEQfhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR6BIH
+			EiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJFGoU
+			ixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcd
+			F0EXZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZIBlFGWsZkRm3Gd0a
+			BBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMczBz1
+			HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUg
+			QSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i3SMKIzgjZiOU
+			I8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgn
+			SSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysC
+			KzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwugi63Lu4v
+			JC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQzDTNG
+			M38zuDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w3
+			1zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8Jzxl
+			PKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAjQGRApkDnQSlB
+			akGsQe5CMEJyQrVC90M6Q31DwEQDREdEikTORRJFVUWaRd5GIkZn
+			RqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL
+			4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQ
+			UZtR5lIxUnxSx1MTU19TqlP2VEJUj1TbVShVdVXCVg9WXFapVvdX
+			RFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0n
+			XXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Nj
+			l2PrZEBklGTpZT1lkmXnZj1mkmboZz1nk2fpaD9olmjsaUNpmmnx
+			akhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw
+			4HE6cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3Vnez
+			eBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwhfIF84X1BfaF+AX5ifsJ/
+			I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZy
+			hteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+O
+			Zo7OjzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2lCCUipT0lV+VyZY0
+			lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCe
+			rp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9
+			p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24ri2uoa8Wr4uw
+			ALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjR
+			uUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePC
+			X8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2
+			zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V
+			0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v
+			4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDq
+			W+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0NPTC
+			9VD13vZt9vv3ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c/23/
+			/3BhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAAoOdmNndAAA
+			AAAAAAABAAEAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEAAAAAAAAA
+			AQAAbmRpbgAAAAAAAAA2AACnQAAAVYAAAEzAAACewAAAJYAAAAzA
+			AABQAAAAVEAAAjMzAAIzMwACMzMAAAAAAAAAAHNmMzIAAAAAAAEM
+			cgAABfj///MdAAAHugAA/XL///ud///9pAAAA9kAAMBxbW1vZAAA
+			AAAAAAYQAACgLwAAAADQ5eVjAAAAAAAAAAAAAAAAAAAAANIdHh8g
+			WiRjbGFzc25hbWVYJGNsYXNzZXNcTlNDb2xvclNwYWNloiEiXE5T
+			Q29sb3JTcGFjZVhOU09iamVjdNIdHiQlV05TQ29sb3KiJCIACAAR
+			ABoAJAApADIANwBJAEwAUQBTAFoAYABrAHgAfgCLAKAApwC0ANQA
+			1gDYANoA3wDlAOcA6RAhECYQMRA6EEcQShBXEGAQZRBtAAAAAAAA
+			AgEAAAAAAAAAJgAAAAAAAAAAAAAAAAAAEHA=
+			</data>
+			<key>ANSIMagentaColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAZMC44MyAwLjIxNTggMC41MTI2NjMzMzMzABAC
+			gALSFBUWF1okY2xhc3NuYW1lWCRjbGFzc2VzV05TQ29sb3KiFhhY
+			TlNPYmplY3QIERokKTI3SUxRU1ddZGp3fpqcnqOut7/CAAAAAAAA
+			AQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAMs=
+			</data>
+			<key>ANSIRedColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAZMC44NiAwLjE5MTkyMzMzMzMgMC4xODA2ABAC
+			gALSFBUWF1okY2xhc3NuYW1lWCRjbGFzc2VzV05TQ29sb3KiFhhY
+			TlNPYmplY3QIERokKTI3SUxRU1ddZGp3fpqcnqOut7/CAAAAAAAA
+			AQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAMs=
+			</data>
+			<key>ANSIWhiteColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxARMC41NzMzIDAuNjMgMC42MwAQAoAC0hQVFhda
+			JGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2JqZWN0
+			CBEaJCkyN0lMUVNXXWRqd36SlJabpq+3ugAAAAAAAAEBAAAAAAAA
+			ABkAAAAAAAAAAAAAAAAAAADD
+			</data>
+			<key>ANSIYellowColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTjAuNzEgMC41MzI1IDAAEAKAAtIUFRYXWiRjbGFz
+			c25hbWVYJGNsYXNzZXNXTlNDb2xvcqIWGFhOU09iamVjdAgRGiQp
+			MjdJTFFTV11kand+jY+RlqGqsrUAAAAAAAABAQAAAAAAAAAZAAAA
+			AAAAAAAAAAAAAAAAvg==
+			</data>
+			<key>BackgroundAlphaInactive</key>
+			<real>1</real>
+			<key>BackgroundBlur</key>
+			<real>0.20000000000000001</real>
+			<key>BackgroundColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTjAgMC4xNjQ1IDAuMjEAEAKAAtIUFRYXWiRjbGFz
+			c25hbWVYJGNsYXNzZXNXTlNDb2xvcqIWGFhOU09iamVjdAgRGiQp
+			MjdJTFFTV11kand+jY+RlqGqsrUAAAAAAAABAQAAAAAAAAAZAAAA
+			AAAAAAAAAAAAAAAAvg==
+			</data>
+			<key>BackgroundSettingsForInactiveWindows</key>
+			<false/>
+			<key>Bell</key>
+			<false/>
+			<key>BlinkText</key>
+			<false/>
+			<key>CursorBlink</key>
+			<true/>
+			<key>CursorColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxARMC41NzMzIDAuNjMgMC42MwAQAoAC0hQVFhda
+			JGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2JqZWN0
+			CBEaJCkyN0lMUVNXXWRqd36SlJabpq+3ugAAAAAAAAEBAAAAAAAA
+			ABkAAAAAAAAAAAAAAAAAAADD
+			</data>
+			<key>CursorType</key>
+			<integer>2</integer>
+			<key>DisableANSIColor</key>
+			<false/>
+			<key>Font</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
+			Z3NWTlNOYW1lViRjbGFzcyNAKAAAAAAAABAQgAKAA18QEEZpcmFD
+			b2RlLVJlZ3VsYXLSFxgZGlokY2xhc3NuYW1lWCRjbGFzc2VzVk5T
+			Rm9udKIZG1hOU09iamVjdAgRGiQpMjdJTFFTWF5nbnd+hY6QkpSn
+			rLfAx8oAAAAAAAABAQAAAAAAAAAcAAAAAAAAAAAAAAAAAAAA0w==
+			</data>
+			<key>FontAntialias</key>
+			<true/>
+			<key>FontWidthSpacing</key>
+			<real>1.004032258064516</real>
+			<key>ProfileCurrentVersion</key>
+			<real>2.0699999999999998</real>
+			<key>SelectionColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxASMC4wMjYgMC4yMTMyIDAuMjYAEAKAAtIUFRYX
+			WiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xvcqIWGFhOU09iamVj
+			dAgRGiQpMjdJTFFTV11kand+k5WXnKewuLsAAAAAAAABAQAAAAAA
+			AAAZAAAAAAAAAAAAAAAAAAAAxA==
+			</data>
+			<key>ShowCommandKeyInTitle</key>
+			<true/>
+			<key>ShowDimensionsInTitle</key>
+			<false/>
+			<key>ShowWindowSettingsNameInTitle</key>
+			<false/>
+			<key>TerminalType</key>
+			<string>xterm-256color</string>
+			<key>TextBoldColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxARMC41NzMzIDAuNjMgMC42MwAQAoAC0hQVFhda
+			JGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2JqZWN0
+			CBEaJCkyN0lMUVNXXWRqd36SlJabpq+3ugAAAAAAAAEBAAAAAAAA
+			ABkAAAAAAAAAAAAAAAAAAADD
+			</data>
+			<key>TextColor</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
+			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
+			b290gAGjCwwTVSRudWxs0w0ODxARElVOU1JHQlxOU0NvbG9yU3Bh
+			Y2VWJGNsYXNzTxAUMC41MTMzIDAuNTgyMzMgMC41OQAQAoAC0hQV
+			FhdaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohYYWE5TT2Jq
+			ZWN0CBEaJCkyN0lMUVNXXWRqd36Vl5meqbK6vQAAAAAAAAEBAAAA
+			AAAAABkAAAAAAAAAAAAAAAAAAADG
+			</data>
+			<key>UseBrightBold</key>
+			<false/>
+			<key>blackColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg7JNIT2DkvUjPoO+F0s+AYY=
+			</data>
+			<key>blueColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmgyqcAj6DtOHsPoO+RUg/AYY=
+			</data>
+			<key>brightBlackColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg+ZzgjyDs44BPoNahyM+AYY=
+			</data>
+			<key>brightBlueColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg7yT4T6DEXcCP4POUAQ/AYY=
+			</data>
+			<key>brightCyanColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg7CIAT+Dj5oQP4N8ShA/AYY=
+			</data>
+			<key>brightGreenColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmgzyujT6DFZy2PoOYFsQ+AYY=
+			</data>
+			<key>brightMagentaColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmgxMjsj6D+uazPoNkyTc/AYY=
+			</data>
+			<key>brightRedColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmgyfkPT+D/15aPoMgl5Y9AYY=
+			</data>
+			<key>brightWhiteColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg49LfT+D0Dt1P4MGM10/AYY=
+			</data>
+			<key>brightYellowColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg1MTpj6DeHnQPoPQg+A+AYY=
+			</data>
+			<key>columnCount</key>
+			<integer>119</integer>
+			<key>cyanColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg4VRFj6DfyESP4PkZwY/AYY=
+			</data>
+			<key>greenColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg9lI5j6DIYkKP4PVjKU8AYY=
+			</data>
+			<key>keyMapBoundKeys</key>
+			<dict>
+				<key>$F702</key>
+				<string></string>
+				<key>$F703</key>
+				<string></string>
+				<key>$F708</key>
+				<string>[25~</string>
+				<key>$F709</key>
+				<string>[26~</string>
+				<key>$F70A</key>
+				<string>[28~</string>
+				<key>$F70B</key>
+				<string>[29~</string>
+				<key>$F70C</key>
+				<string>[31~</string>
+				<key>$F70D</key>
+				<string>[32~</string>
+				<key>$F70E</key>
+				<string>[33~</string>
+				<key>$F70F</key>
+				<string>[34~</string>
+				<key>F704</key>
+				<string>OP</string>
+				<key>F705</key>
+				<string>OQ</string>
+				<key>F706</key>
+				<string>OR</string>
+				<key>F707</key>
+				<string>OS</string>
+				<key>F708</key>
+				<string>[15~</string>
+				<key>F709</key>
+				<string>[17~</string>
+				<key>F70A</key>
+				<string>[18~</string>
+				<key>F70B</key>
+				<string>[19~</string>
+				<key>F70C</key>
+				<string>[20~</string>
+				<key>F70D</key>
+				<string>[21~</string>
+				<key>F70E</key>
+				<string>[23~</string>
+				<key>F70F</key>
+				<string>[24~</string>
+				<key>F710</key>
+				<string>[25~</string>
+				<key>F711</key>
+				<string>[26~</string>
+				<key>F712</key>
+				<string>[28~</string>
+				<key>F713</key>
+				<string>[29~</string>
+				<key>F714</key>
+				<string>[31~</string>
+				<key>F715</key>
+				<string>[32~</string>
+				<key>F716</key>
+				<string>[33~</string>
+				<key>F717</key>
+				<string>[34~</string>
+				<key>F728</key>
+				<string>[3~</string>
+				<key>F729</key>
+				<string>[H</string>
+				<key>F72B</key>
+				<string>[F</string>
+				<key>^F72B</key>
+				<string>321</string>
+				<key>~F702</key>
+				<string>b</string>
+				<key>~F703</key>
+				<string>f</string>
+				<key>~F704</key>
+				<string>[17~</string>
+				<key>~F705</key>
+				<string>[18~</string>
+				<key>~F706</key>
+				<string>[19~</string>
+				<key>~F707</key>
+				<string>[20~</string>
+				<key>~F708</key>
+				<string>[21~</string>
+				<key>~F709</key>
+				<string>[23~</string>
+				<key>~F70A</key>
+				<string>[24~</string>
+				<key>~F70B</key>
+				<string>[25~</string>
+				<key>~F70C</key>
+				<string>[26~</string>
+				<key>~F70D</key>
+				<string>[28~</string>
+				<key>~F70E</key>
+				<string>[29~</string>
+				<key>~F70F</key>
+				<string>[31~</string>
+				<key>~F710</key>
+				<string>[32~</string>
+				<key>~F711</key>
+				<string>[33~</string>
+				<key>~F712</key>
+				<string>[34~</string>
+			</dict>
+			<key>magentaColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg/4CRz+DBTzdPYMgzt4+AYY=
+			</data>
+			<key>name</key>
+			<string>Hugo's Solarized Dark</string>
+			<key>noWarnProcesses</key>
+			<array>
+				<dict>
+					<key>ProcessName</key>
+					<string>screen</string>
+				</dict>
+				<dict>
+					<key>ProcessName</key>
+					<string>tmux</string>
+				</dict>
+				<dict>
+					<key>ProcessName</key>
+					<string>rlogin</string>
+				</dict>
+				<dict>
+					<key>ProcessName</key>
+					<string>slogin</string>
+				</dict>
+				<dict>
+					<key>ProcessName</key>
+					<string>telnet</string>
+				</dict>
+				<dict>
+					<key>ProcessName</key>
+					<string>ssh</string>
+				</dict>
+			</array>
+			<key>redColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg6i7UT+DUATePYMl2hA+AYY=
+			</data>
+			<key>rowCount</key>
+			<integer>29</integer>
+			<key>shellExitAction</key>
+			<integer>1</integer>
+			<key>type</key>
+			<string>Window Settings</string>
+			<key>whiteColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmgzqGaj+D2tdjP4NYPUw/AYY=
+			</data>
+			<key>yellowColour</key>
+			<data>
+			BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2Jq
+			ZWN0AIWEAWMBhARmZmZmg0DAJT+DB17vPoM4Y8A8AYY=
+			</data>
+		</dict>
 		<key>Man Page</key>
 		<dict>
 			<key>BackgroundColor</key>
@@ -222,10 +959,10 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA15TRk1vbm8t
-			UmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250
-			ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zD
-			xgAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADP
+			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA11NZW5sby1S
+			ZWd1bGFy0hcYGRpaJGNsYXNzbmFtZVgkY2xhc3Nlc1ZOU0ZvbnSi
+			GRtYTlNPYmplY3QIERokKTI3SUxRU1heZ253foWOkJKUoqeyu8LF
+			AAAAAAAAAQEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAM4=
 			</data>
 			<key>FontAntialias</key>
 			<true/>
@@ -366,10 +1103,10 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA15TRk1vbm8t
-			UmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250
-			ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zD
-			xgAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADP
+			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA11NZW5sby1S
+			ZWd1bGFy0hcYGRpaJGNsYXNzbmFtZVgkY2xhc3Nlc1ZOU0ZvbnSi
+			GRtYTlNPYmplY3QIERokKTI3SUxRU1heZ253foWOkJKUoqeyu8LF
+			AAAAAAAAAQEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAM4=
 			</data>
 			<key>FontAntialias</key>
 			<true/>
@@ -523,10 +1260,10 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA15TRk1vbm8t
-			UmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250
-			ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zD
-			xgAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADP
+			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA11NZW5sby1S
+			ZWd1bGFy0hcYGRpaJGNsYXNzbmFtZVgkY2xhc3Nlc1ZOU0ZvbnSi
+			GRtYTlNPYmplY3QIERokKTI3SUxRU1heZ253foWOkJKUoqeyu8LF
+			AAAAAAAAAQEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAM4=
 			</data>
 			<key>FontAntialias</key>
 			<true/>
@@ -609,10 +1346,10 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA15TRk1vbm8t
-			UmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250
-			ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zD
-			xgAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADP
+			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA11NZW5sby1S
+			ZWd1bGFy0hcYGRpaJGNsYXNzbmFtZVgkY2xhc3Nlc1ZOU0ZvbnSi
+			GRtYTlNPYmplY3QIERokKTI3SUxRU1heZ253foWOkJKUoqeyu8LF
+			AAAAAAAAAQEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAM4=
 			</data>
 			<key>FontAntialias</key>
 			<true/>
@@ -714,10 +1451,10 @@
 			YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0
 			b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRy
 			b290gAGkCwwVFlUkbnVsbNQNDg8QERITFFZOU1NpemVYTlNmRmxh
-			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA15TRk1vbm8t
-			UmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250
-			ohkbWE5TT2JqZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zD
-			xgAAAAAAAAEBAAAAAAAAABwAAAAAAAAAAAAAAAAAAADP
+			Z3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA11NZW5sby1S
+			ZWd1bGFy0hcYGRpaJGNsYXNzbmFtZVgkY2xhc3Nlc1ZOU0ZvbnSi
+			GRtYTlNPYmplY3QIERokKTI3SUxRU1heZ253foWOkJKUoqeyu8LF
+			AAAAAAAAAQEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAM4=
 			</data>
 			<key>FontAntialias</key>
 			<true/>
