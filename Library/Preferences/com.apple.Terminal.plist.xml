@@ -44,13 +44,13 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>85 286 730 565 0 0 1800 1125 </string>
 	<key>NSWindow Frame TTAppPreferences</key>
-	<string>576 337 667 554 0 0 1800 1125 </string>
+	<string>753 2056 667 554 -535 1329 3200 1775 </string>
 	<key>NSWindow Frame TTInspector</key>
 	<string>1457 521 281 559 0 0 1800 1125 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>0 1 1800 1124 0 0 1800 1125 </string>
+	<string>-101 1516 1200 1285 -535 1329 3200 1775 </string>
 	<key>NSWindow Frame TTWindow Basic</key>
-	<string>228 217 570 413 0 0 1680 1027 </string>
+	<string>-535 1357 1347 861 -535 1329 3200 1775 </string>
 	<key>NSWindow Frame TTWindow Grass</key>
 	<string>0 8 923 1019 0 0 1680 1027 </string>
 	<key>NSWindow Frame TTWindow Homebrew</key>
@@ -58,7 +58,7 @@
 	<key>NSWindow Frame TTWindow Hugo's Settings</key>
 	<string>0 4 843 509 0 0 1680 1027 </string>
 	<key>NSWindow Frame TTWindow Hugo's Solarized Dark</key>
-	<string>0 11 899 1114 0 0 1800 1125 </string>
+	<string>-535 1336 1599 880 -535 1329 3200 1775 </string>
 	<key>NSWindow Frame TTWindow Man Page</key>
 	<string>335 237 570 707 0 0 1512 944 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
@@ -78,7 +78,7 @@
 	<key>Startup Window Settings</key>
 	<string>Hugo's Solarized Dark</string>
 	<key>TTAppPreferences Selected Tab</key>
-	<integer>3</integer>
+	<integer>1</integer>
 	<key>TTInspector Selected Pane</key>
 	<string>Info</string>
 	<key>Window Settings</key>
