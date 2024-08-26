@@ -20,10 +20,21 @@ install_apps() {
 
 setup_post_install() {
     h2 "Post-install Setup"
+    remove_quarantines
     setup_1password_cli
     setup_xcode_directory
     setup_xcode_license
     setup_things_helper
+}
+
+remove_quarantines() {
+    remove_for_app() {
+        local app=$1
+        echo "Remove quarantine for $app"
+        xattr -r -d com.apple.quarantine "$app"
+    }
+
+    remove_for_app "/Applications/Syntax Highlight.app"
 }
 
 setup_1password_cli() {
