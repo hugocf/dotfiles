@@ -8,3 +8,5 @@ brew "k9s"                                  # Kubernetes CLI To Manage Your Clus
 brew "kubectl"                              # Kubernetes command-line interface
 brew "kubectx"                              # Tool that can switch between kubectl contexts easily and create aliases
 brew "saml2aws"                             # Login and retrieve AWS temporary credentials using a SAML IDP
+
+cask "tuple"                                # Remote pair programming app
