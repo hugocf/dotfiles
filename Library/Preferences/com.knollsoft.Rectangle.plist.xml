@@ -5,13 +5,13 @@
 	<key>NSStatusItem Visible Item-0</key>
 	<false/>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>590 545 620 398 0 0 1800 1125 </string>
+	<string>718 665 620 398 0 0 2056 1285 </string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-08-18T01:59:20Z</date>
+	<date>2024-08-26T06:15:27Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>2766913725</integer>
 	<key>allowAnyShortcut</key>
@@ -84,7 +84,7 @@
 		<integer>917504</integer>
 	</dict>
 	<key>lastVersion</key>
-	<string>87</string>
+	<string>88</string>
 	<key>launchOnLogin</key>
 	<true/>
 	<key>leftHalf</key>
