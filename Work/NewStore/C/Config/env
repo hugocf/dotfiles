@@ -1,6 +1,6 @@
 # See 1Password integration: https://developer.1password.com/docs/cli/secret-references/
 
-export JIRA_USER=hferreira-ns
+export JIRA_USER=hferreira@newstore.com
 export JIRA_TOKEN="op://NewStore/Atlassian - Personal Token/password"
 
 export NEWSTORE_USER=hferreira@newstore.com
