@@ -20,7 +20,7 @@
 
 	# yadm alias
 	check = "!source ~/custom-source.sh && yadm_check_changes"
-	unstaged = "!source ~/custom-source.sh && yadm_restore_unstaged"
+	noplist = "!source ~/custom-source.sh && yadm_restore_unstaged_plist"
 [color]
 	ui = auto
 [color "branch"]

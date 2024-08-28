@@ -9,8 +9,8 @@ yadm_check_changes() {
     yadm diff
 }
 
-yadm_restore_unstaged() {
-    yadm status --porcelain | grep "^.[M?]" | cut -c4- | xargs -I{} yadm restore {}
+yadm_restore_unstaged_plist() {
+    yadm status --porcelain | grep "^.[M?].*plist.*" | cut -c4- | xargs -I{} yadm restore {}
 }
 
 pl2xml() {
@@ -30,3 +30,4 @@ alias y=yadm
 alias ll='ls -lh'
 
 [[ -f $HOME/custom-source.work.sh ]] && source "$HOME/custom-source.work.sh"
+
