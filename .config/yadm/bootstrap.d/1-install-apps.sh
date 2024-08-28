@@ -28,14 +28,16 @@ setup_post_install() {
 }
 
 remove_quarantines() {
-    remove_for_app() {
-        local app=$1
-        echo "Remove quarantine for $app"
-        xattr -r -d com.apple.quarantine "$app"
+    remove_from_app() {
+        local full_path app_name
+        full_path=$1
+        app_name=$(remove_path_extension "$full_path")
+        echo "Remove quarantine for $app_name"
+        xattr -r -d com.apple.quarantine "$full_path"
     }
 
-    remove_for_app "/Applications/QLMarkdown.app"
-    remove_for_app "/Applications/Syntax Highlight.app"
+    remove_from_app "/Applications/QLMarkdown.app"
+    remove_from_app "/Applications/Syntax Highlight.app"
 }
 
 setup_1password_cli() {
