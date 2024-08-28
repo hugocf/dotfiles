@@ -36,6 +36,7 @@ remove_quarantines() {
         xattr -r -d com.apple.quarantine "$full_path"
     }
 
+    remove_from_app "/Applications/GitX.app"
     remove_from_app "/Applications/QLMarkdown.app"
     remove_from_app "/Applications/Syntax Highlight.app"
 }
