@@ -29,5 +29,4 @@ alias g=git
 alias y=yadm
 alias ll='ls -lh'
 
-[[ -f $HOME/custom-source.work.sh ]] && source "$HOME/custom-source.work.sh"
-
+[[ -f "$HOME/custom-source.work.sh" ]] && source "$HOME/custom-source.work.sh" || :
