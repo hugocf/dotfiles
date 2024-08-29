@@ -19,8 +19,8 @@
 	st = status --short
 
 	# yadm alias
-	check = "!source ~/custom-source.sh && yadm_check_changes"
-	noplist = "!source ~/custom-source.sh && yadm_restore_unstaged_plist"
+	check = "!source ~/custom-source.sh && yadm_check_changes || echo 'failed'"
+	noplist = "!source ~/custom-source.sh && yadm_restore_unstaged_plist || echo 'failed'"
 [color]
 	ui = auto
 [color "branch"]
