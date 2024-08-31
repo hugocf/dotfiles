@@ -14,6 +14,7 @@ main() {
 
 all_manual_settings() {
     set_1password_settings
+    set_shortcuts_settings
 }
 
 set_1password_settings() {
@@ -29,6 +30,11 @@ set_1password_settings() {
     h2 "1Password Chrome Extension"
     echo "Chrome Profile [each] ➤ chrome://extensions/shortcuts"
     echo "                      ➤ Activate the extension: ${bold}⇧ ⌘ P${reset}"
+}
+
+set_shortcuts_settings() {
+    h2 "Shortcuts"
+    echo "Advanced  ➤ ${bold}ON${reset} Allow Running Scripts"
 }
 
 main "$@"
