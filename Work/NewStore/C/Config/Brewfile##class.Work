@@ -4,6 +4,7 @@
 # brew "crowbar"                              # Securily generates temporary AWS credentials through Identity Providers using SAML
 
 brew "awscli"                               # Official Amazon AWS command-line interface
+brew "glab"                                 # Open-source GitLab command-line tool
 brew "k9s"                                  # Kubernetes CLI To Manage Your Clusters In Style!
 brew "kubectl"                              # Kubernetes command-line interface
 brew "kubectx"                              # Tool that can switch between kubectl contexts easily and create aliases
