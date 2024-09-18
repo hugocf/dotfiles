@@ -11,7 +11,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-08-26T06:15:27Z</date>
+	<date>2024-09-17T09:29:59Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>2766913725</integer>
 	<key>allowAnyShortcut</key>
@@ -84,7 +84,7 @@
 		<integer>917504</integer>
 	</dict>
 	<key>lastVersion</key>
-	<string>88</string>
+	<string>89</string>
 	<key>launchOnLogin</key>
 	<true/>
 	<key>leftHalf</key>
