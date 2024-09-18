@@ -14,6 +14,7 @@ main() {
 
 all_manual_settings() {
     set_1password_settings
+    set_notes_settings
     set_shortcuts_settings
 }
 
@@ -30,6 +31,12 @@ set_1password_settings() {
     h2 "1Password Chrome Extension"
     echo "Chrome Profile [each] ➤ chrome://extensions/shortcuts"
     echo "                      ➤ Activate the extension: ${bold}⇧ ⌘ P${reset}"
+}
+
+set_notes_settings() {
+    h2 "Notes"
+    echo "Settings  ➤ Sort notes by: ${bold}Title${reset}"
+    echo "          ➤ ${bold}ON${reset} Use Touch ID [use same pwd as personal login]"
 }
 
 set_shortcuts_settings() {
