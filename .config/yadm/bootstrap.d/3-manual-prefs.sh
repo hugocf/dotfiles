@@ -27,6 +27,9 @@ set_1password_settings() {
     echo "Privacy   ➤ ${bold}ON${reset} Check for vulnerable passwords"
     echo "Developer ➤ ${bold}ON${reset} Use the SSH Agent"
     echo "          ➤ ${bold}ON${reset} Integrate with 1Password CLI"
+    echo "[Create a New Password]"
+    echo "          ➤ Characters: ${bold}32${reset} "
+    echo "          ➤ Symbols:    ${bold}ON${reset} "
 
     h2 "1Password Chrome Extension"
     echo "Chrome Profile [each] ➤ chrome://extensions/shortcuts"
