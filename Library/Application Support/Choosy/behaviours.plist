@@ -61,7 +61,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "facebook.com" OR URL CONTAINS "instagram.com" OR URL CONTAINS "linkedin.com" OR URL CONTAINS "slack.com" OR URL CONTAINS "twitter.com" OR URL CONTAINS "youtube.com" OR URL CONTAINS "youtu.be"</string>
+		<string>URL CONTAINS "facebook.com" OR URL CONTAINS "instagram.com" OR URL CONTAINS "linkedin.com" OR URL CONTAINS "slack.com" OR URL CONTAINS "twitter.com" OR URL CONTAINS "x.com" OR URL CONTAINS "youtube.com" OR URL CONTAINS "youtu.be"</string>
 		<key>title</key>
 		<string>Social Media</string>
 	</dict>
