@@ -78,6 +78,7 @@ setup_xcode_license() {
     fi
 }
 
+# FIXME: Seems like this is failing on an upgrade; manual fix is: brew reinstall thingsmacsandboxhelper
 setup_things_helper() {
     if [[ -e "/Applications/ThingsMacSandboxHelper.app" ]]; then
         echo "Things Helper needs setup..."
