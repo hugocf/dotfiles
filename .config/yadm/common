@@ -34,6 +34,8 @@ confirm_action() {
     fi
 }
 
+# TODO: Change reporting message to "Remove quarantine from apps"
+# TODO: Move this function to zsh functions
 remove_path_extension() {
     local full_path full_name file_name
     full_path=$1
