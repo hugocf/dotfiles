@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+defaults_domains() {
+    local filter="$1"
+    defaults domains | tr ',' '\n' | sort | grep -i "$filter"
+}
+
 yadm_check_changes() {
     yadm status --porcelain | cut -c4- | while read -r filename; do
         if [[ "$filename" == *.plist && "$(file --brief --mime "$filename")" == application/octet-stream* ]]; then
