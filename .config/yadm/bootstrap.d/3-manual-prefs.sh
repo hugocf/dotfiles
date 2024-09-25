@@ -14,6 +14,7 @@ main() {
 
 all_manual_settings() {
     set_1password_settings
+    set_facetime_settings
     set_notes_settings
     set_shortcuts_settings
 }
@@ -34,6 +35,13 @@ set_1password_settings() {
     h2 "1Password Chrome Extension"
     echo "Chrome Profile [each] ➤ chrome://extensions/shortcuts"
     echo "                      ➤ Activate the extension: ${bold}⇧ ⌘ P${reset}"
+}
+
+set_facetime_settings() {
+    if [[ "$(yadm config --get local.class)" == "Work" ]]; then
+        h2 "FaceTime"
+        echo "General   ➤ ${bold}OFF${reset} Calls From iPhone"
+    fi
 }
 
 set_notes_settings() {
