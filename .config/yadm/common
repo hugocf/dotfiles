@@ -2,7 +2,7 @@
 # shellcheck shell=bash
 
 readonly CONFIG="$BASEDIR/../.."
-readonly ROOT="$BASEDIR/../../.."
+readonly HOME_REL="$BASEDIR/../../.."
 
 readonly bold=$(tput bold)
 readonly invert=$(tput setaf 0; tput setab 7)
