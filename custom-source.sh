@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 defaults_domains() {
     local filter="$1"
@@ -26,6 +26,9 @@ pl2xml() {
     plutil -convert xml1 "$xml"
     echo "Converted copy to xml in $xml"
 }
+
+typeset -U path
+path=(~/.local/bin/scripts $path)
 
 alias plcat='plutil -convert xml1 -o -'
 alias plread=plcat
