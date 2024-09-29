@@ -33,5 +33,6 @@ alias plread=plcat
 alias g=git
 alias y=yadm
 alias ll='ls -lh'
+alias lla='ll -a'
 
 [[ -f "$HOME/custom-source.work.sh" ]] && source "$HOME/custom-source.work.sh" || :
