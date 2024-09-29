@@ -11,6 +11,7 @@ main() {
     setup_xcode_license
     install_apps
     setup_post_install
+    install_myrepos
     cleanup_apps
 }
 
@@ -23,8 +24,8 @@ setup_post_install() {
     h2 "Post-install Setup"
     remove_quarantines
     setup_1password_cli
-    setup_xcode_directory
     setup_things_helper
+    setup_xcode_directory
 }
 
 remove_quarantines() {
@@ -49,6 +50,14 @@ setup_1password_cli() {
         echo -e "\t${bold}1Password Settings${reset}"
         echo -e "\tDeveloper ➤ ${bold}ON${reset} Integrate with 1Password CLI"
         pause
+    fi
+}
+
+# FIXME: Seems like this is failing on an upgrade; manual fix is: brew reinstall thingsmacsandboxhelper
+setup_things_helper() {
+    if [[ -e "/Applications/ThingsMacSandboxHelper.app" ]]; then
+        echo "Things Helper needs setup..."
+        open /Applications/ThingsMacSandboxHelper.app
     fi
 }
 
@@ -78,12 +87,9 @@ setup_xcode_license() {
     fi
 }
 
-# FIXME: Seems like this is failing on an upgrade; manual fix is: brew reinstall thingsmacsandboxhelper
-setup_things_helper() {
-    if [[ -e "/Applications/ThingsMacSandboxHelper.app" ]]; then
-        echo "Things Helper needs setup..."
-        open /Applications/ThingsMacSandboxHelper.app
-    fi
+install_myrepos() {
+    echo "Checkout common local repos"
+    mr --directory "$HOME_REL"/Documents update
 }
 
 cleanup_apps() {
