@@ -89,7 +89,7 @@ setup_xcode_license() {
 
 install_myrepos() {
     echo "Checkout common local repos"
-    mr --directory "$HOME_REL"/Documents update
+    cd "$HOME_REL"/Documents && mr update
 }
 
 cleanup_apps() {
