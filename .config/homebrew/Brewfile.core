@@ -46,7 +46,6 @@ cask "thingsmacsandboxhelper"               # Helper application for Things [all
 cask "typora"                               # Configurable document editor that supports Markdown
 cask "visual-studio-code"                   # Open-source code editor
 
-mas "1Password for Safari", id: 1569813296  # 1Password is the world’s most loved password manager, trusted by millions of individuals and over 80,000 businesses to keep their secrets safe.
 mas "Streaks", id: 963034692                # STREAKS. The to-do list that helps you form good habits.
 mas "The Unarchiver", id: 425424353         # The Unarchiver is a small and easy to use program that can unarchive many different kinds of archive files. It will open common formats such as Zip, RAR (includ…
 mas "Things", id: 904280696                 # Get things done! The award-winning Things app helps you plan your day, manage your projects, and make real progress toward your goals.
