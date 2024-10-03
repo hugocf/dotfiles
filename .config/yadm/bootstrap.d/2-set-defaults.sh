@@ -61,7 +61,6 @@ system_touchid_sudo() {
 set_application_settings() {
     h2 "Application Settings"
     app_gitx_settings
-    app_maccy_settings
     app_textedit_open_plain_text
 }
 
@@ -70,17 +69,6 @@ app_gitx_settings() {
     defaults write net.phere.GitX PBCommitMessageViewVerticalBodyLineLength 69
     defaults write net.phere.GitX PBCommitMessageViewVerticalLineLength 72
     defaults write net.phere.GitX SUEnableAutomaticChecks 1
-}
-
-app_maccy_settings() {
-    echo "Maccy visual tweaks, paste and search behaviour, auto update, shortcut key"
-    defaults write org.p0deje.Maccy imageMaxHeight 16
-    defaults write org.p0deje.Maccy pasteByDefault 1
-    defaults write org.p0deje.Maccy searchMode fuzzy
-    defaults write org.p0deje.Maccy showInStatusBar 0
-    defaults write org.p0deje.Maccy SUEnableAutomaticChecks 1
-    # ctrl-alt-v
-    defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string '{"carbonKeyCode":9,"carbonModifiers":6144}'
 }
 
 app_textedit_open_plain_text() {

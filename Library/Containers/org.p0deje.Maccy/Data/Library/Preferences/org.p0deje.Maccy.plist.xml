@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeyboardShortcuts_delete</key>
+	<string>{"carbonKeyCode":51,"carbonModifiers":2048}</string>
+	<key>KeyboardShortcuts_pin</key>
+	<string>{"carbonModifiers":2048,"carbonKeyCode":35}</string>
+	<key>KeyboardShortcuts_popup</key>
+	<string>{"carbonKeyCode":9,"carbonModifiers":6144}</string>
+	<key>LaunchAtLogin__hasMigrated</key>
+	<true/>
+	<key>NSStatusItem Visible Item-0</key>
+	<false/>
+	<key>NSStatusItem Visible Item-1</key>
+	<false/>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>718 665 620 398 0 0 2056 1285 </string>
+	<key>NSWindow Frame com.sindresorhus.Settings.FrameAutosaveName</key>
+	<string>782 2470 482 305 -535 1329 3200 1775 </string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
+	<key>SULastCheckTime</key>
+	<date>2024-10-02T23:31:18Z</date>
+	<key>SUUpdateGroupIdentifier</key>
+	<integer>119693290</integer>
+	<key>enabledPasteboardTypes</key>
+	<array>
+		<string>public.html</string>
+		<string>public.utf8-plain-text</string>
+		<string>public.tiff</string>
+		<string>public.rtf</string>
+		<string>public.png</string>
+	</array>
+	<key>ignoredPasteboardTypes</key>
+	<array>
+		<string>com.typeit4me.clipping</string>
+		<string>Pasteboard generator type</string>
+		<string>de.petermaurer.TransientPasteboardType</string>
+		<string>net.antelle.keeweb</string>
+		<string>com.agilebits.onepassword</string>
+	</array>
+	<key>imageMaxHeight</key>
+	<string>16</string>
+	<key>migrations</key>
+	<dict>
+		<key>2024-07-01-version-2</key>
+		<true/>
+	</dict>
+	<key>pasteByDefault</key>
+	<string>1</string>
+	<key>searchMode</key>
+	<string>fuzzy</string>
+	<key>showFooter</key>
+	<true/>
+	<key>showInStatusBar</key>
+	<false/>
+	<key>showSearch</key>
+	<true/>
+	<key>showTitle</key>
+	<true/>
+	<key>windowSize</key>
+	<string>[450,800]</string>
+</dict>
+</plist>
