@@ -5,6 +5,32 @@ defaults_domains() {
     defaults domains | tr ',' '\n' | sort | grep -i "$filter"
 }
 
+# See `which things.sh` for inspiration
+things_dates() {
+    local id="$1"
+    local db=$(find ~/Library/Group\ Containers/JLMPQHK86H.com.culturedcode.ThingsMac -name 'main.sqlite' | head -1)
+    local task="
+        select
+            datetime(creationDate, 'unixepoch', 'localtime') as creationDate,
+            datetime(userModificationDate, 'unixepoch', 'localtime') as modificationDate,
+            datetime(stopDate, 'unixepoch', 'localtime') as stopDate,
+            title
+        from TMTask
+        where uuid = '$id';"
+    local checklist="
+        select
+            datetime(creationDate, 'unixepoch', 'localtime') as creationDate,
+            datetime(userModificationDate, 'unixepoch', 'localtime') as modificationDate,
+            datetime(stopDate, 'unixepoch', 'localtime') as stopDate,
+            title
+        from TMChecklistItem
+        where task = '$id'
+        order by \"index\";
+    "
+
+    sqlite3 "$db" "$task $checklist"
+}
+
 typeset -U path
 path=(~/.local/bin/scripts $path)
 
