@@ -32,3 +32,41 @@ Using symlinks circumvents all those drawbacks:
 * ✅ Lets centralise all config in under `.config/zsh/` in an universally compatible way
 
 Also, having *empty placeholders* for all the startup files that I'm not using allows for easy detection when any rogue tool adds something to them.
+
+## Functions vs Scripts
+
+When to choose one or the other?
+
+### Functions
+
+#### Characteristics
+
+* **Shell session**: Integrated with the shell
+* **Shell type**: Fixed, limited to the current shell session and not directly executable from outside the shell
+* **Shell access**: Can directly access and modify shell variables and state
+* **Execution**: Potential naming conflicts if not carefully managed
+* **Namespace**: Functions are part of the shell's namespace
+* **Speed**: Faster execution, kept in memory once loaded (but only loaded when called)
+
+#### Criteria
+
+* Good for utilities and performance-critical operations called frequently
+* When the functionality is specific to your zsh environment and needs to modify shell variables or behaviour
+* Simple, short utilities often work well as functions
+
+### Scripts
+
+#### Characteristics
+
+* **Shell session**: Spins off a new shell process
+* **Shell type**: Portable, can be used across different shells and environments
+* **Shell access**: State isn't preserved between executions
+* **Execution**: Can be run directly from the command line or other scripts.
+* **Namespace**: Each script is a standalone entity with its own environment
+* **Speed**: Makes it slower to startup
+
+#### Criteria
+
+* Good for more general utilities
+* When you need the code to run in multiple environments or shells
+* More complex operations work well as separate scripts
