@@ -1,2 +1,18 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
-source /opt/homebrew/opt/asdf/libexec/asdf.sh
+main() {
+    shell_autoload_functions
+    apps_configure_env
+}
+
+shell_autoload_functions() {
+    # [zsh: 17 Shell Builtin Commands](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-autoload)
+    # [zsh: 14 Expansion](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Modifiers)
+    fpath=(~/.config/zsh/functions $fpath)
+    autoload -Uz $fpath[1]/*(:t)
+}
+
+apps_configure_env() {
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    source /opt/homebrew/opt/asdf/libexec/asdf.sh
+}
+
+main

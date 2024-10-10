@@ -1,0 +1,3 @@
+# Filter list of all domains in `defaults`
+typeset filter="$1"
+defaults domains | tr ',' '\n' | sort | grep -i "$filter"
