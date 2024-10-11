@@ -1,5 +1,6 @@
 main() {
     shell_autoload_functions
+    shell_custom_path
     shell_infinite_history
     shell_source_aliases
     apps_configure_env
@@ -10,6 +11,10 @@ main() {
 shell_autoload_functions() {
     fpath=(~/.config/zsh/functions $fpath)
     autoload -Uz $fpath[1]/*(:t)
+}
+
+shell_custom_path() {
+    path=(~/.local/bin/scripts $path)
 }
 
 # [zsh: 15 Paramenters](https://zsh.sourceforge.io/Doc/Release/Parameters.html#Parameters-Used-By-The-Shell)
