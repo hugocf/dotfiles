@@ -1,15 +1,30 @@
-# [zsh: 17 Shell Builtin Commands](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-autoload)
-# [zsh: 14 Expansion](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Modifiers)
-
 main() {
     shell_autoload_functions
+    shell_infinite_history
     shell_source_aliases
     apps_configure_env
 }
 
+# [zsh: 17 Shell Builtin Commands](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-autoload)
+# [zsh: 14 Expansion](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Modifiers)
 shell_autoload_functions() {
     fpath=(~/.config/zsh/functions $fpath)
     autoload -Uz $fpath[1]/*(:t)
+}
+
+# [zsh: 15 Paramenters](https://zsh.sourceforge.io/Doc/Release/Parameters.html#Parameters-Used-By-The-Shell)
+# [zsh: 16 Options](https://zsh.sourceforge.io/Doc/Release/Options.html#History)
+shell_infinite_history() {
+    # man zshparam
+    export HISTSIZE=10000000
+    export SAVEHIST=$HISTSIZE
+    # man zshoptions
+    setopt EXTENDED_HISTORY
+    setopt HIST_FIND_NO_DUPS
+    setopt HIST_IGNORE_DUPS
+    setopt HIST_IGNORE_SPACE
+    setopt HIST_VERIFY
+    setopt SHARE_HISTORY    # https://apple.stackexchange.com/a/427568
 }
 
 shell_source_aliases() {
