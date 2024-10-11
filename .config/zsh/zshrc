@@ -1,13 +1,19 @@
+# [zsh: 17 Shell Builtin Commands](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-autoload)
+# [zsh: 14 Expansion](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Modifiers)
+
 main() {
     shell_autoload_functions
+    shell_source_aliases
     apps_configure_env
 }
 
 shell_autoload_functions() {
-    # [zsh: 17 Shell Builtin Commands](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-autoload)
-    # [zsh: 14 Expansion](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Modifiers)
     fpath=(~/.config/zsh/functions $fpath)
     autoload -Uz $fpath[1]/*(:t)
+}
+
+shell_source_aliases() {
+    [[ -f $(get_script_dir)/aliases ]] && source $(get_script_dir)/aliases || :
 }
 
 apps_configure_env() {

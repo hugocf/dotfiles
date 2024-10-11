@@ -1,0 +1,6 @@
+# Get the script absolute path, resolving symlinks
+# shellcheck disable=SC2168 shell=bash
+
+local source=${funcfiletrace[1]%:*}
+local script_dir=${source:A:h}
+echo "$script_dir"
