@@ -1,0 +1,4 @@
+# Check whether a command is accessible
+# shellcheck disable=SC2168 shell=bash
+
+command -v "$1" &> /dev/null

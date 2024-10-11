@@ -33,10 +33,6 @@ dash() {
     open dash://$1
 }
 
-exist() {
-    command -v "$1" &> /dev/null
-}
-
 find-resource-forks() {
     local what=${1:-.}
     find $what -exec ls -l {}/..namedfork/rsrc \; 2> /dev/null
@@ -177,58 +173,3 @@ week-days-pt() {
     date -v+tuesday   +"%Y-%m-%d Ter"
     date -v+monday    +"%Y-%m-%d Seg"
 }
-
-# DEFAULTS
-alias grep='grep --color'
-alias diff='diff --color=always'
-alias ll='ls -lhp'
-alias lld='ls -lh -d */'
-alias llf='ll | grep -v "^d"'
-alias lsd='ls -d */'
-alias lsf='ls -p | grep -v "/"'
-alias psql='psql -U postgres'
-exist trash && alias rm='trash -F' || alias rm='rm -i'
-alias top='top -o cpu'
-
-# TOOLS
-alias chrome='open -na "Google Chrome" --args --new-window'  # https://apple.stackexchange.com/a/305902
-alias clean-tmp-all='clean-tmp-bak; clean-tmp-ds; clean-tmp-meta'
-alias clean-tmp-bak='find . \( -name ".#*" -or -name "*~" \) -exec rm {} \;'
-alias clean-tmp-ds='find . \( -name .DS_Store -or -name ._.DS_Store \) -exec rm {} \;'
-alias clean-tmp-meta='find . -name "._*" -exec rm {} \;'
-alias clean-mov-thumbs='find . -name "*.MOV" | sed -e "s/\.MOV/.JPG/" | xargs -I{} rm "{}"'
-alias convert-xls-csv='/Applications/LibreOffice.app/Contents/MacOS/soffice --invisible --convert-to csv'
-alias edit-brew='code ~/.dotfiles/install/Brewfile'
-alias edit-dev="open . && gitx && chrome && code ."
-alias edit-hosts='mate /etc/hosts'
-alias edit-vhosts='mate /etc/apache2/extra/httpd-vhosts.conf'
-alias find-tmp='find . -name .DS_Store -or -name ._.DS_Store -or -name ".#*" -or -name "*~" -or -name "._*"'
-alias flush-dns='su admin -c "sudo dscacheutil -flushcache"'
-alias hide-desktop-icons='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
-alias login-window='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
-alias logout-user="osascript -e 'tell application \"System Events\" to log out'"
-alias nwmon='sudo tcpdump -i en0'
-alias nwout='sudo tcpdump -Q "if=en0 and dir=out"'
-alias nwin='sudo tcpdump -Q "if=en0 and dir=in"'
-alias restart-apache='su admin -c "sudo apachectl -k restart"'
-alias restart-pow='touch ~/.pow/restart.txt'
-alias rot13='tr "0-9a-zA-Z" "5-90-4n-za-mN-ZA-M"'
-alias show-desktop-icons='defaults delete com.apple.finder CreateDesktop; killall Finder'
-alias typora="open -a typora"
-
-# http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
-alias fix-open-with='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
-
-# VERSION CONTROL
-alias cvsst='cvs st | grep -E "\?|Status:" | grep -v "Up-to-date"; date'
-alias cvsup='cvs -q update -P -d ; date'
-alias cvsupC='cvs update -P -d -C ; date'
-alias svnadd='svn st | grep \? | cut -c2- | xargs svn add'
-alias g='git'
-alias y='yadm'
-
-# PROXY/SOCKS
-alias tunnel-create="ssh -D 1080 -f -N digitalocean"    # SOCKS port
-alias tunnel-list="ps -el | grep 'ssh -D'"
-# http://www.chromium.org/developers/design-documents/network-stack/socks-proxy
-alias tunnel-chrome='open /Applications/Google\ Chrome.app --args --incognito --proxy-server="socks5://localhost:1080" --host-resolver-rules="MAP * ~NOTFOUND , EXCLUDE localhost"'

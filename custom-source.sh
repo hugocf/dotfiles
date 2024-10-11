@@ -15,17 +15,6 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_VERIFY
 setopt SHARE_HISTORY    # https://apple.stackexchange.com/a/427568
-# user aliases
-alias history='fc -l -iD 1 | less +G'
-alias h=history
-
-alias plcat='plutil -convert xml1 -o -'
-alias plread=plcat
-
-alias g=git
-alias y=yadm
-alias ll='ls -lh'
-alias lla='ll -a'
 
 [[ -f "$HOME/custom-source.work.sh" ]] && source "$HOME/custom-source.work.sh" || :
 [[ -f "$HOME/custom-source.yadm.sh" ]] && source "$HOME/custom-source.yadm.sh" || :
