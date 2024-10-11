@@ -6,7 +6,7 @@ yadm_check_changes() {
             pl2xml "$filename"
         fi
     done
-    yadm diff
+    yadm diff --color-words
 }
 
 yadm_restore_unstaged_plist() {
