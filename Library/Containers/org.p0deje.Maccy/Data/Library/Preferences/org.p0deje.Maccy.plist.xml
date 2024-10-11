@@ -15,37 +15,57 @@
 	<key>NSStatusItem Visible Item-1</key>
 	<false/>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>718 665 620 398 0 0 2056 1285 </string>
+	<string>590 545 620 398 0 0 1800 1125 </string>
 	<key>NSWindow Frame com.sindresorhus.Settings.FrameAutosaveName</key>
-	<string>782 2470 482 305 -535 1329 3200 1775 </string>
+	<string>634 511 532 460 0 0 1800 1125 </string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-10-02T23:31:18Z</date>
+	<date>2024-10-11T20:04:37Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>119693290</integer>
 	<key>enabledPasteboardTypes</key>
 	<array>
-		<string>public.html</string>
 		<string>public.utf8-plain-text</string>
-		<string>public.tiff</string>
 		<string>public.rtf</string>
+		<string>public.html</string>
 		<string>public.png</string>
+		<string>public.tiff</string>
 	</array>
+	<key>historySize</key>
+	<integer>200</integer>
 	<key>ignoredPasteboardTypes</key>
 	<array>
 		<string>com.typeit4me.clipping</string>
-		<string>Pasteboard generator type</string>
-		<string>de.petermaurer.TransientPasteboardType</string>
 		<string>net.antelle.keeweb</string>
 		<string>com.agilebits.onepassword</string>
+		<string>Pasteboard generator type</string>
+		<string>de.petermaurer.TransientPasteboardType</string>
 	</array>
 	<key>imageMaxHeight</key>
 	<string>16</string>
 	<key>migrations</key>
 	<dict>
+		<key>2020-04-25-allow-custom-ignored-types</key>
+		<true/>
+		<key>2020-06-19-use-keyboardshortcuts</key>
+		<true/>
+		<key>2020-09-01-ignore-keeweb</key>
+		<true/>
+		<key>2021-02-20-allow-to-customize-supported-types</key>
+		<true/>
+		<key>2021-06-28-add-title-to-history-item</key>
+		<true/>
+		<key>2021-10-16-remove-dynamic-pasteboard-types</key>
+		<true/>
+		<key>2022-08-01-rename-suppress-clear-alert</key>
+		<true/>
+		<key>2022-11-14-add-html-rtf-to-supported-types</key>
+		<true/>
+		<key>2023-01-22-add-regexp-search-mode</key>
+		<true/>
 		<key>2024-07-01-version-2</key>
 		<true/>
 	</dict>
@@ -61,6 +81,8 @@
 	<true/>
 	<key>showTitle</key>
 	<true/>
+	<key>suppressClearAlert</key>
+	<false/>
 	<key>windowSize</key>
 	<string>[450,800]</string>
 </dict>
