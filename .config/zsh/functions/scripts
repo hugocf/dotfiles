@@ -1,4 +1,6 @@
 # List custom scripts in the path
+# shellcheck disable=SC2168 shell=bash
+
 readonly SCRIPTS_DIR="$HOME/.local/bin/scripts/"
 
 echo "Custom scripts in $SCRIPTS_DIR"

@@ -1,9 +1,9 @@
 # See `things.sh` for inspiration
-typeset id db task checklist
+# shellcheck disable=SC2168 shell=bash
 
-id="$1"
-db=$(find ~/Library/Group\ Containers/JLMPQHK86H.com.culturedcode.ThingsMac -name 'main.sqlite' | head -1)
-task="
+local id="$1"
+local db="$(find ~/Library/Group\ Containers/JLMPQHK86H.com.culturedcode.ThingsMac -name 'main.sqlite' | head -1)"
+local task="
     select
         datetime(creationDate, 'unixepoch', 'localtime') as creationDate,
         datetime(userModificationDate, 'unixepoch', 'localtime') as modificationDate,
@@ -11,7 +11,7 @@ task="
         title
     from TMTask
     where uuid = '$id';"
-checklist="
+local checklist="
     select
         datetime(creationDate, 'unixepoch', 'localtime') as creationDate,
         datetime(userModificationDate, 'unixepoch', 'localtime') as modificationDate,

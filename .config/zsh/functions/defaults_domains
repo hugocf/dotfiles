@@ -1,3 +1,5 @@
 # Filter list of all domains in `defaults`
-typeset filter="$1"
+# shellcheck disable=SC2168 shell=bash
+
+local filter="$1"
 defaults domains | tr ',' '\n' | sort | grep -i "$filter"
