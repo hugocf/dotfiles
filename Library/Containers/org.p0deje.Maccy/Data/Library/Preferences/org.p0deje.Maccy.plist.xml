@@ -17,7 +17,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>590 545 620 398 0 0 1800 1125 </string>
 	<key>NSWindow Frame com.sindresorhus.Settings.FrameAutosaveName</key>
-	<string>634 511 532 460 0 0 1800 1125 </string>
+	<string>634 498 510 473 0 0 1800 1125 </string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
@@ -70,7 +70,7 @@
 		<true/>
 	</dict>
 	<key>pasteByDefault</key>
-	<string>1</string>
+	<true/>
 	<key>searchMode</key>
 	<string>fuzzy</string>
 	<key>showFooter</key>
