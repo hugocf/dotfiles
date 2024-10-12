@@ -1,9 +1,15 @@
 # List custom scripts in the path
 # shellcheck disable=SC2168 shell=bash
 
-readonly SCRIPTS_DIR="$HOME/.local/bin/scripts/"
+list_executable() {
+    local what=$1
+    local where=$2
+    echo
+    echo "Custom $what in $where"
+    find "$where" -maxdepth 1 -type f -perm +111 -print0 | sort -z | while IFS= read -r -d '' file; do
+        echo "    ${file:t}"
+    done
+}
 
-echo "Custom scripts in $SCRIPTS_DIR"
-find "$SCRIPTS_DIR" -maxdepth 1 -type f -perm +111 -print0 | sort -z | while IFS= read -r -d '' file; do
-    echo "  ${file:t}"
-done
+list_executable functions "$(get_script_dir)"
+list_executable scripts "$HOME/.local/bin/scripts/"
