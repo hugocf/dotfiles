@@ -42,3 +42,6 @@ apps_configure_env() {
 }
 
 main
+
+# TODO: Move to work-specific repo and load from there
+[[ -f "$HOME/custom-source.work.sh" ]] && source "$HOME/custom-source.work.sh" || :
