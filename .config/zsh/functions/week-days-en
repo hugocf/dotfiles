@@ -1,0 +1,10 @@
+# shellcheck disable=SC2168 shell=bash
+
+date +"Week %V"
+date -v+sunday    +"%Y-%m-%d %a"
+date -v+saturday  +"%Y-%m-%d %a"
+date -v+friday    +"%Y-%m-%d %a"
+date -v+thursday  +"%Y-%m-%d %a"
+date -v+wednesday +"%Y-%m-%d %a"
+date -v+tuesday   +"%Y-%m-%d %a"
+date -v+monday    +"%Y-%m-%d %a"

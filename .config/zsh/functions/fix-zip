@@ -1,0 +1,4 @@
+# shellcheck disable=SC2168 shell=bash
+
+zip -d "$1" __MACOSX/* *.DS_Store*
+unzip -t "$1"

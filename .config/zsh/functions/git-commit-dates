@@ -1,0 +1,10 @@
+# shellcheck disable=SC2168 shell=bash
+
+# On a given commit:
+# git-commit-dates "$(date +'%b %d') 01:23"
+local default=$(date +'%b %d %H:%M')
+local date_time=$(ask_if_empty "${*:-}" "$default" "Enter the date and time:" "")
+
+export GIT_COMMITTER_DATE="Day $date_time:$(date +%S) $(date +%Y)"  # envar => CommitDate
+git commit --amend --no-edit --date="$GIT_COMMITTER_DATE"       # param => AuthorDate
+git show --format=fuller | head

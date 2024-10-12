@@ -7,7 +7,6 @@ readonly CALLDIR=$(pwd)                         # where it was called from
 # Do the work
 cd "$BASEDIR"
 
-source ./bash/bash_aliases
 if ! isadmin $USER; then
     echo "ERROR: User $USER must be an Administrator!"
     exit 1

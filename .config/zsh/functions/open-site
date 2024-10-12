@@ -1,0 +1,26 @@
+# shellcheck disable=SC2168 shell=bash
+
+current_dir="${PWD##*/}"
+
+# Does ~/Sites link here?
+links_sites="$(ls -l ~/Sites | grep "$current_dir" | tr -s ' ' | cut -d ' ' -f 9)"
+links_array=( $links_sites )
+links_count=${#links_array[@]}
+if [[ $links_count == 1 ]]; then
+    open "http://${links_array[0]}.dev"
+    return
+fi
+
+# Is there a web location file to open?
+shortcut_file=$(ls -1 *.{webloc,url} 2>/dev/null | head -1)
+if [[ -a "$shortcut_file" ]]; then
+    open "$shortcut_file";
+    return
+fi
+
+# Oops, something's wrong...
+if [[ $links_count > 1 ]]; then
+    echo "Current directory '$current_dir' is used in too many ~/Sites"
+else
+    echo "Didn't find any ~/Sites pointing to the current directory '$current_dir' nor any web location files inside it"
+fi

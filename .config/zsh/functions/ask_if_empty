@@ -1,0 +1,14 @@
+# shellcheck disable=SC2168 shell=bash
+
+# [zsh: 17 Shell Builtin Commands#read](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-read)
+local value="$1"
+local default="$2"
+local message="$3"
+# -s to omit output (e.g. pwds)
+# -q for simple char y|n
+local -a options=("${@:4}")
+if [[ -z "$value" ]]; then
+    [[ "$BASH_VERSION" ]] && read -r $options -p "$message [$default] " value
+    [[ "$ZSH_VERSION" ]] && read -r $options "value?$message [$default] "
+fi
+echo "${value:-$default}"

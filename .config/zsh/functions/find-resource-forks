@@ -1,0 +1,4 @@
+# shellcheck disable=SC2168 shell=bash
+
+local what=${1:-.}
+find $what -exec ls -l {}/..namedfork/rsrc \; 2> /dev/null

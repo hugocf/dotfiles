@@ -1,0 +1,5 @@
+# shellcheck disable=SC2168 shell=bash
+
+# Bash Function to open man pages in new terminal window - Mac OS X Hints
+# http://hints.macworld.com/article.php?story=20131226153018801
+if [ $# -eq 1 ]; then open x-man-page://$1 ; elif [ $# -eq 2 ] ; then open x-man-page://$1/$2 ; fi

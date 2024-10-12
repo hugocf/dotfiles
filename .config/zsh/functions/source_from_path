@@ -1,0 +1,4 @@
+# shellcheck disable=SC2168 shell=bash
+
+local path="$1"
+[[ -r "$1" ]] && source "$1"

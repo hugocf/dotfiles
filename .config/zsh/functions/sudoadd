@@ -1,0 +1,4 @@
+# shellcheck disable=SC2168 shell=bash
+
+local user="$1"
+sudoaupdate -a $user

@@ -1,0 +1,6 @@
+# shellcheck disable=SC2168 shell=bash
+
+local flag="$1"
+local user="$2"
+sudo dseditgroup -o edit $flag $user -t user admin
+sudo dseditgroup -o edit $flag $user -t user wheel
