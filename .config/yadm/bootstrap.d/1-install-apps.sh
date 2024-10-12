@@ -30,13 +30,11 @@ setup_post_install() {
 
 remove_quarantines() {
     remove_from_app() {
-        local full_path app_name
-        full_path=$1
-        app_name=$(remove_path_extension "$full_path")
-        echo "Remove quarantine for $app_name"
+        local full_path=$1
         xattr -r -d com.apple.quarantine "$full_path"
     }
 
+    echo "Remove quarantine from apps"
     remove_from_app "/Applications/GitX.app"
     remove_from_app "/Applications/QLMarkdown.app"
     remove_from_app "/Applications/Syntax Highlight.app"

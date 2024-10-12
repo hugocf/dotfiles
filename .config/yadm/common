@@ -33,13 +33,3 @@ confirm_action() {
         eval "$skipped_action"
     fi
 }
-
-# TODO: Change reporting message to "Remove quarantine from apps"
-# TODO: Move this function to zsh functions
-remove_path_extension() {
-    local full_path full_name file_name
-    full_path=$1
-    full_name="${full_path##*/}"    # remove path
-    file_name="${full_name%.*}"     # remove extension
-    echo "$file_name"
-}
