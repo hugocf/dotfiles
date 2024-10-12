@@ -1,6 +1,6 @@
-# List custom scripts in the path
 # shellcheck disable=SC2168 shell=bash
 
+# List custom functions and scripts in known locations
 list_executable() {
     local what=$1
     local where=$2
