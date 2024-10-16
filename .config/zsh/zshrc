@@ -1,13 +1,13 @@
 main() {
     apps_configure_env
     shell_autoload_functions
+    shell_completions
     shell_custom_path
     shell_infinite_history
     shell_source_aliases
 }
 
 apps_configure_env() {
-    eval "$(/opt/homebrew/bin/brew shellenv)"
     source /opt/homebrew/opt/asdf/libexec/asdf.sh
 }
 
@@ -16,6 +16,12 @@ apps_configure_env() {
 shell_autoload_functions() {
     fpath=(~/.config/zsh/functions $fpath)
     autoload -Uz $fpath[1]/*(:t)
+}
+
+# https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+shell_completions() {
+    autoload -Uz compinit
+    compinit
 }
 
 shell_custom_path() {
