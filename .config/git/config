@@ -46,7 +46,6 @@
 	attributesFile = ~/.config/git/attributes   # default
 	autocrlf = input
 	compression = 9
-	editor = code --wait
 	excludesFile = ~/.config/git/ignore         # default
 [diff]
 	renames = copies

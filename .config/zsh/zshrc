@@ -1,15 +1,23 @@
 main() {
-    apps_configure_env
+    apps_configure_envs
+    apps_configure_thefuck
     shell_autoload_functions
     shell_completions
+    shell_custom_aliases
     shell_custom_path
+    shell_ignore_cli_comments
     shell_infinite_history
-    shell_source_aliases
+    shell_user_extensions
 }
 
-apps_configure_env() {
+apps_configure_envs() {
     [[ -f $(brew --prefix)/opt/asdf/libexec/asdf.sh ]] && source $(brew --prefix)/opt/asdf/libexec/asdf.sh
     [[ -f $(brew --prefix)/etc/profile.d/autojump.sh ]] && source $(brew --prefix)/etc/profile.d/autojump.sh
+}
+
+apps_configure_thefuck() {
+    eval $(thefuck --alias)
+    export THEFUCK_REQUIRE_CONFIRMATION='false'
 }
 
 # [zsh: 17 Shell Builtin Commands#autoload](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-autoload)
@@ -25,8 +33,16 @@ shell_completions() {
     compinit
 }
 
+shell_custom_aliases() {
+    [[ -f $(get_script_dir)/aliases ]] && source $(get_script_dir)/aliases || :
+}
+
 shell_custom_path() {
-    path=(~/.local/bin/scripts $path)
+    path=($LOCAL_SCRIPTS $path)
+}
+
+shell_ignore_cli_comments() {
+    setopt INTERACTIVE_COMMENTS
 }
 
 # [zsh: 15 Parameters](https://zsh.sourceforge.io/Doc/Release/Parameters.html#Parameters-Used-By-The-Shell)
@@ -44,8 +60,9 @@ shell_infinite_history() {
     setopt SHARE_HISTORY    # https://apple.stackexchange.com/a/427568
 }
 
-shell_source_aliases() {
-    [[ -f $(get_script_dir)/aliases ]] && source $(get_script_dir)/aliases || :
+shell_user_extensions() {
+    [[ -f $(brew --prefix)/opt/spaceship/spaceship.zsh ]] && source $(brew --prefix)/opt/spaceship/spaceship.zsh
+
 }
 
 main

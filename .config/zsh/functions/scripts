@@ -12,4 +12,4 @@ list_executable() {
 }
 
 list_executable functions "$(get_script_dir)"
-list_executable scripts "$HOME/.local/bin/scripts/"
+list_executable scripts "$LOCAL_SCRIPTS"

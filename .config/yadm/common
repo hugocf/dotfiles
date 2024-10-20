@@ -4,6 +4,9 @@
 readonly CONFIG="$BASEDIR/../.."
 readonly HOME_REL="$BASEDIR/../../.."
 
+# [`tput` usage`](https://stackoverflow.com/a/20983251)
+# [colour vars](https://unix.stackexchange.com/a/559724)
+# `man 5 terminfo` for list of colours
 readonly bold=$(tput bold)
 readonly invert=$(tput setaf 0; tput setab 7)
 readonly reset=$(tput sgr0)

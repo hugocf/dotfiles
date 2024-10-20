@@ -10,11 +10,10 @@ alias g='git'
 alias history='fc -l -iD 1 | less +G'
 alias h=history
 
-# Append `| column` to get `ls` style output
-alias lsa='ls -1 -a'
-alias lsd='ls -1 -d */'
-alias lsf='ls -p | grep -v "/"'
-alias lsh='lsa | grep "^\."'
+alias lsa='ls -a'
+alias lsd='ls -d */'
+alias lsf='ls -p | grep -v "/" | column'
+alias lsh='lsa | grep "^\." | column'
 
 alias ll='ls -lhp'
 alias lla='ll -a'

@@ -1,15 +1,9 @@
 # Experimental apps being tried out
 
-# TODO: drop for default zsh shell
-brew "bash-completion"                      # Programmable completion for Bash 3.2
-brew "vcprompt"                             # Provide version control info in shell prompts
-
-# TODO: replace with "visual-studio-code" + all commands `mate` ➔ `code` + core `vscode` extensions
-cask "textmate"                             # General-purpose text editor
-
 brew "git-absorb"                           # Automatic git commit --fixup
 brew "pandoc"                               # Swiss-army knife of markup format conversion
 brew "thefuck"                              # Programmatically correct mistyped console commands
+brew "spaceship"                            # Minimalistic, powerful and extremely customizable Zsh prompt
 brew "yq"                                   # Process YAML, JSON, XML, CSV and properties documents from the CLI
 
 cask "around"                               # Video calls designed for energy, ideas and action
