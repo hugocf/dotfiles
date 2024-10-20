@@ -5,6 +5,7 @@
 [includeIf "gitdir:~/Work/NewStore/"]
 	path = ~/.config/work/gitconfig
 [alias]
+	addmod = add -u
 	br = branch -a -vv
 	ci = commit
 	co = checkout
