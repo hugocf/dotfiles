@@ -66,7 +66,7 @@ shell_infinite_history() {
 
 shell_user_extensions() {
     [[ -f $(brew --prefix)/opt/spaceship/spaceship.zsh ]] && source $(brew --prefix)/opt/spaceship/spaceship.zsh
-
+    [[ -f $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 }
 
 main
