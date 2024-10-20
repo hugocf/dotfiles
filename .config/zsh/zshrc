@@ -12,8 +12,8 @@ apps_configure_env() {
     [[ -f $(brew --prefix)/etc/profile.d/autojump.sh ]] && source $(brew --prefix)/etc/profile.d/autojump.sh
 }
 
-# [zsh: 17 Shell Builtin Commands](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-autoload)
-# [zsh: 14 Expansion](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Modifiers)
+# [zsh: 17 Shell Builtin Commands#autoload](https://zsh.sourceforge.io/Doc/Release/Shell-Builtin-Commands.html#index-autoload)
+# [zsh: 14 Expansion#Modifiers](https://zsh.sourceforge.io/Doc/Release/Expansion.html#Modifiers)
 shell_autoload_functions() {
     fpath=(~/.config/zsh/functions $fpath)
     autoload -Uz $fpath[1]/*(:t)
@@ -29,8 +29,8 @@ shell_custom_path() {
     path=(~/.local/bin/scripts $path)
 }
 
-# [zsh: 15 Paramenters](https://zsh.sourceforge.io/Doc/Release/Parameters.html#Parameters-Used-By-The-Shell)
-# [zsh: 16 Options](https://zsh.sourceforge.io/Doc/Release/Options.html#History)
+# [zsh: 15 Parameters](https://zsh.sourceforge.io/Doc/Release/Parameters.html#Parameters-Used-By-The-Shell)
+# [zsh: 16 Options#History](https://zsh.sourceforge.io/Doc/Release/Options.html#History)
 shell_infinite_history() {
     # man zshparam
     export HISTSIZE=10000000
