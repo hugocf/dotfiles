@@ -64,7 +64,7 @@ setup_xcode_directory() {
     current_path=$(xcode-select --print-path)
     target_path="/Applications/Xcode.app/Contents/Developer"
 
-    if [[ "$current_path" == "$target_path" ]]; then 
+    if [[ "$current_path" == "$target_path" ]]; then
         echo "Xcode developer directory set correctly"
     else
         echo "Xcode developer directory needs changing..."
@@ -76,8 +76,8 @@ setup_xcode_license() {
     local xcode_version accepted_version
     xcode_version=$(xcodebuild -version | grep Xcode | cut -d' ' -f2)
     accepted_version=$(defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense)
-    
-    if [[ "$xcode_version" == "$accepted_version" ]]; then 
+
+    if [[ "$xcode_version" == "$accepted_version" ]]; then
         echo "Xcode license is accepted"
     else
         echo "Xcode license needs acceptance..."

@@ -26,7 +26,8 @@ confirm_action() {
     local confirmed_action="$2"
     local skipped_action="$3"
 
-    read -r -p "$question [y/N] " answer < /dev/tty
+    read -r -n1 -p "$question [y/N] " answer < /dev/tty
+    echo
     if [[ "$answer" == "y" ]]; then
         eval "$confirmed_action"
     else
