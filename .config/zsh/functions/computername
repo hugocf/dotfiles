@@ -1,0 +1,9 @@
+# shellcheck disable=SC2168 shell=bash
+
+echo "HostName: $(scutil --get HostName 2>&1)"
+echo "LocalHostName: $(scutil --get LocalHostName 2>&1)"
+echo "ComputerName: $(scutil --get ComputerName 2>&1)"
+
+ip_address=$(ipconfig getifaddr en0)
+host "$ip_address"
+# nslookup "$ip_address"
