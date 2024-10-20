@@ -23,6 +23,7 @@ install_apps() {
 setup_post_install() {
     h2 "Post-install Setup"
     remove_quarantines
+    setup_shell_path_permissions
     setup_1password_cli
     setup_things_helper
     setup_xcode_directory
@@ -38,6 +39,14 @@ remove_quarantines() {
     remove_from_app "/Applications/GitX.app"
     remove_from_app "/Applications/QLMarkdown.app"
     remove_from_app "/Applications/Syntax Highlight.app"
+}
+
+setup_shell_path_permissions() {
+    # Fix "zsh compinit: insecure directories"
+    # https://github.com/Homebrew/homebrew-core/blob/master/Formula/z/zsh-completions.rb#L49-L53
+    echo "Fix paths permissions"
+    chmod go-w '/opt/homebrew/share'
+    chmod -R go-w '/opt/homebrew/share/zsh'
 }
 
 setup_1password_cli() {

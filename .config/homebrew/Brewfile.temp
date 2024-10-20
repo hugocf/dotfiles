@@ -3,8 +3,12 @@
 brew "git-absorb"                           # Automatic git commit --fixup
 brew "pandoc"                               # Swiss-army knife of markup format conversion
 brew "thefuck"                              # Programmatically correct mistyped console commands
-brew "spaceship"                            # Minimalistic, powerful and extremely customizable Zsh prompt
 brew "yq"                                   # Process YAML, JSON, XML, CSV and properties documents from the CLI
+
+# zsh extensions
+brew "spaceship"                            # Minimalistic, powerful and extremely customizable Zsh prompt
+brew "zsh-completions"                      # Additional completion definitions for zsh
+
 
 cask "around"                               # Video calls designed for energy, ideas and action
 cask "discord"                              # Voice and text chat software
