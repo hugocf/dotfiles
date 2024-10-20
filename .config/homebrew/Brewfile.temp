@@ -9,6 +9,7 @@ brew "yq"                                   # Process YAML, JSON, XML, CSV and p
 brew "spaceship"                            # Minimalistic, powerful and extremely customizable Zsh prompt
 brew "zsh-autosuggestions"                  # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-completions"                      # Additional completion definitions for zsh
+brew "zsh-syntax-highlighting"              # Fish shell like syntax highlighting for zsh
 
 cask "around"                               # Video calls designed for energy, ideas and action
 cask "discord"                              # Voice and text chat software
