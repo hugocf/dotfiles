@@ -24,7 +24,7 @@
 	check = "!yadm_custom_action.sh check || echo 'failed'"
 	noplist = "!yadm_custom_action.sh noplist || echo 'failed'"
 [color]
-	ui = auto
+	ui = always
 [color "branch"]
 	current = yellow reverse
 	local = yellow
