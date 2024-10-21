@@ -36,9 +36,10 @@ set_1password_settings() {
 
     h2 "1Password Chrome Extension [Installed by Your Administrator]"
     echo "Chrome Profile [each]"
-    echo "Autofill… ➤ ${bold}OFF${reset} Offer to fill and save passwords"
-    echo "          ➤ ${bold}OFF${reset} Offer to save and sign with passkeys"
-    echo "          ➤ ${bold}OFF${reset} Allow caching passkey IDs in local storage"
+    echo "Autofill… ➤ chrome://password-manager/settings"
+    echo "          ➤ ${bold}OFF${reset} Offer to save passwords and passkeys"
+    echo "Keyboard… ➤ chrome://extensions/shortcuts"
+    echo "          ➤ Activate the extension: ${bold}Not set${reset}"
 }
 
 set_chrome_settings() {
