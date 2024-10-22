@@ -2,8 +2,5 @@
 [C/Code/Shell/dotfiles.git]
 checkout = git clone 'git@github.com:hugocf/dotfiles.git' 'dotfiles.git'
 
-[C/Code/Shell/scripts.git]
-checkout = git clone 'git@github.com:hugocf/scripts.git' 'scripts.git'
-
 [W/Website/ferreira.cc.git]
 checkout = git clone 'git@github.com:hugocf/ferreira.cc.git' 'ferreira.cc.git'
