@@ -17,6 +17,7 @@
 	refiso = reflog --date=iso
 	register = "!git clone $1 $(basename $1) && mr register $(basename $1)"
 	restorall = restore --worktree --staged
+	rewritehist = rebase --committer-date-is-author-date --autosquash --interactive --rebase-merges
 	shove = push --force-with-lease
 	st = status --short
 
