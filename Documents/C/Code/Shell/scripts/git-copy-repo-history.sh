@@ -8,7 +8,8 @@ main() {
     local target_dir="${3:-}"
     local target_folder="${4:-}"
 
-    cd "$target_dir"
+    cd "$source_dir"; ensure_is_git_repo
+    cd "$target_dir"; ensure_is_git_repo
     git remote add source-repo "$source_dir"
     git fetch source-repo
     git subtree add --prefix="$target_folder" source-repo "$source_branch"
@@ -28,6 +29,14 @@ usage() {
 Example:
     $(basename "$0") ./source.git main ./target.git old/repo/"
     exit 1
+}
+
+ensure_is_git_repo() {
+    local is_git_repo=$(git rev-parse --is-inside-work-tree 2> /dev/null)
+    if [[ $is_git_repo != true ]]; then
+        echo "Error: '$(pwd)' is not a git working directory. Make sure it holds a git repository."
+        exit 1
+    fi
 }
 
 main "$@"
