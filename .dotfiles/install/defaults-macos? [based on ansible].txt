@@ -1,0 +1,92 @@
+---
+- name: Ensure firewall is on
+  community.general.osx_defaults:
+    domain: com.apple.alf
+    key: globalstate
+    type: int
+    value: 1
+    state: present
+- name: Enable stealth mode on the firewall
+  community.general.osx_defaults:
+    domain: com.apple.alf
+    key: stealthenabled
+    type: bool
+    value: true
+    state: present
+
+- name: Expand save panel by default (1/2)
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSNavPanelExpandedStateForSaveMode
+    type: bool
+    value: true
+    state: present
+- name: Expand save panel by default (2/2)
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSNavPanelExpandedStateForSaveMode2
+    type: bool
+    value: true
+    state: present
+- name: Default to saving to local disk
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSDocumentSaveNewDocumentsToCloud
+    type: bool
+    value: false
+    state: present
+
+- name: Make screenshots PNGs by default
+  community.general.osx_defaults:
+    domain: com.apple.screencapture
+    key: type
+    type: string
+    value: "png"
+    state: present
+
+- name: Turn on Safari debug menu
+  community.general.osx_defaults:
+    domain: com.apple.Safari
+    key: IncludeInternalDebugMenu
+    type: bool
+    value: true
+    state: present
+- name: Don't automatically open downloads in Safari
+  community.general.osx_defaults:
+    domain: com.apple.Safari
+    key: AutoOpenSafeDownloads
+    type: bool
+    value: false
+    state: present
+
+- name: Turn on automatic update checks
+  community.general.osx_defaults:
+    domain: com.apple.SoftwareUpdate
+    key: AutomaticCheckEnabled
+    type: int
+    value: 1
+  become: true
+
+- name: Enable full UI navigation by keyboard
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleKeyboardUIMode
+    type: int
+    value: 3
+    state: present
+
+- name: Don't write DS_Store files to network drives
+  community.general.osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+    state: present
+
+- name: Allow AirDrop over ethernet
+  community.general.osx_defaults:
+    domain: com.apple.NetworkBrowser
+    key: BrowseAllInterfaces
+    type: bool
+    value: true
+    state: present

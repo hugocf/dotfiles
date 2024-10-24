@@ -1,3 +1,0 @@
-# shellcheck disable=SC2168 shell=bash
-
-source_from_path `brew --prefix`/$1

@@ -30,7 +30,7 @@ highlight_diff() {
 alias compare="diff -s -q -w"
 
 # Do the work
-test=../convert-csv2ynab.sh
+test=../convert_csv2ynab.sh
 cd $BASEDIR
 
 

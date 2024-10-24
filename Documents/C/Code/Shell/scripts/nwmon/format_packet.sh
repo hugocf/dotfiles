@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# 
+#
 # Formatting tool to enhance the packet output of the tcpdump utility with
 # information regarding the <pid> and <command> originating the network packet.
-# 
+#
 # It searches for the packet lan <port> number and, based on that, adds the columns:
 #   <app> <pid> (...) <cmd>
-# 
+#
 # where,
 #   <app> = name of the UNIX command associated with the process (e.g. ssh)
 #   <pid> = the process id
@@ -13,10 +13,10 @@
 #   <cmd> = command and arguments (e.g. ssh example.com)
 #
 # Useful aliases for your profile, to monitor downloads and uploads:
-#   alias nwmon='sudo tcpdump -l -q -ien1 | format-packet.sh'
-#   alias nwin='sudo tcpdump -l -q -ien1 dst `hostname -s` | format-packet.sh'
-#   alias nwout='sudo tcpdump -l -q -ien1 src `hostname -s` | format-packet.sh'
-# 
+#   alias nwmon='sudo tcpdump -l -q -ien1 | format_packet.sh'
+#   alias nwin='sudo tcpdump -l -q -ien1 dst `hostname -s` | format_packet.sh'
+#   alias nwout='sudo tcpdump -l -q -ien1 src `hostname -s` | format_packet.sh'
+#
 #
 # Created by Hugo Ferreira <hugo@ferreira.cc> on 2010-01-21.
 # Copyright (c) 2010 Hugo Ferreira. All Rights Reserved.
@@ -43,4 +43,4 @@ fi
 
 
 ###
-# sudo cp /Users/hugo/Work/Scripts\ \&\ Macros/Unix\ Shell/format-packet.sh /usr/local/bin/
+# sudo cp /Users/hugo/Work/Scripts\ \&\ Macros/Unix\ Shell/format_packet.sh /usr/local/bin/
