@@ -17,6 +17,7 @@ all_manual_settings() {
     set_chrome_settings
     set_facetime_settings
     set_notes_settings
+    set_slack_settings
     set_shortcuts_settings
 }
 
@@ -61,6 +62,33 @@ set_notes_settings() {
     h2 "Notes"
     echo "Settings      ➤ Sort notes by: ${bold}Title${reset}"
     echo "              ➤ ${bold}ON${reset} Use Touch ID [use same pwd as personal login]"
+}
+
+set_slack_settings() {
+    h2 "Slack"
+    echo "Notifications ➤ My keywords: ${bold}Hugo, Ferreira${reset}"
+    echo "              ➤ Allow notifications: ${bold}Weekdays${reset} ${bold}9:00${reset} to ${bold}18:00${reset} [default]"
+    echo "              ➤ Notification sound (messages): ${bold}None${reset}"
+    echo "              ➤ If I’m not active… ${bold}OFF${reset} Send me a mobile notification, summarising activity that I’ve missed"
+    echo "Navigation    ➤ ${bold}ON${reset} Home [default]"
+    echo "              ➤ ${bold}ON${reset} DMs"
+    echo "              ➤ ${bold}ON${reset} Activity [default]"
+    echo "              ➤ ${bold}ON${reset} Later"
+    echo "              ➤ ${bold}ON${reset} People"
+    echo "              ➤ ${bold}OFF${reset} (all others)"
+    echo "Home          ➤ Show… ${bold}ON${reset} Unread only"
+    echo "              ➤ Sort… ${bold}ON${reset} By most recent"
+    echo "              ➤ ${bold}OFF${reset} Move items with unread mentions to top of sections"
+    echo "              ➤ ${bold}OFF${reset} Organise external conversations into the External connections section"
+    echo "              ➔ See also ${bold}https://hugo.ferreira.cc/slack-inbox/${reset}"
+    echo "Appearance    ➤ Colour mode: ${bold}System${reset}"
+    echo "Messages …    ➤ Emoji Customise: ${bold}👍 🙂 🙏${reset} [:simple_smile:]"
+    echo "              ➤ In-line… ${bold}ON${reset} Even if they’re larger than 20 MB"
+    echo "Language …    ➤ Language: ${bold}English (UK)${reset}"
+    echo "Accessibility ➤ Press… ${bold}ON${reset} Move focus to the message list, only if the message field is empty [default]"
+    echo "Mark as read  ➤ When I view… ${bold}ON${reset} Start me at the newest message but leave unseen messages unread"
+    echo "              ➤ When I mark… ${bold}ON${reset} Prompt to confirm [default]"
+    echo "Advanced      ➤ Other… ${bold}OFF${reset} Send me occasional surveys via Slackbot"
 }
 
 set_shortcuts_settings() {
