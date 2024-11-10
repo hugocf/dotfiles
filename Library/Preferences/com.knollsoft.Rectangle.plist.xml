@@ -11,7 +11,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-09-17T09:29:59Z</date>
+	<date>2024-11-10T19:31:04Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>2766913725</integer>
 	<key>allowAnyShortcut</key>
@@ -69,6 +69,8 @@
 	</dict>
 	<key>hideMenubarIcon</key>
 	<true/>
+	<key>internalTilingNotified</key>
+	<true/>
 	<key>larger</key>
 	<dict>
 		<key>keyCode</key>
@@ -84,7 +86,7 @@
 		<integer>917504</integer>
 	</dict>
 	<key>lastVersion</key>
-	<string>89</string>
+	<string>90</string>
 	<key>launchOnLogin</key>
 	<true/>
 	<key>leftHalf</key>
@@ -216,6 +218,8 @@
 		<integer>393216</integer>
 	</dict>
 	<key>unsnapRestore</key>
+	<integer>2</integer>
+	<key>windowSnapping</key>
 	<integer>2</integer>
 </dict>
 </plist>
