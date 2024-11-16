@@ -5,3 +5,5 @@ export JIRA_TOKEN="op://NewStore/Atlassian - Personal Token/password"
 
 export NEWSTORE_USER=hferreira@newstore.com
 export NEWSTORE_PASS="op://NewStore/NOM - ${ENV:-Staging}/password"    # ENV=Staging|Production
+
+export WORK="$HOME/Work/NewStore/"
