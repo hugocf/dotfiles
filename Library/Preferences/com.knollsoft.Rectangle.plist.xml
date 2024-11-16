@@ -58,6 +58,8 @@
 		<key>modifierFlags</key>
 		<integer>393216</integer>
 	</dict>
+	<key>cycleSizesIsChanged</key>
+	<true/>
 	<key>disabledApps</key>
 	<string>[]</string>
 	<key>firstThird</key>
@@ -74,7 +76,7 @@
 	<key>larger</key>
 	<dict>
 		<key>keyCode</key>
-		<integer>20</integer>
+		<integer>21</integer>
 		<key>modifierFlags</key>
 		<integer>393216</integer>
 	</dict>
@@ -175,13 +177,17 @@
 		<key>modifierFlags</key>
 		<integer>393216</integer>
 	</dict>
+	<key>selectedCycleSizes</key>
+	<integer>7</integer>
 	<key>smaller</key>
 	<dict>
 		<key>keyCode</key>
-		<integer>21</integer>
+		<integer>20</integer>
 		<key>modifierFlags</key>
 		<integer>393216</integer>
 	</dict>
+	<key>subsequentExecutionMode</key>
+	<integer>0</integer>
 	<key>toggleTodo</key>
 	<dict>
 		<key>keyCode</key>
