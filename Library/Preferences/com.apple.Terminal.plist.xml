@@ -48,7 +48,7 @@
 	<key>NSWindow Frame TTInspector</key>
 	<string>1457 521 281 559 0 0 1800 1125 </string>
 	<key>NSWindow Frame TTWindow</key>
-	<string>-319 1603 899 1114 -580 1329 3200 1775 </string>
+	<string>-261 1545 899 1114 -580 1329 3200 1775 </string>
 	<key>NSWindow Frame TTWindow Basic</key>
 	<string>-535 1357 1347 861 -535 1329 3200 1775 </string>
 	<key>NSWindow Frame TTWindow Grass</key>
@@ -58,7 +58,7 @@
 	<key>NSWindow Frame TTWindow Hugo's Settings</key>
 	<string>0 4 843 509 0 0 1680 1027 </string>
 	<key>NSWindow Frame TTWindow Hugo's Solarized Dark</key>
-	<string>221 1362 1599 1736 -580 1329 3200 1775 </string>
+	<string>-580 1342 1067 1762 -580 1329 3200 1775 </string>
 	<key>NSWindow Frame TTWindow Man Page</key>
 	<string>801 1733 1277 1369 0 1329 3200 1775 </string>
 	<key>NSWindow Frame TTWindow Novel</key>
