@@ -11,7 +11,7 @@
 	co = checkout
 	last = logiso -n 20
 	loglist = log --graph --all --oneline
-	logdate = loglist --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s'	# https://stackoverflow.com/a/1441062
+	logdate = loglist --pretty=dateauthorline # https://stackoverflow.com/a/1441062
 	logiso = logdate --date=iso
 	logshort = logdate --date=short
 	refiso = reflog --date=iso
@@ -70,6 +70,8 @@
 	defaultBranch = main
 [merge]
 	log = true
+[pretty]
+	dateauthorline = format:%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s
 [pull]
 	rebase = true
 [push]
