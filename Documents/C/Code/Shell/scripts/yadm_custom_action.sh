@@ -23,8 +23,13 @@ restore_unstaged_plist() {
     yadm status --porcelain | grep -E "^(M| M|MM) .*\.plist(\.xml)?$" | cut -c4- | xargs -I{} yadm restore --staged --worktree {}
 }
 
+save_unstaged_plist() {
+    yadm status --porcelain | grep -E "^(M| M|MM) .*\.plist(\.xml)?$" | cut -c4- | xargs -I{} yadm add {}
+}
+
 case ${1:-} in
     check) check_changes ;;
     noplist) restore_unstaged_plist ;;
-    *) echo "Please choose a valid command: check, noplist" ;;
+    saveplist) save_unstaged_plist ;;
+    *) echo "Please choose a valid command: check, noplist, saveplist" ;;
 esac
