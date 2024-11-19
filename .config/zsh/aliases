@@ -2,6 +2,11 @@
 
 alias diff='diff --color=always'
 
+alias edit_brew='code $(find -s ~/.config/homebrew/ -name "Brewfile*")'
+alias edit_dev='open -R . && gitx && chrome && code .'
+alias edit_hosts='code /etc/hosts'
+alias edit_vhosts='code /etc/apache2/extra/httpd-vhosts.conf'
+
 # http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
 alias fix-open-with='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
@@ -38,10 +43,6 @@ alias clean_tmp_ds='find . \( -name .DS_Store -or -name ._.DS_Store \) -exec rm 
 alias clean_tmp_meta='find . -name "._*" -exec rm {} \;'
 alias clean_mov_thumbs='find . -name "*.MOV" | sed -e "s/\.MOV/.JPG/" | xargs -I{} rm "{}"'
 alias convert_xls_csv='/Applications/LibreOffice.app/Contents/MacOS/soffice --invisible --convert-to csv'
-alias edit_brew='code ~/.dotfiles/install/Brewfile'
-alias edit_dev="open . && gitx && chrome && code ."
-alias edit_hosts='mate /etc/hosts'
-alias edit_vhosts='mate /etc/apache2/extra/httpd-vhosts.conf'
 alias find_tmp='find . -name .DS_Store -or -name ._.DS_Store -or -name ".#*" -or -name "*~" -or -name "._*"'
 alias flush_dns='su admin -c "sudo dscacheutil -flushcache"'
 alias hide_desktop_icons='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
