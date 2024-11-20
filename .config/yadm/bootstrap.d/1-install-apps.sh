@@ -36,6 +36,7 @@ remove_quarantines() {
     }
 
     echo "Remove quarantine from apps"
+    remove_from_app "/Applications/Disk Inventory X.app"
     remove_from_app "/Applications/GitX.app"
     remove_from_app "/Applications/QLMarkdown.app"
     remove_from_app "/Applications/Syntax Highlight.app"
