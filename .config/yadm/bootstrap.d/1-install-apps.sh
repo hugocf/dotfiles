@@ -87,7 +87,7 @@ setup_xcode_license() {
     xcode_version=$(xcodebuild -version | grep Xcode | cut -d' ' -f2)
     accepted_version=$(defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense)
 
-    if [[ "$xcode_version" == "$accepted_version" ]]; then
+    if [[ "${xcode_version%.*}" == "${accepted_version%.*}" ]]; then
         echo "Xcode license is accepted"
     else
         echo "Xcode license needs acceptance..."
