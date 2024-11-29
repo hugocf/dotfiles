@@ -1,5 +1,6 @@
 # Experimental apps being tried out
 
+brew "fswatch"                              # Monitor a directory for changes and run a shell command
 brew "git-absorb"                           # Automatic git commit --fixup
 brew "pandoc"                               # Swiss-army knife of markup format conversion
 brew "thefuck"                              # Programmatically correct mistyped console commands
