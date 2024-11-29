@@ -102,10 +102,11 @@ install_myrepos() {
 
 cleanup_apps() {
     h2 "Homebrew Cleanup"
-    # returns $? = 0 (success) if there’s nothing to clean up
-    if cat $BREWFILES | brew bundle cleanup --file=-; then
+    local cleanup=$(cat $BREWFILES | brew bundle cleanup --file=-)
+    if [[ -z "$cleanup" ]]; then
         echo "Nothing to cleanup"
     else
+        echo "$cleanup"
         confirm_action "Are you sure to proceed with the listed uninstalls?" \
             "cat $BREWFILES | brew bundle cleanup --file=- --force" \
             "echo Cleanup skipped"
