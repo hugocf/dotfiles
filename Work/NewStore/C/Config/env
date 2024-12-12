@@ -1,9 +1,10 @@
 # See 1Password integration: https://developer.1password.com/docs/cli/secret-references/
 
-export JIRA_USER=hferreira@newstore.com
+export WORK="$HOME/Work/NewStore/"
+export WORK_EMAIL=hferreira@newstore.com
+
+export JIRA_USER=$WORK_EMAIL
 export JIRA_TOKEN="op://NewStore/Atlassian - Personal Token/password"
 
-export NEWSTORE_USER=hferreira@newstore.com
+export NEWSTORE_USER=$WORK_EMAIL
 export NEWSTORE_PASS="op://NewStore/NOM - ${ENV:-Staging}/password"    # ENV=Staging|Production
-
-export WORK="$HOME/Work/NewStore/"
