@@ -47,7 +47,7 @@ setup_yadm() {
 
 yadm_clone_repo() {
     if yadm status &> /dev/null; then
-        echo "yadm cloned"
+        echo "yadm repo cloned"
     else
         echo "yadm clone repo"
         yadm clone https://github.com/hugocf/dotfiles
