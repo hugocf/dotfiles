@@ -33,3 +33,5 @@ mas "GarageBand", id: 682658836             # GarageBand is the easiest way to c
 mas "Hush", id: 1544743900                  # Safari extension to browse the web free of nags to accept cookies or privacy invasive tracking.
 mas "Just Focus", id: 1142151959            # JustFocus is a simple rest reminder [menu bar Pomodoro timer]
 mas "Super Agent", id: 1568262835           # [Safari extension that] automatically fills out website’s cookie consent forms for you based on your preferences.
+
+vscode "gera2ld.markmap-vscode"             # Visualize your markdown in VSCode

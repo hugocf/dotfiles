@@ -41,7 +41,7 @@ cask "rectangle"                            # Move and resize windows using keyb
 cask "slack"                                # Team communication and collaboration software
 cask "syncthing"                            # Open source continuous file synchronization application
 cask "syntax-highlight"                     # Quicklook extension for source files
-cask "thingsmacsandboxhelper"               # Helper application for Things [allows “quick entry with autofill”]
+cask "thingsmacsandboxhelper"               # Helper application for Things [HF: allows “quick entry with autofill”]
 cask "typora"                               # Configurable document editor that supports Markdown
 cask "visual-studio-code"                   # Open-source code editor
 
@@ -49,3 +49,19 @@ mas "Streaks", id: 963034692                # STREAKS. The to-do list that helps
 mas "The Unarchiver", id: 425424353         # The Unarchiver is a small and easy to use program that can unarchive many different kinds of archive files. It will open common formats such as Zip, RAR (includ…
 mas "Things", id: 904280696                 # Get things done! The award-winning Things app helps you plan your day, manage your projects, and make real progress toward your goals.
 mas "Xcode", id: 497799835                  # Xcode includes everything developers need to create great applications for Mac, iPhone, iPad, Apple TV, Apple Watch and Apple Vision Pro. Xcode provides develop…
+
+vscode "alefragnani.bookmarks"                          # Mark lines and jump to them
+vscode "compulim.compulim-vscode-closetag"              # Quickly close last opened HTML/XML tag
+vscode "davidanson.vscode-markdownlint"                 # Markdown linting and style checking for Visual Studio Code
+vscode "eamodio.gitlens"                                # Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
+vscode "editorconfig.editorconfig"                      # EditorConfig Support for Visual Studio Code
+vscode "flesler.url-encode"                             # Allows URL-Encoding and URL-Decoding text, supports multiple selections and whole file if none
+vscode "foxundermoon.shell-format"                      # A formatter for shell scripts, Dockerfile, gitignore, dotenv, /etc/hosts, jvmoptions, and other file types
+vscode "ginfuru.ginfuru-better-solarized-dark-theme"    # A Better Solarized theme for Visual Studio Code include light and dark versions
+vscode "gruntfuggly.todo-tree"                          # Show TODO, FIXME, etc. comment tags in a tree view
+vscode "mads-hartmann.bash-ide-vscode"                  # A language server for Bash
+vscode "mechatroner.rainbow-csv"                        # Highlight CSV and TSV files, Run SQL-like queries
+vscode "redhat.vscode-xml"                              # XML Language Support by Red Hat
+vscode "redhat.vscode-yaml"                             # YAML Language Support by Red Hat, with built-in Kubernetes syntax support
+vscode "timonwong.shellcheck"                           # Integrates ShellCheck into VS Code, a linter for Shell scripts.
+vscode "yzhang.markdown-all-in-one"                     # All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
