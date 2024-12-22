@@ -5,7 +5,6 @@ tap "alexanderwillner/tap"
 
 brew "alexanderwillner/tap/things.sh"       # Simple read-only comand-line interface to your Things 3 database
 brew "asciinema"                            # Record and share terminal sessions
-brew "asdf"                                 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "autojump"                             # Shell extension to jump to frequently used directories
 brew "cliclick"                             # Tool for emulating mouse and keyboard events
 brew "exiftool"                             # Perl lib for reading and writing EXIF metadata
@@ -15,7 +14,7 @@ brew "httpie"                               # User-friendly cURL replacement (co
 brew "hugo"                                 # Configurable static site generator
 brew "jq"                                   # Lightweight and flexible command-line JSON processor
 brew "mas"                                  # Mac App Store command-line interface
-# brew "md5sha1sum"                           # Hash utilities [Note: `asdf` installs coreutils, which ads `md5sum` and `sha1sum` already]
+brew "mise"                                 # Polyglot runtime manager (asdf rust clone)
 brew "mr"                                   # Multiple Repository management tool
 brew "testdisk"                             # Powerful free data recovery utility
 brew "tldr"                                 # Simplified and community-driven man pages

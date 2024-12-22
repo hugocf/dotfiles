@@ -11,7 +11,7 @@ main() {
 }
 
 apps_configure_envs() {
-    [[ -f $(brew --prefix)/opt/asdf/libexec/asdf.sh ]] && source $(brew --prefix)/opt/asdf/libexec/asdf.sh
+    eval "$(mise activate zsh)"
     [[ -f $(brew --prefix)/etc/profile.d/autojump.sh ]] && source $(brew --prefix)/etc/profile.d/autojump.sh
 }
 
@@ -42,7 +42,7 @@ shell_custom_aliases() {
 }
 
 shell_custom_path() {
-    path=($LOCAL_SCRIPTS $path)
+    path=($LOCAL_SCRIPTS $LOCAL_BIN $path)
 }
 
 shell_ignore_cli_comments() {

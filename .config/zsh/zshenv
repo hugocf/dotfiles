@@ -1,4 +1,5 @@
-LOCAL_SCRIPTS="$HOME/.local/bin/scripts/"
+LOCAL_BIN="$HOME/.local/bin/"
+LOCAL_SCRIPTS="$LOCAL_BIN/scripts/"
 SHELL_SESSIONS_DISABLE=1    # https://apple.stackexchange.com/a/427568
 
 export EDITOR="code --wait"
