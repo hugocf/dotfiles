@@ -13,12 +13,21 @@ main() {
 }
 
 all_manual_settings() {
+    set_system_settings
     set_1password_settings
     set_chrome_settings
     set_facetime_settings
     set_notes_settings
     set_shortcuts_settings
     set_slack_settings
+}
+
+set_system_settings() {
+    h2 "System Settings"
+    echo "Accessibility ➤ Zoom"
+    echo "              ➤ ${bold}ON${reset} Use scroll gesture with modifier keys to zoom"
+    open "x-apple.systempreferences:com.apple.preference.universalaccess?Zoom"
+    pause
 }
 
 set_1password_settings() {
