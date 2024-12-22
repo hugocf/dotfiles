@@ -17,8 +17,8 @@ all_manual_settings() {
     set_chrome_settings
     set_facetime_settings
     set_notes_settings
-    set_slack_settings
     set_shortcuts_settings
+    set_slack_settings
 }
 
 set_1password_settings() {
@@ -64,6 +64,11 @@ set_notes_settings() {
     echo "              ➤ ${bold}ON${reset} Use Touch ID [use same pwd as personal login]"
 }
 
+set_shortcuts_settings() {
+    h2 "Shortcuts"
+    echo "Advanced      ➤ ${bold}ON${reset} Allow Running Scripts"
+}
+
 set_slack_settings() {
     h2 "Slack"
     echo "Notifications ➤ My keywords: ${bold}Hugo, Ferreira${reset}"
@@ -89,11 +94,6 @@ set_slack_settings() {
     echo "Mark as read  ➤ When I view… ${bold}ON${reset} Start me at the newest message but leave unseen messages unread"
     echo "              ➤ When I mark… ${bold}ON${reset} Prompt to confirm [default]"
     echo "Advanced      ➤ Other… ${bold}OFF${reset} Send me occasional surveys via Slackbot"
-}
-
-set_shortcuts_settings() {
-    h2 "Shortcuts"
-    echo "Advanced      ➤ ${bold}ON${reset} Allow Running Scripts"
 }
 
 main "$@"
