@@ -75,7 +75,7 @@ vscode_info() {
     local name="$1"
     local url_english="https://marketplace.visualstudio.com/items?itemName=$1"
 
-    curl --silent "$url_english" | grep '<meta name="description" content="' | cut -d'"' -f4 | perl -MHTML::Entities -pe 'decode_entities($_)'
+    curl --silent "$url_english" | grep '<meta name="description" content="' | cut -d'"' -f4 | perl -MHTML::Entities -C -pe 'decode_entities($_)'
 }
 
 main "$@"
