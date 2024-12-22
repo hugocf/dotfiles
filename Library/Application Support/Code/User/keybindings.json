@@ -1,0 +1,46 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "markdown.extension.editing.toggleStrikethrough",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "alt+s",
+        "command": "-markdown.extension.editing.toggleStrikethrough",
+        "when": "false"
+    },
+    {
+        "key": "shift+alt+[IntlRo]",
+        "command": "-closeTag.closeHTMLTagInPlace",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+[Period]",
+        "command": "closeTag.closeHTMLTagInPlace",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+[Backquote]",
+        "command": "-closeTag.closeHTMLTagInPlace",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+[Period]",
+        "command": "-closeTag.closeHTMLTag",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "-bookmarks.expandSelectionToNext",
+        "when": "editorTextFocus"
+    }
+]

@@ -1,0 +1,86 @@
+{
+    "[git-commit]": {
+        "editor.rulers": [60, 72],
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[markdown]": {
+        "editor.tabSize": 4
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "aws.telemetry": false,
+    "bashIde.explainshellEndpoint": "",
+    "breadcrumbs.enabled": true,
+    "chat.commandCenter.enabled": false,
+    "editor.fontFamily": "JetBrains Mono, 'Apple Color Emoji', Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "alt",
+    "editor.renderControlCharacters": true,
+    "editor.suggestSelection": "first",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.sortOrder": "mixed",
+    "files.associations": {
+        "Brewfile*": "ruby"
+    },
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "always",
+    "markdownlint.config": {
+        /* MD004 */ "ul-style": { "style": "sublist" },
+        /* MD007 */ "ul-indent": { "indent": 4 },
+        /* MD033 */ "no-inline-html": { "allowed_elements": [ "mark", "sub", "sup" ] },
+        /* MD036 */ "no-emphasis-as-header": false
+    },
+    "redhat.telemetry.enabled": false,
+    "shellformat.flag": "--space-redirects",
+    "tabnine.experimentalAutoImports": true,
+    "window.autoDetectColorScheme": true,
+    "window.openFilesInNewWindow": "on",
+    "window.restoreWindows": "none",
+    "workbench.colorCustomizations": {
+        // HF: ~/.vscode/extensions/ginfuru.ginfuru-better-solarized-dark-theme-0.9.6/themes/Better Solarized Light-color-theme.json
+        "editor.selectionBackground": "#CCC4B0",
+
+        // HF: ~/.vscode/extensions/ginfuru.ginfuru-better-solarized-dark-theme-0.9.6/themes/Better Solarized Dark-color-theme.json
+        "terminal.ansiBlack": "#073642",
+        "terminal.ansiRed": "#DC322F",
+        "terminal.ansiGreen": "#859900",
+        "terminal.ansiYellow": "#B58900",
+        "terminal.ansiBlue": "#268BD2",
+        "terminal.ansiMagenta": "#D33682",
+        "terminal.ansiCyan": "#2AA198",
+        "terminal.ansiWhite": "#EEE8D5",
+        "terminal.ansiBrightBlack": "#00212B",
+        "terminal.ansiBrightRed": "#CB4B16",
+        "terminal.ansiBrightGreen": "#859900",
+        "terminal.ansiBrightYellow": "#B58900",
+        "terminal.ansiBrightBlue": "#839496",
+        "terminal.ansiBrightMagenta": "#6C71C4",
+        "terminal.ansiBrightCyan": "#268BD2",
+        "terminal.ansiBrightWhite": "#FDF6E3",
+        "terminalCursor.background": "#00212B",
+        "terminalCursor.foreground": "#839496",
+        "terminal.background": "#00212B",
+        "terminal.border": "#EEE8D52B",
+        "terminal.selectionBackground": "#EEE8D52B",
+    },
+    "workbench.colorTheme": "Better Solarized Light",
+    "workbench.preferredLightColorTheme": "Better Solarized Light",
+    "workbench.preferredDarkColorTheme": "Better Solarized Dark",
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.location": "top",
+}
