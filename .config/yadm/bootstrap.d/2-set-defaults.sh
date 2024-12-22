@@ -22,19 +22,19 @@ system_character_palette_categories() {
     echo "Character Palette categories reset"
     # Adding to the default: MusicalSymbols, SignStandardSymbols, TechnicalSymbols
     defaults write com.apple.CharacterPaletteIM CVActiveCategories -array \
-            "Category-Emoji"                \
-            "Category-Arrows"               \
-            "Category-Bullets"              \
-            "Category-CurrencySymbols"      \
-            "Category-Latin"                \
-            "Category-LetterlikeSymbols"    \
-            "Category-MathematicalSymbols"  \
-            "Category-MusicalSymbols"       \
-            "Category-Parentheses"          \
-            "Category-Pictographs"          \
-            "Category-Punctuation"          \
-            "Category-SignStandardSymbols"  \
-            "Category-TechnicalSymbols"
+        "Category-Emoji" \
+        "Category-Arrows" \
+        "Category-Bullets" \
+        "Category-CurrencySymbols" \
+        "Category-Latin" \
+        "Category-LetterlikeSymbols" \
+        "Category-MathematicalSymbols" \
+        "Category-MusicalSymbols" \
+        "Category-Parentheses" \
+        "Category-Pictographs" \
+        "Category-Punctuation" \
+        "Category-SignStandardSymbols" \
+        "Category-TechnicalSymbols"
 }
 
 system_lock_screen_message() {
