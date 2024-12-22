@@ -8,7 +8,6 @@ readonly BREWFILES="$CONFIG/homebrew/Brewfile.core $CONFIG/homebrew/Brewfile.tem
 
 main() {
     h1 "Applications"
-    setup_xcode_license
     install_apps
     setup_post_install
     install_myrepos
@@ -23,10 +22,11 @@ install_apps() {
 setup_post_install() {
     h2 "Post-install Setup"
     remove_quarantines
+    setup_xcode_license
+    setup_xcode_directory
     setup_shell_path_permissions
     setup_1password_cli
     setup_things_helper
-    setup_xcode_directory
 }
 
 remove_quarantines() {
@@ -40,6 +40,32 @@ remove_quarantines() {
     remove_from_app "/Applications/GitX.app"
     remove_from_app "/Applications/QLMarkdown.app"
     remove_from_app "/Applications/Syntax Highlight.app"
+}
+
+setup_xcode_license() {
+    local xcode_version accepted_version
+    xcode_version=$(xcodebuild -version | grep Xcode | cut -d' ' -f2)
+    accepted_version=$(defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense)
+
+    if [[ "${xcode_version%.*}" == "${accepted_version%.*}" ]]; then
+        echo "Xcode license is accepted"
+    else
+        echo "Xcode license needs acceptance..."
+        sudo xcodebuild -license accept
+    fi
+}
+
+setup_xcode_directory() {
+    local current_path target_path
+    current_path=$(xcode-select --print-path)
+    target_path="/Applications/Xcode.app/Contents/Developer"
+
+    if [[ "$current_path" == "$target_path" ]]; then
+        echo "Xcode developer directory set correctly"
+    else
+        echo "Xcode developer directory needs changing..."
+        sudo xcode-select --switch $target_path
+    fi
 }
 
 setup_shell_path_permissions() {
@@ -66,32 +92,6 @@ setup_things_helper() {
     if [[ -e "/Applications/ThingsMacSandboxHelper.app" ]]; then
         echo "Things Helper needs setup..."
         open /Applications/ThingsMacSandboxHelper.app
-    fi
-}
-
-setup_xcode_directory() {
-    local current_path target_path
-    current_path=$(xcode-select --print-path)
-    target_path="/Applications/Xcode.app/Contents/Developer"
-
-    if [[ "$current_path" == "$target_path" ]]; then
-        echo "Xcode developer directory set correctly"
-    else
-        echo "Xcode developer directory needs changing..."
-        sudo xcode-select --switch $target_path
-    fi
-}
-
-setup_xcode_license() {
-    local xcode_version accepted_version
-    xcode_version=$(xcodebuild -version | grep Xcode | cut -d' ' -f2)
-    accepted_version=$(defaults read /Library/Preferences/com.apple.dt.Xcode IDEXcodeVersionForAgreedToGMLicense)
-
-    if [[ "${xcode_version%.*}" == "${accepted_version%.*}" ]]; then
-        echo "Xcode license is accepted"
-    else
-        echo "Xcode license needs acceptance..."
-        sudo xcodebuild -license accept
     fi
 }
 
