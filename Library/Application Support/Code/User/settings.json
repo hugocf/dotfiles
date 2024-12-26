@@ -21,7 +21,7 @@
     "bashIde.explainshellEndpoint": "",
     "breadcrumbs.enabled": true,
     "chat.commandCenter.enabled": false,
-    "editor.fontFamily": "JetBrains Mono, 'Apple Color Emoji', Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Fira Code, JetBrains Mono, Source Code Pro, 'Apple Color Emoji', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "alt",

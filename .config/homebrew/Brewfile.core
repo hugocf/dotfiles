@@ -28,8 +28,9 @@ cask "1password"                            # Password manager that keeps all pa
 cask "1password-cli"                        # Command-line interface for 1Password
 cask "choosy"                               # Open links in any browser
 cask "disk-inventory-x"                     # Disk usage utility
-cask "font-fira-code"                       # Free monospaced font with programming ligatures
-cask "font-jetbrains-mono"                  # A free and open source typeface for developers
+cask "font-fira-code"                       # Free monospaced font with programming ligatures — [GitHub](https://github.com/tonsky/FiraCode)
+cask "font-jetbrains-mono"                  # A free and open source typeface for developers — [GitHub](https://github.com/JetBrains/JetBrainsMono)
+cask "font-source-code-pro"                 # Monospaced font family for user interface and coding environments — [GitHub](https://github.com/adobe-fonts/source-code-pro)
 cask "gitx"                                 # Git GUI
 cask "google-chrome"                        # Web browser
 cask "keepingyouawake"                      # Tool to prevent the system from going into sleep mode
