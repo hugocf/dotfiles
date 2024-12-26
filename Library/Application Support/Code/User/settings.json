@@ -20,7 +20,7 @@
     "aws.telemetry": false,
     "bashIde.explainshellEndpoint": "",
     "breadcrumbs.enabled": true,
-    "chat.commandCenter.enabled": false,
+    "chat.commandCenter.enabled": true,
     "editor.fontFamily": "Fira Code, JetBrains Mono, Source Code Pro, 'Apple Color Emoji', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
