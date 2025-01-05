@@ -6,7 +6,9 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[markdown]": {
-        "editor.tabSize": 4
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "files.trimTrailingWhitespace": false,
     },
     "[shellscript]": {
         "editor.defaultFormatter": "foxundermoon.shell-format"
@@ -42,7 +44,7 @@
     "markdownlint.config": {
         /* MD004 */ "ul-style": { "style": "sublist" },
         /* MD007 */ "ul-indent": { "indent": 4 },
-        /* MD033 */ "no-inline-html": { "allowed_elements": [ "mark", "sub", "sup" ] },
+        /* MD033 */ "no-inline-html": false,
         /* MD036 */ "no-emphasis-as-header": false
     },
     "redhat.telemetry.enabled": false,
