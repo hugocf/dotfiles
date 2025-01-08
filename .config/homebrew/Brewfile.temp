@@ -12,6 +12,11 @@ brew "zsh-autosuggestions"                  # Fish-like fast/unobtrusive autosug
 brew "zsh-completions"                      # Additional completion definitions for zsh
 brew "zsh-syntax-highlighting"              # Fish shell like syntax highlighting for zsh
 
+# HF: To use only when needed; ffmpeg needed for highres and installs half of the internet
+#     Usage: yt-dlp https://www.youtube.com/watch?v=ABCDEF12345
+# brew "ffmpeg"                               # Play, record, convert, and stream audio and video
+# brew "yt-dlp"                               # Feature-rich command-line audio/video downloader
+
 cask "around"                               # Video calls designed for energy, ideas and action
 cask "discord"                              # Voice and text chat software
 cask "firefox"                              # Web browser
