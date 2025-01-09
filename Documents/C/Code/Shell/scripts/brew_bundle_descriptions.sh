@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-readonly comment_marker="        # "
+readonly column_marker="§"  # Must be unlikely to be found in a description
+readonly description_prefix="# "
 
 main() {
     [[ ! "$*" ]] && usage 1
@@ -29,8 +30,8 @@ process_formulas() {
 
     echo -e "\n# Formulas"
     brew bundle list --formula --file="$brewfile" | while read -r name; do
-        brew desc --formula "$name" | sed "s/: /$comment_marker/"
-    done
+        brew desc --formula "$name" | sed "s/: /$column_marker$description_prefix/"
+    done | column -s$"$column_marker" -t
 }
 
 process_casks() {
@@ -38,8 +39,8 @@ process_casks() {
 
     echo -e "\n# Casks"
     brew bundle list --cask --file="$brewfile" | while read -r name; do
-        brew desc --cask "$name" | sed "s/: /$comment_marker/"
-    done
+        brew desc --cask "$name" | sed "s/: /$column_marker$description_prefix/"
+    done | column -s$"$column_marker" -t
 }
 
 process_appstore() {
@@ -50,8 +51,8 @@ process_appstore() {
     brew bundle list --mas --file="$brewfile" | while read -r name; do
         id=$(grep "$name" "$brewfile" | cut -d':' -f2 | cut -d'#' -f1 | grep -o '[0-9]*')
         info=$(mas_info "$id")
-        echo "$id$comment_marker$info"
-    done
+        echo -e "$id$column_marker$description_prefix$info"
+    done | column -s$"$column_marker" -t
 }
 
 mas_info() {
@@ -69,8 +70,8 @@ process_vscode() {
     echo -e "\n# VS Code"
     brew bundle list --vscode --file="$brewfile" | while read -r name; do
         info=$(vscode_info "$name" | sed 's/Extension for Visual Studio Code - //')
-        echo "$name$comment_marker$info"
-    done
+        echo -e "$name$column_marker$description_prefix$info"
+    done | column -s$"$column_marker" -t
 }
 
 vscode_info() {
