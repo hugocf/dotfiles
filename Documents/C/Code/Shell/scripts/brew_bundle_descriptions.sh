@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+readonly comment_marker="        # "
+
 main() {
     [[ ! "$*" ]] && usage 1
     local brewfile="$1"
@@ -27,7 +29,7 @@ process_formulas() {
 
     echo -e "\n# Formulas"
     brew bundle list --formula --file="$brewfile" | while read -r name; do
-        brew desc --formula "$name"
+        brew desc --formula "$name" | sed "s/: /$comment_marker/"
     done
 }
 
@@ -36,7 +38,7 @@ process_casks() {
 
     echo -e "\n# Casks"
     brew bundle list --cask --file="$brewfile" | while read -r name; do
-        brew desc --cask "$name"
+        brew desc --cask "$name" | sed "s/: /$comment_marker/"
     done
 }
 
@@ -48,7 +50,7 @@ process_appstore() {
     brew bundle list --mas --file="$brewfile" | while read -r name; do
         id=$(grep "$name" "$brewfile" | cut -d':' -f2 | cut -d'#' -f1 | grep -o '[0-9]*')
         info=$(mas_info "$id")
-        echo "$id: $info"
+        echo "$id$comment_marker$info"
     done
 }
 
@@ -66,8 +68,8 @@ process_vscode() {
 
     echo -e "\n# VS Code"
     brew bundle list --vscode --file="$brewfile" | while read -r name; do
-        info=$(vscode_info "$name")
-        echo "$name: $info"
+        info=$(vscode_info "$name" | sed 's/Extension for Visual Studio Code - //')
+        echo "$name$comment_marker$info"
     done
 }
 
