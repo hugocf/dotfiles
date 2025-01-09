@@ -59,6 +59,8 @@ vscode "editorconfig.editorconfig"                      # EditorConfig Support f
 vscode "flesler.url-encode"                             # Allows URL-Encoding and URL-Decoding text, supports multiple selections and whole file if none
 vscode "foxundermoon.shell-format"                      # A formatter for shell scripts, Dockerfile, gitignore, dotenv, /etc/hosts, jvmoptions, and other file types
 vscode "ginfuru.ginfuru-better-solarized-dark-theme"    # A Better Solarized theme for Visual Studio Code include light and dark versions
+vscode "github.copilot"                                 # Your AI pair programmer
+vscode "github.copilot-chat"                            # AI chat features powered by Copilot
 vscode "gruntfuggly.todo-tree"                          # Show TODO, FIXME, etc. comment tags in a tree view
 vscode "mads-hartmann.bash-ide-vscode"                  # A language server for Bash
 vscode "mechatroner.rainbow-csv"                        # Highlight CSV and TSV files, Run SQL-like queries
