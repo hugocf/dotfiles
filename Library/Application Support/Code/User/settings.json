@@ -85,4 +85,5 @@
     "workbench.preferredDarkColorTheme": "Better Solarized Dark",
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "top",
+    "editor.accessibilitySupport": "off",
 }
