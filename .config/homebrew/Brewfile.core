@@ -39,8 +39,8 @@ cask "menumeters"                           # Set of CPU, memory, disk, and netw
 cask "netnewswire"                          # Free and open-source RSS reader
 cask "qlmarkdown"                           # Quick Look generator for Markdown files
 cask "rectangle"                            # Move and resize windows using keyboard shortcuts or snap areas
+cask "resilio-sync"                         # File sync and share software
 cask "slack"                                # Team communication and collaboration software
-cask "syncthing"                            # Open source continuous file synchronization application
 cask "syntax-highlight"                     # Quicklook extension for source files
 cask "thingsmacsandboxhelper"               # Helper application for Things [HF: allows “quick entry with autofill”]
 cask "typora"                               # Configurable document editor that supports Markdown
