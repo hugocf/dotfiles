@@ -65,7 +65,7 @@ set_application_settings() {
 }
 
 app_gitx_settings() {
-    echo "GitX commit message lines, auto update"
+    echo "GitX commit message lines and auto update"
     defaults write net.phere.GitX PBCommitMessageViewVerticalBodyLineLength 69
     defaults write net.phere.GitX PBCommitMessageViewVerticalLineLength 72
     defaults write net.phere.GitX SUEnableAutomaticChecks 1
