@@ -24,6 +24,7 @@ cask "kap"                                  # Open-source screen recorder built 
 cask "keycastr"                             # Open-source keystroke visualiser
 cask "libreoffice"                          # Free cross-platform office suite, fresh version
 cask "macwhisper"                           # Speech recognition tool
+cask "obsidian"                             # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "oversight"                            # Monitors computer mic and webcam
 cask "piezo"                                # Audio recording application
 cask "postman"                              # Collaboration platform for API development
