@@ -28,7 +28,6 @@ cask "obsidian"                             # Knowledge base that works on top o
 cask "oversight"                            # Monitors computer mic and webcam
 cask "piezo"                                # Audio recording application
 cask "postman"                              # Collaboration platform for API development
-cask "syncthing"                            # Open source continuous file synchronization application
 cask "tunnelbear"                           # VPN client for secure internet access and private browsing
 cask "vlc"                                  # Multimedia player
 cask "warp"                                 # Rust-based terminal
