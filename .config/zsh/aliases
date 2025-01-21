@@ -46,7 +46,7 @@ alias plcat='plutil -convert xml1 -o -'
 
 alias restart_apache='sudo apachectl -k restart'
 # rm: https://hasseg.org/trash/
-exists trash && alias rm='trash -F' || alias rm='rm -i'
+exists trash && alias rm='trash' || alias rm='rm -i'
 alias rot13='tr "0-9a-zA-Z" "5-90-4n-za-mN-ZA-M"'
 
 # http://www.chromium.org/developers/design-documents/network-stack/socks-proxy
