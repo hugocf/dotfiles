@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eo pipefail
+# FIXME: Had to remove -u because dock_apps_remove_after() give error "to_remove[@]: unbound variable"
 
 readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
 source "$BASEDIR/../common"
@@ -14,6 +15,7 @@ main() {
 set_system_settings() {
     h2 "System Settings"
     system_character_palette_categories
+    system_dock_layout
     system_lock_screen_message
     system_touchid_sudo
 }
@@ -35,6 +37,49 @@ system_character_palette_categories() {
         "Category-Punctuation" \
         "Category-SignStandardSymbols" \
         "Category-TechnicalSymbols"
+}
+
+system_dock_layout() {
+    dock_cmd() {
+        $(which dockutil) --no-restart "$@"
+    }
+
+    dock_set() {
+        local pos desktop app
+        local "$@"
+        if dock_cmd --find "$app" &>/dev/null; then
+            dock_cmd --move "$app" --position "$pos"
+        else
+            dock_cmd --add "$app" --position "$pos"
+        fi
+        name=$(remove_extension "$(remove_path "$app")")
+        assign=$([[ -z $desktop ]] && echo "None     " || echo "Desktop $desktop")
+        echo "    $assign ← $name"
+    }
+
+    dock_remove_after() {
+        local pos
+        local "$@"
+        local all_apps=($(dockutil --list | grep persistentApps | cut -d$'\t' -f2))
+        local to_remove=("${all_apps[@]:$pos}")
+        for app in "${to_remove[@]}"; do
+            dock_cmd --remove "$app"
+        done
+    }
+
+    echo "Dock layout reset"
+    dock_set pos=1  desktop=  app="/Applications/Google Chrome.app"
+    dock_set pos=2  desktop=2 app="/System/Applications/Music.app"
+    dock_set pos=3  desktop=2 app="/System/Applications/Calendar.app"
+    dock_set pos=4  desktop=2 app="/System/Applications/Notes.app"
+    dock_set pos=5  desktop=2 app="/System/Applications/Contacts.app"
+    dock_set pos=6  desktop=2 app="/Applications/Things3.app"
+    dock_set pos=7  desktop=2 app="/Applications/OfficeTime.app"
+    dock_set pos=8  desktop=3 app="/System/Applications/Mail.app"
+    dock_set pos=9  desktop=4 app="/System/Applications/Messages.app"
+    dock_set pos=10 desktop=4 app="/Applications/Slack.app"
+    dock_set pos=11 desktop=  app="/Applications/Visual Studio Code.app"
+    dock_remove_after pos=11
 }
 
 system_lock_screen_message() {
@@ -78,6 +123,7 @@ app_textedit_open_plain_text() {
 
 force_settings_reload() {
     killall sighup cfprefsd
+    killall Dock
 }
 
 main "$@"

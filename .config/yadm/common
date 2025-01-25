@@ -11,6 +11,20 @@ readonly bold=$(tput bold)
 readonly invert=$(tput setaf 0; tput setab 7)
 readonly reset=$(tput sgr0)
 
+confirm_action() {
+    local question="$1"
+    local confirmed_action="$2"
+    local skipped_action="$3"
+
+    read -r -n1 -p "$question [y/N] " answer < /dev/tty
+    echo
+    if [[ "$answer" == "y" ]]; then
+        eval "$confirmed_action"
+    else
+        eval "$skipped_action"
+    fi
+}
+
 h1() {
     echo -e "\n${bold}${invert} === $* === ${reset}"
 }
@@ -24,16 +38,10 @@ pause() {
     echo
 }
 
-confirm_action() {
-    local question="$1"
-    local confirmed_action="$2"
-    local skipped_action="$3"
+remove_extension() {
+    echo "${1%.*}"
+}
 
-    read -r -n1 -p "$question [y/N] " answer < /dev/tty
-    echo
-    if [[ "$answer" == "y" ]]; then
-        eval "$confirmed_action"
-    else
-        eval "$skipped_action"
-    fi
+remove_path() {
+    echo "${1##*/}"
 }
