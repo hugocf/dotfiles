@@ -44,20 +44,26 @@ system_dock_layout() {
         $(which dockutil) --no-restart "$@"
     }
 
-    dock_set() {
-        local pos desktop app
+    dock_app_set() {
+        local pos desktop path
         local "$@"
-        if dock_cmd --find "$app" &>/dev/null; then
-            dock_cmd --move "$app" --position "$pos"
+        if dock_cmd --find "$path" &>/dev/null; then
+            dock_cmd --move "$path" --position "$pos"
         else
-            dock_cmd --add "$app" --position "$pos"
+            dock_cmd --add "$path" --position "$pos"
         fi
-        name=$(remove_extension "$(remove_path "$app")")
-        assign=$([[ -z $desktop ]] && echo "None     " || echo "Desktop $desktop")
-        echo "    $assign ← $name"
+        manually_assign "$desktop" "$path"
     }
 
-    dock_remove_after() {
+    manually_assign() {
+        local desktop=$1
+        local path=$2
+        desktop_name=$([[ -z $desktop ]] && echo "None     " || echo "Desktop $desktop")
+        app_name=$(remove_extension "$(remove_path "$path")")
+        echo "    $desktop_name ← $app_name"
+    }
+
+    dock_apps_remove_after() {
         local pos
         local "$@"
         local all_apps=($(dockutil --list | grep persistentApps | cut -d$'\t' -f2))
@@ -67,19 +73,35 @@ system_dock_layout() {
         done
     }
 
+    dock_folder_set() {
+        local pos sort display view path
+        local "$@"
+        if dock_cmd --find "$path" &>/dev/null; then
+            dock_cmd --move "$path" --position "$pos"
+        else
+            dock_cmd --add "$path" --position "$pos" --sort "$sort" --display "$display" --view "$view"
+        fi
+    }
+
     echo "Dock layout reset"
-    dock_set pos=1  desktop=  app="/Applications/Google Chrome.app"
-    dock_set pos=2  desktop=2 app="/System/Applications/Music.app"
-    dock_set pos=3  desktop=2 app="/System/Applications/Calendar.app"
-    dock_set pos=4  desktop=2 app="/System/Applications/Notes.app"
-    dock_set pos=5  desktop=2 app="/System/Applications/Contacts.app"
-    dock_set pos=6  desktop=2 app="/Applications/Things3.app"
-    dock_set pos=7  desktop=2 app="/Applications/OfficeTime.app"
-    dock_set pos=8  desktop=3 app="/System/Applications/Mail.app"
-    dock_set pos=9  desktop=4 app="/System/Applications/Messages.app"
-    dock_set pos=10 desktop=4 app="/Applications/Slack.app"
-    dock_set pos=11 desktop=  app="/Applications/Visual Studio Code.app"
-    dock_remove_after pos=11
+    dock_app_set pos=1  desktop=  path="/Applications/Google Chrome.app"
+    dock_app_set pos=2  desktop=2 path="/System/Applications/Music.app"
+    dock_app_set pos=3  desktop=2 path="/System/Applications/Calendar.app"
+    dock_app_set pos=4  desktop=2 path="/System/Applications/Notes.app"
+    dock_app_set pos=5  desktop=2 path="/System/Applications/Contacts.app"
+    dock_app_set pos=6  desktop=2 path="/Applications/Things3.app"
+    dock_app_set pos=7  desktop=2 path="/Applications/OfficeTime.app"
+    dock_app_set pos=8  desktop=3 path="/System/Applications/Mail.app"
+    dock_app_set pos=9  desktop=4 path="/System/Applications/Messages.app"
+    dock_app_set pos=10 desktop=4 path="/Applications/Slack.app"
+    dock_app_set pos=11 desktop=  path="/Applications/Visual Studio Code.app"
+    dock_apps_remove_after pos=11
+    dock_folder_set pos=1 sort=name      display=folder view=list path="/Users/Shared/Library Data"
+    dock_folder_set pos=2 sort=name      display=stack  view=list path="/Users/hugo/Work/NewStore"
+    dock_folder_set pos=3 sort=name      display=folder view=list path="/Users/hugo"
+    dock_folder_set pos=4 sort=name      display=folder view=list path="/Users/hugo/Documents"
+    dock_folder_set pos=5 sort=dateadded display=stack  view=fan  path="/Users/hugo/Downloads"
+    dock_folder_set pos=6 sort=name      display=stack  view=list path="/Users/hugo/Cloud"
 }
 
 system_lock_screen_message() {
