@@ -7,6 +7,7 @@ brew "alexanderwillner/tap/things.sh"       # Simple read-only comand-line inter
 brew "asciinema"                            # Record and share terminal sessions
 brew "autojump"                             # Shell extension to jump to frequently used directories
 brew "cliclick"                             # Tool for emulating mouse and keyboard events
+brew "dockutil"                             # Tool for managing dock items
 brew "exiftool"                             # Perl lib for reading and writing EXIF metadata
 brew "fx"                                   # Terminal JSON viewer
 brew "git"                                  # Distributed revision control system
