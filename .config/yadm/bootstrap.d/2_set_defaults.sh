@@ -41,7 +41,7 @@ system_character_palette_categories() {
 
 system_dock_layout() {
     dock_cmd() {
-        $(which dockutil) --no-restart "$@"
+        dockutil --no-restart "$@"
     }
 
     dock_app_set() {
