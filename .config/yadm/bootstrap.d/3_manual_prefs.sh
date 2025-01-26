@@ -24,9 +24,16 @@ all_manual_settings() {
 
 set_system_settings() {
     h2 "System Settings"
+
     echo "Accessibility ➤ Zoom"
     echo "              ➤ ${bold}ON${reset} Use scroll gesture with modifier keys to zoom"
     open "x-apple.systempreferences:com.apple.preference.universalaccess?Zoom"
+    pause
+
+    echo "Desktop & Dock ➤ Hot Corners"
+    echo "              ➤ [ ${bold}—${reset} ]    [ ${bold}—${reset} ]"
+    echo "              ➤ [ ${bold}—${reset} ]    [ ${bold}Desktop${reset} ]"
+    open "x-apple.systempreferences:com.apple.preference.dock"
     pause
 }
 

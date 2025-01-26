@@ -48,18 +48,6 @@ system_desktop_options() {
 }
 
 system_dock_options() {
-    dock_corner_off() {
-        local pos=$1
-        defaults write com.apple.dock "wvous-$pos-corner"   1
-        defaults write com.apple.dock "wvous-$pos-modifier" 0
-    }
-
-    dock_corner_desktop() {
-        local pos=$1
-        defaults write com.apple.dock "wvous-$pos-corner"   4
-        defaults write com.apple.dock "wvous-$pos-modifier" 0
-    }
-
     dock_magnification() {
         local on=$1
         local size=$([[ $on == true ]] && echo 128 || echo 64)
@@ -70,10 +58,6 @@ system_dock_options() {
     echo "Dock options set"
     defaults write com.apple.dock autohide -bool true
     defaults write com.apple.dock mru-spaces -bool false
-    dock_corner_off     "bl"
-    dock_corner_desktop "br"
-    dock_corner_off     "tl"
-    dock_corner_off     "tr"
     dock_magnification true
 }
 
