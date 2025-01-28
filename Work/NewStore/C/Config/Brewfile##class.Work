@@ -4,11 +4,11 @@
 # brew "crowbar"                                 # Securily generates temporary AWS credentials through Identity Providers using SAML
 
 brew "awscli"                                   # Official Amazon AWS command-line interface
+brew "aws-sso-cli"                              # Securely manage AWS API credentials using AWS SSO
 brew "glab"                                     # Open-source GitLab command-line tool
 brew "k9s"                                      # Kubernetes CLI To Manage Your Clusters In Style!
 brew "kubectl"                                  # Kubernetes command-line interface
 brew "kubectx"                                  # Tool that can switch between kubectl contexts easily and create aliases
-brew "saml2aws"                                 # Login and retrieve AWS temporary credentials using a SAML IDP
 
 cask "docker"                                   # App to build and share containerised applications and microservices
 cask "tuple"                                    # Remote pair programming app
