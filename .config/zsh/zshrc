@@ -75,5 +75,4 @@ shell_user_extensions() {
 
 main
 
-# TODO: Move to work-specific repo and load from there
-[[ -f "$HOME/custom-source.work.sh" ]] && source "$HOME/custom-source.work.sh" || :
+[[ -f ~/.config/work/zshrc ]] && source ~/.config/work/zshrc || :
