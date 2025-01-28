@@ -13,9 +13,9 @@
 set -euo pipefail
 # set -x    print each command before executing it [debug]
 
-readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
-readonly CALLDIR=$(pwd)                         # where it was called from
-readonly SUCCESS=0                              # exit status of bash commands
+readonly BASEDIR="$(dirname "$(readlink -f "$0")")" # where the script is located
+readonly CALLDIR=$(pwd)                             # where it was called from
+readonly SUCCESS=0                                  # exit status of bash commands
 
 # Script configuration
 readonly CONSTANT="value"
