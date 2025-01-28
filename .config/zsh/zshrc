@@ -33,8 +33,8 @@ shell_autoload_functions() {
 
 # https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
 shell_completions() {
-    autoload -Uz compinit
-    compinit
+    autoload -Uz bashcompinit && bashcompinit
+    autoload -Uz compinit && compinit
 }
 
 shell_custom_aliases() {
