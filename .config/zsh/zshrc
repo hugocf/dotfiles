@@ -67,6 +67,7 @@ shell_infinite_history() {
 shell_user_extensions() {
     [[ -f $(brew --prefix)/opt/spaceship/spaceship.zsh ]] && source $(brew --prefix)/opt/spaceship/spaceship.zsh
     [[ -f $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    [[ -f $(brew --prefix)/bin/fzf ]] && eval "$(fzf --zsh)"
 
     # [Must be the last one being sourced](https://github.com/zsh-users/zsh-syntax-highlighting#why-must-zsh-syntax-highlightingzsh-be-sourced-at-the-end-of-the-zshrc-file)
     [[ -f $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

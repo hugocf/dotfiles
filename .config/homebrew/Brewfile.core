@@ -10,6 +10,7 @@ brew "cliclick"                             # Tool for emulating mouse and keybo
 brew "dockutil"                             # Tool for managing dock items
 brew "exiftool"                             # Perl lib for reading and writing EXIF metadata
 brew "fx"                                   # Terminal JSON viewer
+brew "fzf"                                  # Command-line fuzzy finder written in Go
 brew "git"                                  # Distributed revision control system
 brew "httpie"                               # User-friendly cURL replacement (command-line HTTP client)
 brew "hugo"                                 # Configurable static site generator
