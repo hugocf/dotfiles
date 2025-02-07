@@ -20,6 +20,7 @@ set_system_settings() {
     system_dock_layout
     system_lock_screen_message
     system_touchid_sudo
+    system_workaround_slow_emoji_picker
 }
 
 system_character_palette_categories() {
@@ -145,6 +146,12 @@ system_touchid_sudo() {
         echo "Touch ID for sudo must be enabled..."
         sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
     fi
+}
+
+system_workaround_slow_emoji_picker() {
+    # https://www.reddit.com/r/MacOS/comments/1ccfycq/comment/l2gmfy0/
+    echo "Fix slow emoji picker"
+    defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 }
 
 set_application_settings() {
