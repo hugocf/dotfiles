@@ -35,6 +35,27 @@ set_system_settings() {
     echo "              ➤ [ ${bold}—${reset} ]    [ ${bold}Desktop${reset} ]"
     open "x-apple.systempreferences:com.apple.preference.dock"
     pause
+
+    echo "Time Machine  ➤ Options…"
+    echo "              ➤ Backup Frequency: ${bold}Automatically Every Hour${reset}"
+    open_time_machine_options
+    pause
+}
+
+open_time_machine_options() {
+    /usr/bin/osascript -e '
+    tell application "System Settings"
+        activate
+        delay 0.5
+        reveal anchor "main" of pane id "com.apple.Time-Machine-Settings.extension"
+        delay 0.5
+    end tell
+    # Click the "Options…" button
+    tell application "System Events" to tell process "System Settings"
+        click button 1 of scroll area 1 of group 1 of group 2 of splitter group 1 of group 1 of window 1
+    end tell
+    return
+    '
 }
 
 set_1password_settings() {
