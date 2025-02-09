@@ -1,0 +1,19 @@
+# shellcheck disable=SC2168 shell=bash
+
+local app="$1"
+[[ -z "$app" ]] && echo "Usage: osascript_debug_elements <app>" && return 1
+
+/usr/bin/osascript -e "
+tell application \"$app\" to activate
+tell application \"System Events\"
+    tell application process \"$app\"
+        set allElements to entire contents
+        repeat with element in allElements
+            set elementProperties to properties of element
+            log \"----------\"
+            log elementProperties
+            log element
+        end repeat
+    end tell
+end tell
+"

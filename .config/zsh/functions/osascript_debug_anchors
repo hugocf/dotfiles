@@ -1,0 +1,10 @@
+# shellcheck disable=SC2168 shell=bash
+
+local app="$1"
+[[ -z "$app" ]] && echo "Usage: osascript_debug_anchors <app>" && return 1
+
+/usr/bin/osascript -e "
+tell application \"$app\"
+    get every anchor of current pane
+end tell
+"
