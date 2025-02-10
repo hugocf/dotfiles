@@ -4,7 +4,13 @@ local app="$1"
 [[ -z "$app" ]] && echo "Usage: osascript_debug_anchors <app>" && return 1
 
 /usr/bin/osascript -e "
+tell application \"$app\" to activate
 tell application \"$app\"
     get every anchor of current pane
 end tell
 "
+
+echo '==========
+tell application "Example"
+    reveal anchor "example" of pane id "com.apple.Example"
+end tell'
