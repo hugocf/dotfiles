@@ -1,0 +1,70 @@
+# shellcheck disable=SC2168 shell=bash
+
+mr_daily() {
+    mr_update "$1"
+    mr_since_days 1
+}
+
+mr_monday() {
+    mr_update "$1"
+    mr_since_days 3
+}
+
+mr_last() {
+    local nbr=20
+    h1 "Last $nbr commits in all branches"
+    mr log -n $nbr --graph --all --date=iso --pretty=dateauthorline
+    h2 "Last $nbr commits in all branches"
+}
+
+mr_register() {
+    local flag="$*"
+    local msg="Register all git repos under the current directory: $(pwd)"
+
+    if [[ $flag != "--all" ]]; then
+        echo "$msg"
+        echo "To execute, pass parameter: --all"
+        return 1
+    fi
+    h1 "Register all git repos under the current directory: $(pwd)"
+    find . -name .git -exec dirname {} \; | sort | xargs -I{} mr register {}
+    h2 "Register all git repos under the current directory: $(pwd)"
+}
+
+mr_since_days() {
+    local when="${1:-00:00:00}"
+    [[ $1 =~ ^[0-9]+$ ]] && when="$1 days ago"
+
+    h1 "Commits in all branches since '$when'"
+    mr log --graph --all --since="$when" --date=iso --pretty=dateauthorline
+    h2 "Commits in all branches since '$when'"
+}
+
+mr_update() {
+    local where="${1:-.}"
+
+    h1 "Updating repos under: $where"
+    cd "$where" || return
+    mr --jobs 10 update
+}
+
+mr_who() {
+    local who="$1"
+    local when="${2:-2 weeks ago}"
+
+    log() {
+        local msg="$1"
+        local opt="$2"
+
+        h1 "$msg"
+        mr log --graph --all $opt --since="$when" --date=iso --pretty=dateauthorline
+        h2 "$msg"
+    }
+
+    if [[ -z $who ]]; then
+        log "Commits in all branches since '$when'"
+    else
+        log "Commits authored by '$who' in all branches since '$when'" 		--author="$who"
+        log "Commits participated by '$who' in all branches since '$when'"	--grep="$who"
+    fi
+}

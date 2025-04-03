@@ -29,7 +29,8 @@ shell_autoload_functions() {
         $fpath
     )
     autoload -Uz $fpath[1]/*(:t)
-    typography
+    bundle_myrepos
+    bundle_typography
 }
 
 # https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
