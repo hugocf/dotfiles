@@ -1,0 +1,13 @@
+# shellcheck disable=SC2168 shell=bash
+
+bold=$(tput bold)
+invert=$(tput setaf 0; tput setab 7)
+reset=$(tput sgr0)
+
+h1() {
+    echo -e "\n${bold}${invert} === $* === ${reset}"
+}
+
+h2() {
+    echo -e "\n${bold}--- $* ---${reset}"
+}

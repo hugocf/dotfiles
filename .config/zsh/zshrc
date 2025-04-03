@@ -29,6 +29,7 @@ shell_autoload_functions() {
         $fpath
     )
     autoload -Uz $fpath[1]/*(:t)
+    typography
 }
 
 # https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
