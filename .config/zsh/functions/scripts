@@ -1,7 +1,7 @@
 # shellcheck disable=SC2168 shell=bash
 
 # List custom functions and scripts in known locations
-list_executable() {
+list_files() {
     local what=$1
     local where=$2
     echo
@@ -11,6 +11,6 @@ list_executable() {
     done | column
 }
 
-list_executable functions "$(get_script_dir)"
-list_executable scripts "$LOCAL_SCRIPTS"
+list_files functions "$(get_script_dir)"
+list_files scripts "$LOCAL_SCRIPTS"
 echo
