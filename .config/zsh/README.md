@@ -17,7 +17,7 @@ See details in [ZSH - THE Z SHELL](https://zsh.sourceforge.io/) documentation:
 * [An Introduction to the Z Shell - Startup Files](https://zsh.sourceforge.io/Intro/intro_3.html)
 * [zsh: 5 Files](https://zsh.sourceforge.io/Doc/Release/Files.html)
 
-## Symlinks instead `$ZDOTDIR`
+## Symlinks instead of `$ZDOTDIR`
 
 In `zsh`, the `ZDOTDIR` variable allows to set [the directory to search for shell startup files, if not `$HOME`](https://zsh.sourceforge.io/Doc/Release/Parameters.html#index-ZDOTDIR).
 
