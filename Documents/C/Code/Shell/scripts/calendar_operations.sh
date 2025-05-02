@@ -44,7 +44,21 @@ remove_event_alarms_by_title() {
 }
 
 main() {
-    local command="${1:-}"
+    local usage="Usage: $(basename $0) command [args...]
+
+    get_events_by_url <url>
+    set_events_url_by_title <title> <url>
+    set_events_url_by_url <old_url> <new_url>
+    remove_event_alarms_by_title <title>
+
+This script requires sqlite3 and assumes the calendar database is located at: $DB"
+
+    if [ $# -eq 0 ]; then
+        echo "$usage"
+        exit 1
+    fi
+
+    local command="$1"
     shift
 
     case "$command" in
@@ -61,7 +75,8 @@ main() {
             remove_event_alarms_by_title "$@"
             ;;
         *)
-            echo "Usage: $0 {get_events_by_url|set_event_url_by_title|remove_event_alarms_by_title} [args...]"
+            echo "Invalid command: $command"
+            echo "$usage"
             exit 1
             ;;
     esac
