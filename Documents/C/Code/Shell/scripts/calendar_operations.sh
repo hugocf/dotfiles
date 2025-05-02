@@ -8,9 +8,6 @@ main() {
     local usage="Usage: $(basename $0) command [args...]
 
     get_events_by_url <url>
-    set_events_url_by_title <title> <url>
-    set_events_url_by_url <old_url> <new_url>
-    remove_event_alarms_by_title <title>
 
 This script requires sqlite3 and assumes the calendar database is located at: $DB"
 
@@ -25,15 +22,6 @@ This script requires sqlite3 and assumes the calendar database is located at: $D
     case "$command" in
         get_events_by_url)
             get_events_by_url "$@"
-            ;;
-        set_events_url_by_title)
-            set_events_url_by_title "$@"
-            ;;
-        set_events_url_by_url)
-            set_events_url_by_url "$@"
-            ;;
-        remove_event_alarms_by_title)
-            remove_event_alarms_by_title "$@"
             ;;
         *)
             echo "Invalid command: $command"
@@ -55,29 +43,6 @@ get_events_by_url() {
         from CalendarItem
         where url like '%$url%'
         order by start_date;
-    "
-    sqlite3 "$DB" "$sql"
-}
-
-set_events_url_by_title() {
-    local title="$1"
-    local url="$2"
-    local sql="update CalendarItem set url = '$url', last_modified = strftime('%s', 'now') - $NSDATE_DELTA where summary = '$title';"
-    sqlite3 "$DB" "$sql"
-}
-
-set_events_url_by_url() {
-    local old_url="$1"
-    local new_url="$2"
-    local sql="update CalendarItem set url = '$new_url', last_modified = strftime('%s', 'now') - $NSDATE_DELTA where url = '$old_url';"
-    sqlite3 "$DB" "$sql"
-}
-
-remove_event_alarms_by_title() {
-    local title="$1"
-    local sql="
-        delete from alarm where calendaritem_owner_id in (select rowid from CalendarItem where summary = '$title');
-        update CalendarItem set last_modified = strftime('%s', 'now') - $NSDATE_DELTA  where summary = '$title';
     "
     sqlite3 "$DB" "$sql"
 }
