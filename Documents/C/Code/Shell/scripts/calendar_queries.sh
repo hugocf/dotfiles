@@ -36,12 +36,13 @@ get_events_by_url() {
     local sql="
         select
             rowid,
-            datetime(start_date + $NSDATE_DELTA, 'unixepoch', 'localtime') as date,
-            datetime(last_modified + $NSDATE_DELTA, 'unixepoch', 'localtime') as date,
+            uuid,
+            datetime(start_date + $NSDATE_DELTA, 'unixepoch', 'localtime') as start_date,
+            datetime(last_modified + $NSDATE_DELTA, 'unixepoch', 'localtime') as modified_date,
             summary,
             url
         from CalendarItem
-        where url like '%$url%'
+        where url like '$url'
         order by start_date;
     "
     sqlite3 "$DB" "$sql"
