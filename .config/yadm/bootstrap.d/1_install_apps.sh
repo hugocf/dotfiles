@@ -27,6 +27,7 @@ setup_post_install() {
     setup_shell_path_permissions
     setup_1password_cli
     setup_things_helper
+    fix_zsh_insecure_files
 }
 
 remove_quarantines() {
@@ -85,6 +86,11 @@ setup_1password_cli() {
         echo -e "\tDeveloper ➤ ${bold}ON${reset} Integrate with 1Password CLI"
         pause
     fi
+}
+
+fix_zsh_insecure_files() {
+    echo "Fix zsh insecure files (i.e. compinit/compaudit errors)"
+    sudo chown -R hugo:staff /Applications/Docker.app
 }
 
 # FIXME: Seems like this is failing on an upgrade; manual fix is: brew reinstall thingsmacsandboxhelper
