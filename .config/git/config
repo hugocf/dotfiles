@@ -22,9 +22,9 @@
 	st = status --short
 
 	# yadm alias
-	check = "!yadm_custom_action.sh check || echo 'failed'"
-	noplist = "!yadm_custom_action.sh noplist || echo 'failed'"
-	saveplist = "!yadm_custom_action.sh saveplist && yadm commit -m 'prefs: Snapshot dynamic plist settings'"
+	check = "!yadm_action.sh check || echo 'failed'"
+	noplist = "!yadm_action.sh noplist || echo 'failed'"
+	saveplist = "!yadm_action.sh saveplist && yadm commit -m 'prefs: Snapshot dynamic plist settings'"
 [color]
 	ui = always
 [color "branch"]
