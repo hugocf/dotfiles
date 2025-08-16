@@ -1,0 +1,7 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "tags": "tags",
+    "date": "datetime"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./attachments",
+  "newLinkFormat": "relative",
+  "promptDelete": false,
+  "showInlineTitle": false,
+  "useMarkdownLinks": true,
+  "useTab": false
+}
