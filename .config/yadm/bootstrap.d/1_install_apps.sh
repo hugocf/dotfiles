@@ -90,7 +90,9 @@ setup_1password_cli() {
 
 fix_zsh_insecure_files() {
     echo "Fix zsh insecure files (i.e. compinit/compaudit errors)"
-    sudo chown -R hugo:staff /Applications/Docker.app
+    if [[ -e "/Applications/Docker.app" ]]; then
+        sudo chown -R hugo:staff /Applications/Docker.app
+    fi
 }
 
 # FIXME: Seems like this is failing on an upgrade; manual fix is: brew reinstall thingsmacsandboxhelper
