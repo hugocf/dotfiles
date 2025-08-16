@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-check_changes() {
+check_plist() {
     yadm status --porcelain | cut -c4- | while read -r filename; do
         if [[ "$filename" == *.plist && "$(file --brief --mime "$filename")" == application/octet-stream* ]]; then
             pl2xml "$filename"
@@ -28,7 +28,7 @@ save_unstaged_plist() {
 }
 
 case ${1:-} in
-    check) check_changes ;;
+    check) check_plist ;;
     noplist) restore_unstaged_plist ;;
     saveplist) save_unstaged_plist ;;
     *) echo "Please choose a valid command: check, noplist, saveplist" ;;
