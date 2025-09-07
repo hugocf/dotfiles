@@ -2,9 +2,63 @@
 
 local rows=${1:-20}
 
-sqlite3 -batch -init /dev/null -column -header ~/Library/Safari/History.db "
-    select datetime(v.visit_time + 978307200, 'unixepoch', 'localtime') as date, i.domain_expansion, i.url, v.title
-    from history_items i left join history_visits v on i.id = v.history_item
-    order by i.id desc
-    limit $rows;
-"
+local DEFAULT_HISTORY_DB="$HOME/Library/Safari/History.db"
+local SAFARI_TABS_DB="$HOME/Library/Containers/com.apple.Safari/Data/Library/Safari/SafariTabs.db"
+local PROFILES_DIR="$HOME/Library/Containers/com.apple.Safari/Data/Library/Safari/Profiles"
+local COLUMN_MAX=90
+local COLUMN_SEP="§"
+
+table_header() {
+    echo "date visited${COLUMN_SEP}profile name${COLUMN_SEP}domain expansion${COLUMN_SEP}url address${COLUMN_SEP}page title"
+    echo "------------${COLUMN_SEP}------------${COLUMN_SEP}----------------${COLUMN_SEP}-----------${COLUMN_SEP}----------"
+}
+
+show_history() {
+    local profile="$1"
+    local db="$2"
+
+    if [[ -f "$db" ]]; then
+        sqlite3 -batch -init /dev/null -separator "$COLUMN_SEP" "$db" "
+            select
+                datetime(v.visit_time + 978307200, 'unixepoch', 'localtime'),
+                '$profile',
+                i.domain_expansion,
+                case when length(i.url) > $COLUMN_MAX then substr(i.url, 1, $COLUMN_MAX) || '...' else i.url end,
+                case when length(v.title) > $COLUMN_MAX then substr(v.title, 1, $COLUMN_MAX) || '...' else v.title end
+            from history_items i left join history_visits v on i.id = v.history_item
+            order by i.id desc
+            limit $rows;
+        "
+    else
+        echo "No History.db found for profile: $profile ($db)"
+    fi
+}
+
+list_profiles() {
+    sqlite3 -batch -init /dev/null -separator "$COLUMN_SEP" "$SAFARI_TABS_DB" "
+        select title, external_uuid
+        from bookmarks
+        where type=1 and subtype=2 and title <> '';
+    "
+}
+
+create_table_data() {
+    local file="$1"
+    show_history "Default" "$DEFAULT_HISTORY_DB" > "$file"
+    list_profiles | while IFS="$COLUMN_SEP" read -r profile uuid; do
+        show_history "$profile" "$PROFILES_DIR/$uuid/History.db" >> "$file"
+    done
+}
+
+show_full_table() {
+    local file="$1"
+    {
+        table_header
+        sort -r "$file"
+    } | sed "s/$COLUMN_SEP$COLUMN_SEP/$COLUMN_SEP $COLUMN_SEP/g" | column -s "$COLUMN_SEP" -t
+}
+
+tmp_table=$(mktemp)
+create_table_data "$tmp_table"
+show_full_table "$tmp_table"
+rm "$tmp_table"
