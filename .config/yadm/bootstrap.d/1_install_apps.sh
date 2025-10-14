@@ -8,10 +8,17 @@ readonly BREWFILES="$CONFIG/homebrew/Brewfile.core $CONFIG/homebrew/Brewfile.tem
 
 main() {
     h1 "Applications"
+    setup_pre_install
     install_apps
     setup_post_install
     install_myrepos
     cleanup_apps
+}
+
+setup_pre_install() {
+    h2 "Pre-install Setup"
+    setup_xcode_license
+    setup_xcode_directory
 }
 
 install_apps() {
@@ -22,8 +29,6 @@ install_apps() {
 setup_post_install() {
     h2 "Post-install Setup"
     remove_quarantines
-    setup_xcode_license
-    setup_xcode_directory
     setup_shell_path_permissions
     setup_1password_cli
     setup_things_helper
