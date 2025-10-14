@@ -4,6 +4,8 @@ set -euo pipefail
 readonly BASEDIR=$(cd "$(dirname "$0")" && pwd) # where the script is located
 source "$BASEDIR/../common"
 
+# Note: See functions `osascript_debug_anchors` and `osascript_debug_elements` for AppleScript inspection
+
 main() {
     h1 "Manual Settings"
     confirm_action "Do you want to review all manual settings?" \
@@ -16,6 +18,7 @@ all_manual_settings() {
     review_system_settings
     review_1password_settings
     review_chrome_settings
+    review_contacts_settings
     review_facetime_settings
     review_notes_settings
     review_shortcuts_settings
@@ -54,7 +57,7 @@ open_time_machine_options() {
     tell application "System Events" to tell process "System Settings"
         click button 1 of scroll area 1 of group 1 of group 2 of splitter group 1 of group 1 of window 1
     end tell
-    return
+    return -- silence output to terminal
     '
 }
 
@@ -86,6 +89,40 @@ review_chrome_settings() {
     echo "Chrome Profile [each]"
     echo "chrome://password-manager/settings"
     echo "Settings      ➤ ${bold}OFF${reset} Offer to save passwords and passkeys"
+}
+
+review_contacts_settings() {
+    h2 "Contacts"
+    echo "General       ➤ Sort By: ${bold}First Name${reset}"
+    echo "              ➤ Short Name Format: ${bold}Full Name${reset}"
+    echo "              ➤ ${bold}OFF${reset} Prefer nicknames"
+    echo "              ➤ Address Format: Portugal"
+    echo "              ➤ Default Account: iCloud"
+    echo
+    echo "Template      ➤ First    Middle    Last"
+    echo "              ➤ Job Title    Department"
+    echo "              ➤ Company"
+    echo "              ➤ mobile: Phone"
+    echo "              ➤ work: Email"
+    echo "              ➤ home page: URL"
+    echo "              ➤ birthday: day/month/year"
+    echo "              ➤ daughter: Related Name"
+    echo "              ➤ son: Related Name"
+    echo "              ➤ LinkedIn: Username"
+    echo "              ➤ work: Address"
+    echo "              ➤ home: Address"
+    open_contacts_settings
+    pause
+}
+
+open_contacts_settings() {
+    /usr/bin/osascript -e '
+    tell application "Contacts" to activate
+    tell application "System Events" to tell process "Contacts"
+        click menu item "Settings…" of menu "Contacts" of menu bar 1
+    end tell
+    return -- silence output to terminal
+    '
 }
 
 review_facetime_settings() {
