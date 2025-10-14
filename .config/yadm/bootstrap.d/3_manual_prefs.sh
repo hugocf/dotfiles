@@ -74,6 +74,7 @@ review_1password_settings() {
     echo "[Create a New Password]"
     echo "              ➤ Characters: ${bold}32${reset} "
     echo "              ➤ Symbols:    ${bold}ON${reset} "
+    pause
 
     h2 "1Password Chrome Extension [Installed by Your Administrator]"
     echo "Chrome Profile [each]"
@@ -82,6 +83,7 @@ review_1password_settings() {
     echo "              ➤ ${bold}OFF${reset} Offer save and sign in with passkeys"
     echo "chrome://extensions/shortcuts"
     echo "Keyboard …    ➤ Activate the extension: ${bold}Not set${reset}"
+    pause
 }
 
 review_chrome_settings() {
@@ -89,6 +91,7 @@ review_chrome_settings() {
     echo "Chrome Profile [each]"
     echo "chrome://password-manager/settings"
     echo "Settings      ➤ ${bold}OFF${reset} Offer to save passwords and passkeys"
+    pause
 }
 
 review_contacts_settings() {
@@ -129,6 +132,7 @@ review_facetime_settings() {
     if [[ "$(yadm config --get local.class)" == "Work" ]]; then
         h2 "FaceTime"
         echo "General   ➤ ${bold}OFF${reset} Calls From iPhone"
+        pause
     fi
 }
 
@@ -136,11 +140,13 @@ review_notes_settings() {
     h2 "Notes"
     echo "Settings      ➤ Sort notes by: ${bold}Title${reset}"
     echo "              ➤ ${bold}ON${reset} Use Touch ID [use same pwd as personal login]"
+    pause
 }
 
 review_shortcuts_settings() {
     h2 "Shortcuts"
     echo "Advanced      ➤ ${bold}ON${reset} Allow Running Scripts"
+    pause
 }
 
 review_slack_settings() {
@@ -168,6 +174,7 @@ review_slack_settings() {
     echo "Mark as read  ➤ When I view… ${bold}ON${reset} Start me at the newest message but leave unseen messages unread"
     echo "              ➤ When I mark… ${bold}ON${reset} Prompt to confirm [default]"
     echo "Advanced      ➤ Other… ${bold}OFF${reset} Send me occasional surveys via Slackbot"
+    pause
 }
 
 main "$@"
