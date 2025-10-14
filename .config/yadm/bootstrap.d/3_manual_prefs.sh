@@ -13,16 +13,16 @@ main() {
 }
 
 all_manual_settings() {
-    set_system_settings
-    set_1password_settings
-    set_chrome_settings
-    set_facetime_settings
-    set_notes_settings
-    set_shortcuts_settings
-    set_slack_settings
+    review_system_settings
+    review_1password_settings
+    review_chrome_settings
+    review_facetime_settings
+    review_notes_settings
+    review_shortcuts_settings
+    review_slack_settings
 }
 
-set_system_settings() {
+review_system_settings() {
     h2 "System Settings"
 
     echo "Accessibility ➤ Zoom"
@@ -58,7 +58,7 @@ open_time_machine_options() {
     '
 }
 
-set_1password_settings() {
+review_1password_settings() {
     h2 "1Password"
     echo "General       ➤ Show Quick Access: ${bold}⌃ ⌥ ⌘ P${reset}"
     echo "Security      ➤ ${bold}ON${reset} Touch ID"
@@ -81,32 +81,32 @@ set_1password_settings() {
     echo "Keyboard …    ➤ Activate the extension: ${bold}Not set${reset}"
 }
 
-set_chrome_settings() {
+review_chrome_settings() {
     h2 "Chrome"
     echo "Chrome Profile [each]"
     echo "chrome://password-manager/settings"
     echo "Settings      ➤ ${bold}OFF${reset} Offer to save passwords and passkeys"
 }
 
-set_facetime_settings() {
+review_facetime_settings() {
     if [[ "$(yadm config --get local.class)" == "Work" ]]; then
         h2 "FaceTime"
         echo "General   ➤ ${bold}OFF${reset} Calls From iPhone"
     fi
 }
 
-set_notes_settings() {
+review_notes_settings() {
     h2 "Notes"
     echo "Settings      ➤ Sort notes by: ${bold}Title${reset}"
     echo "              ➤ ${bold}ON${reset} Use Touch ID [use same pwd as personal login]"
 }
 
-set_shortcuts_settings() {
+review_shortcuts_settings() {
     h2 "Shortcuts"
     echo "Advanced      ➤ ${bold}ON${reset} Allow Running Scripts"
 }
 
-set_slack_settings() {
+review_slack_settings() {
     h2 "Slack"
     echo "Notifications ➤ My keywords: ${bold}Hugo, Ferreira${reset}"
     echo "              ➤ Allow notifications: ${bold}Weekdays${reset} ${bold}9:00${reset} to ${bold}18:00${reset} [default]"
