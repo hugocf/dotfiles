@@ -29,6 +29,8 @@ install_apps() {
 setup_post_install() {
     h2 "Post-install Setup"
     remove_quarantines
+    setup_xcode_license
+    setup_xcode_directory
     setup_shell_path_permissions
     setup_1password_cli
     setup_things_helper
