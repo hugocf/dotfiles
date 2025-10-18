@@ -5,4 +5,4 @@ SHELL_SESSIONS_DISABLE=1    # https://apple.stackexchange.com/a/427568
 export EDITOR="code --wait"
 export LANG=en_US.UTF-8     # Unicode sorting instead ASCII-based (e.g. in `ls`, `sort`)
 
-[[ -f ~/.config/work/zshenv ]] && source ~/.config/work/zshenv || :
+[[ -f ~/.config/work/dotfiles/zshenv ]] && source ~/.config/work/dotfiles/zshenv || :

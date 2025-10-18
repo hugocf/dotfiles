@@ -77,4 +77,4 @@ shell_user_extensions() {
 
 main
 
-[[ -f ~/.config/work/zshrc ]] && source ~/.config/work/zshrc || :
+[[ -f ~/.config/work/dotfiles/zshrc ]] && source ~/.config/work/dotfiles/zshrc || :
