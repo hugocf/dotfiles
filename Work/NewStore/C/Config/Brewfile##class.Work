@@ -27,4 +27,3 @@ vscode "ms-python.vscode-pylance"               # A performant, feature-rich lan
 vscode "ms-vscode-remote.remote-containers"     # Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set.
 vscode "ms-vscode.makefile-tools"               # Provide makefile support in VS Code: C/C++ IntelliSense, build, debug/run.
 vscode "mtxr.sqltools"                          # Connecting users to many of the most commonly used databases. Welcome to database management done right.
-vscode "tabnine.tabnine-vscode"                 # Tabnine is the AI code assistant that accelerates and simplifies software development while keeping your code private, secure, and compliant. It provides accurate, highly personalized results for generating code, writing unit tests, creating documentation, explaining legacy code, fixing code, and mu
