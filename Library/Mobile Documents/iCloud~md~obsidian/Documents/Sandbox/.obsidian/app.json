@@ -1,0 +1,9 @@
+{
+  "promptDelete": false,
+  "showInlineTitle": false,
+  "alwaysUpdateLinks": true,
+  "useTab": false,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./attachments"
+}
