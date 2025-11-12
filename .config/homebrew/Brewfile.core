@@ -53,6 +53,10 @@ mas "The Unarchiver", id: 425424353         # The Unarchiver is a small and easy
 mas "Things", id: 904280696                 # Get things done! The award-winning Things app helps you plan your day, manage your projects, and make real progress toward your goals.
 mas "Xcode", id: 497799835                  # Xcode includes everything developers need to create great applications for Mac, iPhone, iPad, Apple TV, Apple Watch and Apple Vision Pro. Xcode provides develop…
 
+vscode "ginfuru.ginfuru-better-solarized-dark-theme"    # A Better Solarized theme for Visual Studio Code include light and dark versions
+vscode "nicolaiverbaarschot.alabaster-variant-theme"    # A theme set inspired by Tonsky's Alabaster
+vscode "tonsky.theme-alabaster"                         # A light theme with minimal amount of highlighting for Visual Studio Code
+
 vscode "alefragnani.bookmarks"                          # Mark lines and jump to them
 vscode "compulim.compulim-vscode-closetag"              # Quickly close last opened HTML/XML tag
 vscode "davidanson.vscode-markdownlint"                 # Markdown linting and style checking for Visual Studio Code
@@ -60,7 +64,6 @@ vscode "eamodio.gitlens"                                # Supercharge Git within
 vscode "editorconfig.editorconfig"                      # EditorConfig Support for Visual Studio Code
 vscode "flesler.url-encode"                             # Allows URL-Encoding and URL-Decoding text, supports multiple selections and whole file if none
 vscode "foxundermoon.shell-format"                      # A formatter for shell scripts, Dockerfile, gitignore, dotenv, /etc/hosts, jvmoptions, and other file types
-vscode "ginfuru.ginfuru-better-solarized-dark-theme"    # A Better Solarized theme for Visual Studio Code include light and dark versions
 vscode "github.copilot"                                 # Your AI pair programmer
 vscode "github.copilot-chat"                            # AI chat features powered by Copilot
 vscode "gruntfuggly.todo-tree"                          # Show TODO, FIXME, etc. comment tags in a tree view
