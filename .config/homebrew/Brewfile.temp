@@ -17,6 +17,12 @@ brew "zsh-syntax-highlighting"              # Fish shell like syntax highlightin
 # brew "ffmpeg"                               # Play, record, convert, and stream audio and video
 # brew "yt-dlp"                               # Feature-rich command-line audio/video downloader
 
+cask "codex"                                # OpenAI's coding agent that runs in your terminal
+cask "codex-app"                            # OpenAI's Codex desktop app for managing coding agents
+cask "chatgpt"                              # OpenAI's official ChatGPT desktop app
+cask "claude"                               # Anthropic's official Claude AI desktop app
+cask "claude-code"                          # Terminal-based AI coding assistant
+
 cask "around"                               # Video calls designed for energy, ideas and action
 cask "discord"                              # Voice and text chat software
 cask "firefox"                              # Web browser
