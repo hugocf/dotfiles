@@ -15,22 +15,22 @@
 	<key>NSStatusItem Visible Item-1</key>
 	<false/>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>590 545 620 398 0 0 1800 1125 </string>
+	<string>710 2361 620 398 -580 1329 3200 1775 </string>
 	<key>NSWindow Frame com.sindresorhus.Settings.FrameAutosaveName</key>
-	<string>634 498 510 473 0 0 1800 1125 </string>
+	<string>773 561 510 473 0 0 2056 1285 </string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2024-11-09T21:09:56Z</date>
+	<date>2025-12-09T02:19:54Z</date>
 	<key>SUUpdateGroupIdentifier</key>
 	<integer>119693290</integer>
 	<key>enabledPasteboardTypes</key>
 	<array>
-		<string>public.utf8-plain-text</string>
 		<string>public.rtf</string>
 		<string>public.html</string>
+		<string>public.utf8-plain-text</string>
 		<string>public.png</string>
 		<string>public.tiff</string>
 	</array>
