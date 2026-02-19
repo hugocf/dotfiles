@@ -12,6 +12,7 @@ brew "exiftool"                             # Perl lib for reading and writing E
 brew "fx"                                   # Terminal JSON viewer
 brew "fzf"                                  # Command-line fuzzy finder written in Go
 brew "git"                                  # Distributed revision control system
+brew "graphviz"                             # Graph visualization software from AT&T and Bell Labs
 brew "httpie"                               # User-friendly cURL replacement (command-line HTTP client)
 brew "hugo"                                 # Configurable static site generator
 brew "jq"                                   # Lightweight and flexible command-line JSON processor
@@ -67,6 +68,7 @@ vscode "foxundermoon.shell-format"                      # A formatter for shell 
 vscode "github.copilot"                                 # Your AI pair programmer
 vscode "github.copilot-chat"                            # AI chat features powered by Copilot
 vscode "gruntfuggly.todo-tree"                          # Show TODO, FIXME, etc. comment tags in a tree view
+vscode "jebbs.plantuml"                                 # Rich PlantUML support for Visual Studio Code
 vscode "mads-hartmann.bash-ide-vscode"                  # A language server for Bash
 vscode "mechatroner.rainbow-csv"                        # Highlight CSV and TSV files, Run SQL-like queries
 vscode "redhat.vscode-xml"                              # XML Language Support by Red Hat
