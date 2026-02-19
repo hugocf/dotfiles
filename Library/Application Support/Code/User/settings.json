@@ -62,6 +62,7 @@
         /* MD033 */ "no-inline-html": false,
         /* MD036 */ "no-emphasis-as-header": false
     },
+    "plantuml.java": "/Users/hugo/.local/share/mise/installs/java/26.0.0/bin/java",
     "redhat.telemetry.enabled": false,
     "shellformat.flag": "--space-redirects",
     "window.autoDetectColorScheme": true,
