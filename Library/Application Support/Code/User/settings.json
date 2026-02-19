@@ -1,6 +1,20 @@
 {
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
     "[git-commit]": {
         "editor.rulers": [60, 72],
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -19,10 +33,10 @@
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
-    "aws.telemetry": false,
     "bashIde.explainshellEndpoint": "",
     "breadcrumbs.enabled": true,
     "chat.commandCenter.enabled": true,
+    "editor.accessibilitySupport": "off",
     "editor.fontFamily": "Fira Code, JetBrains Mono, Source Code Pro, 'Apple Color Emoji', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
@@ -50,54 +64,12 @@
     },
     "redhat.telemetry.enabled": false,
     "shellformat.flag": "--space-redirects",
-    "tabnine.experimentalAutoImports": true,
     "window.autoDetectColorScheme": true,
     "window.openFilesInNewWindow": "on",
     "window.restoreWindows": "none",
-    // "workbench.colorCustomizations": {
-    //     // HF: ~/.vscode/extensions/ginfuru.ginfuru-better-solarized-dark-theme-0.9.6/themes/Better Solarized Dark-color-theme.json
-    //     "terminal.ansiBlack": "#073642",
-    //     "terminal.ansiRed": "#DC322F",
-    //     "terminal.ansiGreen": "#859900",
-    //     "terminal.ansiYellow": "#B58900",
-    //     "terminal.ansiBlue": "#268BD2",
-    //     "terminal.ansiMagenta": "#D33682",
-    //     "terminal.ansiCyan": "#2AA198",
-    //     "terminal.ansiWhite": "#EEE8D5",
-    //     "terminal.ansiBrightBlack": "#00212B",
-    //     "terminal.ansiBrightRed": "#CB4B16",
-    //     "terminal.ansiBrightGreen": "#859900",
-    //     "terminal.ansiBrightYellow": "#B58900",
-    //     "terminal.ansiBrightBlue": "#839496",
-    //     "terminal.ansiBrightMagenta": "#6C71C4",
-    //     "terminal.ansiBrightCyan": "#268BD2",
-    //     "terminal.ansiBrightWhite": "#FDF6E3",
-    //     "terminalCursor.background": "#00212B",
-    //     "terminalCursor.foreground": "#839496",
-    //     "terminal.background": "#00212B",
-    //     "terminal.border": "#EEE8D52B",
-    //     "terminal.selectionBackground": "#EEE8D52B",
-    // },
     "workbench.colorTheme": "Alabaster",
     "workbench.preferredLightColorTheme": "Alabaster Light",
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "top",
-    "editor.accessibilitySupport": "off",
-    "tabnine.cloudHost": "https://console.tabnine.com",
-    "[dockercompose]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 2,
-        "editor.autoIndent": "advanced",
-        "editor.quickSuggestions": {
-            "other": true,
-            "comments": false,
-            "strings": true
-        },
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[github-actions-workflow]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "docker.extension.enableComposeLanguageServer": false,
     "workbench.preferredDarkColorTheme": "Alabaster Dark",
 }
