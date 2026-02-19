@@ -59,6 +59,7 @@ vscode "nicolaiverbaarschot.alabaster-variant-theme"    # A theme set inspired b
 vscode "tonsky.theme-alabaster"                         # A light theme with minimal amount of highlighting for Visual Studio Code
 
 vscode "alefragnani.bookmarks"                          # Mark lines and jump to them
+vscode "bierner.markdown-mermaid"                       # Adds Mermaid diagram and flowchart support to VS Code's builtin markdown preview
 vscode "compulim.compulim-vscode-closetag"              # Quickly close last opened HTML/XML tag
 vscode "davidanson.vscode-markdownlint"                 # Markdown linting and style checking for Visual Studio Code
 vscode "eamodio.gitlens"                                # Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
