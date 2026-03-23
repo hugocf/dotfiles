@@ -27,6 +27,7 @@
     "editor:toggle-numbered-list",
     "editor:toggle-checklist-status",
     "editor:insert-table",
+    "obsidian-link-embed:embed-link",
     "editor:configure-toolbar"
   ],
   "mobilePullAction": "command-palette:open"
