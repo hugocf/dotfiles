@@ -8,6 +8,7 @@ brew "kubectl"                                  # Kubernetes command-line interf
 brew "kubectx"                                  # Tool that can switch between kubectl contexts easily and create aliases
 brew "uv"                                       # Extremely fast Python package installer and resolver, written in Rust
 
+cask "dbeaver-community"                        # Universal database tool and SQL client
 cask "docker"                                   # App to build and share containerised applications and microservices
 cask "tuple"                                    # Remote pair programming app
 
