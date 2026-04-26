@@ -116,8 +116,8 @@ system_dock_layout() {
     dock_app_set pos=7  desktop=2 path="/Applications/Things3.app"
     dock_app_set pos=8  desktop=2 path="/Applications/OfficeTime.app"
     dock_app_set pos=9  desktop=3 path="/System/Applications/Mail.app"
-    dock_app_set pos=10 desktop=4 path="/System/Applications/Messages.app"
-    dock_app_set pos=11 desktop=4 path="/Applications/Slack.app"
+    dock_app_set pos=10 desktop=3 path="/System/Applications/Messages.app"
+    dock_app_set pos=11 desktop=3 path="/Applications/Slack.app"
     dock_app_set pos=12 desktop=  path="/Applications/Visual Studio Code.app"
     dock_apps_remove_after pos=12
     dock_folder_set pos=1 sort=name      display=folder view=list path="/Users/Shared/Library Data"
