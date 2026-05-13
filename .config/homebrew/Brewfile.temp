@@ -46,5 +46,4 @@ mas "Hush", id: 1544743900                  # Safari extension to browse the web
 mas "Just Focus", id: 1142151959            # JustFocus is a simple rest reminder [menu bar Pomodoro timer]
 
 vscode "gera2ld.markmap-vscode"             # Visualize your markdown in VSCode
-vscode "github.copilot"                     # Your AI pair programmer
 vscode "github.copilot-chat"                # AI chat features powered by Copilot
