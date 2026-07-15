@@ -30,5 +30,11 @@
     "obsidian-link-embed:embed-link",
     "editor:configure-toolbar"
   ],
-  "mobilePullAction": "command-palette:open"
+  "mobilePullAction": "command-palette:open",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
