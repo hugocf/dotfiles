@@ -10,9 +10,9 @@
 	<string>{"carbonKeyCode":9,"carbonModifiers":6144}</string>
 	<key>LaunchAtLogin__hasMigrated</key>
 	<true/>
-	<key>NSStatusItem Visible Item-0</key>
+	<key>NSStatusItem VisibleCC Item-0</key>
 	<false/>
-	<key>NSStatusItem Visible Item-1</key>
+	<key>NSStatusItem VisibleCC Item-1</key>
 	<false/>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>710 2361 620 398 -580 1329 3200 1775 </string>
