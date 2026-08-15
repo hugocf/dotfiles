@@ -4,13 +4,19 @@
 <dict>
 	<key>NSWindow Frame NSSpellCheckerSubstitutionsPanel2</key>
 	<string>692 407 425 137 0 0 1800 1125 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>700 746 400 135 0 0 1800 1130 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>590 549 620 398 0 0 1800 1130 </string>
 	<key>SUAutomaticallyUpdate</key>
 	<false/>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2026-06-19T08:16:06Z</date>
+	<date>2026-08-10T23:06:45Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>browsers</key>
 	<array>
@@ -43,7 +49,11 @@
 	</array>
 	<key>displayMenuBarItem</key>
 	<string>0</string>
+	<key>displayMode</key>
+	<integer>0</integer>
 	<key>launchAtLogin</key>
 	<string>1</string>
+	<key>urlExpansionMode</key>
+	<integer>2</integer>
 </dict>
 </plist>
