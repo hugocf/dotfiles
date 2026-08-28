@@ -9,7 +9,7 @@
 #
 # — [azet/community_bash_style_guide: Community Bash Style Guide](https://github.com/azet/community_bash_style_guide)
 
-# https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+# https://medium.com/factualopinions/consider-starting-all-your-bash-scripts-with-these-options-74fbec0cbb83
 set -euo pipefail
 # set -x    print each command before executing it [debug]
 
