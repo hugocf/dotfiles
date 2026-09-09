@@ -9,6 +9,8 @@ main() {
 
     get_events_by_url <url>
     get_events_by_summary <text>
+    get_events_with_nbspace
+    fix_events_with_nbspace
 
 This script requires sqlite3 and assumes the calendar database is located at: $DB"
 
@@ -26,6 +28,12 @@ This script requires sqlite3 and assumes the calendar database is located at: $D
             ;;
         get_events_by_summary)
             get_events_by_summary "$@"
+            ;;
+        get_events_with_nbspace)
+            get_events_with_nbspace "$@"
+            ;;
+        fix_events_with_nbspace)
+            fix_events_with_nbspace "$@"
             ;;
         *)
             echo "Invalid command: $command"
@@ -66,6 +74,33 @@ get_events_by_summary() {
         order by start_date;
     "
     sqlite3 "$DB" "$sql"
+}
+
+get_events_with_nbspace() {
+    local nbspace=" "
+    local sql="
+        select
+            rowid,
+            uuid,
+            datetime(start_date + $NSDATE_DELTA, 'unixepoch', 'localtime') as start_date,
+            datetime(last_modified + $NSDATE_DELTA, 'unixepoch', 'localtime') as modified_date,
+            summary
+        from CalendarItem
+        where summary like '%$nbspace%'
+        order by start_date;
+    "
+    sqlite3 "$DB" "$sql" | sed "s/$nbspace/🁢/g"
+}
+
+fix_events_with_nbspace() {
+    local nbspace=" "
+    local sql="
+        update CalendarItem
+        set summary = replace(summary, '$nbspace', ' ')
+        where summary like '%$nbspace%';
+    "
+    sqlite3 "$DB" "$sql"
+    get_events_with_nbspace
 }
 
 main "$@"
