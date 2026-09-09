@@ -77,27 +77,25 @@ get_events_by_summary() {
 }
 
 get_events_with_nbspace() {
-    local nbspace=" "
     local sql="
         select
             rowid,
             uuid,
             datetime(start_date + $NSDATE_DELTA, 'unixepoch', 'localtime') as start_date,
             datetime(last_modified + $NSDATE_DELTA, 'unixepoch', 'localtime') as modified_date,
-            summary
+            replace(summary, char(160), '🁢') as summary
         from CalendarItem
-        where summary like '%$nbspace%'
+        where summary like '%' || char(160) || '%'
         order by start_date;
     "
-    sqlite3 "$DB" "$sql" | sed "s/$nbspace/🁢/g"
+    sqlite3 "$DB" "$sql"
 }
 
 fix_events_with_nbspace() {
-    local nbspace=" "
     local sql="
         update CalendarItem
-        set summary = replace(summary, '$nbspace', ' ')
-        where summary like '%$nbspace%';
+        set summary = replace(summary, char(160), ' ')
+        where summary like '%' || char(160) || '%';
     "
     sqlite3 "$DB" "$sql"
     get_events_with_nbspace
