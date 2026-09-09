@@ -43,8 +43,16 @@ This script requires sqlite3 and assumes the calendar database is located at: $D
     esac
 }
 
+# Escapes a value for interpolation into a single-quoted SQL string.
+# Doubling ' is SQLite's only literal escape (backslash is not special),
+# so this is sufficient here but is NOT portable to other engines.
+sql_quote() {
+    local value=${1//\'/"''"}
+    printf "%s" "$value"
+}
+
 get_events_by_url() {
-    local url="${1:-%}"
+    local url; url=$(sql_quote "${1:-%}")
     local sql="
         select
             rowid,
@@ -61,7 +69,7 @@ get_events_by_url() {
 }
 
 get_events_by_summary() {
-    local summary="${1:-%}"
+    local summary; summary=$(sql_quote "${1:-%}")
     local sql="
         select
             rowid,
