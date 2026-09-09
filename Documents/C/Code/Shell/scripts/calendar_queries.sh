@@ -8,6 +8,7 @@ main() {
     local usage="Usage: $(basename $0) command [args...]
 
     get_events_by_url <url>
+    get_events_by_summary <text>
 
 This script requires sqlite3 and assumes the calendar database is located at: $DB"
 
@@ -22,6 +23,9 @@ This script requires sqlite3 and assumes the calendar database is located at: $D
     case "$command" in
         get_events_by_url)
             get_events_by_url "$@"
+            ;;
+        get_events_by_summary)
+            get_events_by_summary "$@"
             ;;
         *)
             echo "Invalid command: $command"
@@ -43,6 +47,22 @@ get_events_by_url() {
             url
         from CalendarItem
         where url like '$url'
+        order by start_date;
+    "
+    sqlite3 "$DB" "$sql"
+}
+
+get_events_by_summary() {
+    local summary="${1:-:}"
+    local sql="
+        select
+            rowid,
+            uuid,
+            datetime(start_date + $NSDATE_DELTA, 'unixepoch', 'localtime') as start_date,
+            datetime(last_modified + $NSDATE_DELTA, 'unixepoch', 'localtime') as modified_date,
+            summary
+        from CalendarItem
+        where summary like '%$summary%'
         order by start_date;
     "
     sqlite3 "$DB" "$sql"
