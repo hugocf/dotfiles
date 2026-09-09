@@ -7,8 +7,8 @@ readonly NSDATE_DELTA=978307200
 main() {
     local usage="Usage: $(basename $0) command [args...]
 
-    get_events_by_url <url>
-    get_events_by_summary <text>
+    get_events_by_url <pattern>
+    get_events_by_summary <pattern>
     get_events_with_nbspace
     fix_events_with_nbspace
 
@@ -44,7 +44,7 @@ This script requires sqlite3 and assumes the calendar database is located at: $D
 }
 
 get_events_by_url() {
-    local url="${1:-:}"
+    local url="${1:-%}"
     local sql="
         select
             rowid,
@@ -61,7 +61,7 @@ get_events_by_url() {
 }
 
 get_events_by_summary() {
-    local summary="${1:-:}"
+    local summary="${1:-%}"
     local sql="
         select
             rowid,
@@ -70,7 +70,7 @@ get_events_by_summary() {
             datetime(last_modified + $NSDATE_DELTA, 'unixepoch', 'localtime') as modified_date,
             summary
         from CalendarItem
-        where summary like '%$summary%'
+        where summary like '$summary'
         order by start_date;
     "
     sqlite3 "$DB" "$sql"
