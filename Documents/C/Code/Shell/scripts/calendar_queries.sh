@@ -10,7 +10,9 @@ main() {
     get_events_by_url <pattern>
     get_events_by_summary <pattern>
     get_events_with_nbspace
+    get_events_with_write_text_form
     fix_events_with_nbspace
+    fix_events_with_write_text_form
 
 This script requires sqlite3 and assumes the calendar database is located at: $DB"
 
@@ -32,8 +34,14 @@ This script requires sqlite3 and assumes the calendar database is located at: $D
         get_events_with_nbspace)
             get_events_with_nbspace "$@"
             ;;
+        get_events_with_write_text_form)
+            get_events_with_write_text_form "$@"
+            ;;
         fix_events_with_nbspace)
             fix_events_with_nbspace "$@"
+            ;;
+        fix_events_with_write_text_form)
+            fix_events_with_write_text_form "$@"
             ;;
         *)
             echo "Invalid command: $command"
@@ -107,6 +115,36 @@ fix_events_with_nbspace() {
     "
     sqlite3 "$DB" "$sql"
     get_events_with_nbspace
+}
+
+get_events_with_write_text_form() {
+    local text_form="char(9997)"    # U+270D
+
+    local sql="
+        select
+            rowid,
+            uuid,
+            datetime(start_date + $NSDATE_DELTA, 'unixepoch', 'localtime') as start_date,
+            datetime(last_modified + $NSDATE_DELTA, 'unixepoch', 'localtime') as modified_date,
+            replace(summary, char(160), '🁢') as summary
+        from CalendarItem
+        where summary like '%' || $text_form || ' %'
+        order by start_date;
+    "
+    sqlite3 "$DB" "$sql"
+}
+
+fix_events_with_write_text_form() {
+    local text_form="char(9997)"          # U+270D
+    local emoji_form="char(9997, 65039)"  # U+270D U+FE0F
+
+    local sql="
+        update CalendarItem
+        set summary = replace(summary, $text_form || ' ', $emoji_form || ' ')
+        where summary like '%' || $text_form || ' %';
+    "
+    sqlite3 "$DB" "$sql"
+    get_events_with_write_text_form
 }
 
 main "$@"
