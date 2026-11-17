@@ -18,7 +18,6 @@ brew "zsh-syntax-highlighting"              # Fish shell like syntax highlightin
 # brew "yt-dlp"                               # Feature-rich command-line audio/video downloader
 
 cask "codex"                                # OpenAI's coding agent that runs in your terminal
-cask "codex-app"                            # OpenAI's Codex desktop app for managing coding agents
 cask "chatgpt"                              # OpenAI's official ChatGPT desktop app
 cask "claude"                               # Anthropic's official Claude AI desktop app
 cask "claude-code"                          # Terminal-based AI coding assistant
@@ -46,4 +45,3 @@ mas "Hush", id: 1544743900                  # Safari extension to browse the web
 mas "Just Focus", id: 1142151959            # JustFocus is a simple rest reminder [menu bar Pomodoro timer]
 
 vscode "gera2ld.markmap-vscode"             # Visualize your markdown in VSCode
-vscode "github.copilot-chat"                # AI chat features powered by Copilot
