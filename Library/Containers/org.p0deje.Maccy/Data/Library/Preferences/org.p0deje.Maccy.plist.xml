@@ -8,6 +8,8 @@
 	<string>{"carbonModifiers":2048,"carbonKeyCode":35}</string>
 	<key>KeyboardShortcuts_popup</key>
 	<string>{"carbonKeyCode":9,"carbonModifiers":6144}</string>
+	<key>KeyboardShortcuts_togglePreview</key>
+	<string>{"carbonKeyCode":49,"carbonModifiers":4096}</string>
 	<key>LaunchAtLogin__hasMigrated</key>
 	<true/>
 	<key>NSStatusItem VisibleCC Item-0</key>
@@ -28,11 +30,13 @@
 	<integer>119693290</integer>
 	<key>enabledPasteboardTypes</key>
 	<array>
+		<string>public.heic</string>
 		<string>public.rtf</string>
+		<string>public.jpeg</string>
 		<string>public.html</string>
-		<string>public.utf8-plain-text</string>
-		<string>public.png</string>
 		<string>public.tiff</string>
+		<string>public.png</string>
+		<string>public.utf8-plain-text</string>
 	</array>
 	<key>historySize</key>
 	<integer>200</integer>
@@ -68,9 +72,21 @@
 		<true/>
 		<key>2024-07-01-version-2</key>
 		<true/>
+		<key>2025-07-04-add-jpeg-heic</key>
+		<true/>
+		<key>2026-08-12-cleanup-orphaned-history-item-contents</key>
+		<true/>
+		<key>2026-08-31-sanitize-history-item-titles</key>
+		<true/>
+		<key>2026-09-15-remove-unpersistable-contents</key>
+		<true/>
 	</dict>
 	<key>pasteByDefault</key>
 	<true/>
+	<key>pinOrder</key>
+	<string>{"pins":["s","b","e","k","u","o"]}</string>
+	<key>previewWidth</key>
+	<real>400</real>
 	<key>searchMode</key>
 	<string>fuzzy</string>
 	<key>showFooter</key>
