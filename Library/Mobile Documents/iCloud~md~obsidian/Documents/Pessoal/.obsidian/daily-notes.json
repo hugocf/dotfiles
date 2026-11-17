@@ -1,5 +1,5 @@
 {
   "format": "YYYY/YYYY-MM-DD",
-  "folder": "📆 Logbook",
-  "template": "📐 Templates/Daily note"
+  "folder": "L/Logbook",
+  "template": "O/Obsidian/Templates/Daily note.md"
 }
